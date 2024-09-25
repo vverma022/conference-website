@@ -1,18 +1,13 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
-import { ConferencePage } from './page/main'
-function App() {
-  const [count, setCount] = useState(0)
+import ConferencePage from './page/main'
 
+function App() {
   return (
-    <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ConferencePage />} />
+       <Route path="/" element={<ConferencePage />} />
       </Routes>
     </BrowserRouter>
-    </>
   )
 }
 

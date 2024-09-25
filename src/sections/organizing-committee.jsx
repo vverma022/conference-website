@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const committeeMembers = [
   { name: 'Dr. Jane Smith', role: 'Conference Chair', image: '/placeholder.svg?height=200&width=200' },
@@ -29,13 +29,10 @@ export function OrganizingCommittee() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="text-center"
             >
-              <Image
-                src={member.image}
-                alt={member.name}
-                width={200}
-                height={200}
-                className="rounded-full mx-auto mb-4"
-              />
+              <Avatar className="w-32 h-32 mx-auto mb-4">
+                <AvatarImage src={member.image} alt={member.name} />
+                <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+              </Avatar>
               <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
               <p className="text-gray-600">{member.role}</p>
             </motion.div>

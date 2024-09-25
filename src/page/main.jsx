@@ -1,13 +1,22 @@
-import { Navbar } from '@/sections/navbar'
-import { Footer } from '@/sections/footer'
+import { HeroSection } from '@/sections/hero-section'
+import { AboutEvent } from '@/sections/about-event'
+import { OrganizingCommittee } from '@/sections/organizing-committee'
+import { EventLocation } from '@/sections/event-location'
+import { FAQ } from '@/sections/faq'
+import { ContactUs } from "../sections/contact-us"
 
-export default function ConferencePage() {
+
+const ConferencePage = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main className="flex-grow">
-      </main>
-      <Footer />
+    <div>
+      <HeroSection />
+      <AboutEvent />
+      <OrganizingCommittee />
+      <EventLocation />
+      <FAQ />
+      <ContactUs />
     </div>
   )
 }
+
+  export default ConferencePage
