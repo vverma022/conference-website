@@ -1,39 +1,61 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 const navItems = [
-  { name: 'Home', href: '#' },
-  { name: 'About', href: '#about' },
-  { name: 'Committee', href: '#committee' },
-  { name: 'Location', href: '#location' },
-  { name: 'FAQ', href: '#faq' },
-  { name: 'Contact', href: '#contact' },
-  { name: 'Register', href: '#register' },
+  { name: 'Home', href: 'home' },
+  { name: 'About', href: 'about' },
+  { name: 'Committee', href: 'committee' },
+  { name: 'Location', href: 'location' },
+  { name: 'FAQ', href: 'faq' },
+  { name: 'Contact', href: 'contact' },
+  { name: 'Register', href: 'register' },
 ]
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const scrollToSection = () => {
+    setIsOpen(false)
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 640) {
+        setIsOpen(false)
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
-    <nav className="bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
-            <Link href="#" className="flex-shrink-0 flex items-center">
+            <a href="#home" className="flex-shrink-0 flex items-center" onClick={() => scrollToSection('home')}>
               <span className="text-xl font-bold text-primary">TechConf 2024</span>
-            </Link>
+            </a>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.name}
-                href={item.href}
+                href={`#${item.href}`}
                 className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary"
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(item.href)
+                }}
               >
                 {item.name}
-              </Link>
+              </a>
             ))}
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
@@ -59,14 +81,17 @@ export function Navbar() {
       >
         <div className="pt-2 pb-3 space-y-1">
           {navItems.map((item) => (
-            <Link
+            <a
               key={item.name}
-              href={item.href}
+              href={`#${item.href}`}
               className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:border-primary hover:text-primary"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                e.preventDefault()
+                scrollToSection(item.href)
+              }}
             >
               {item.name}
-            </Link>
+            </a>
           ))}
         </div>
       </motion.div>

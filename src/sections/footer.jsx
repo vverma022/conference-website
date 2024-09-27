@@ -3,8 +3,8 @@ import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="bg-gray-800 text-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <footer className="bg-gray-800 text-white w-full">
+      <div className="max-w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <span className="text-2xl font-bold">TechConf 2024</span>

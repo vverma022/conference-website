@@ -4,17 +4,35 @@ import { OrganizingCommittee } from '@/sections/organizing-committee'
 import { EventLocation } from '@/sections/event-location'
 import { FAQ } from '@/sections/faq'
 import { ContactUs } from "../sections/contact-us"
+import { Footer } from "../sections/footer"
+import { Navbar } from "../sections/navbar"
 
 
 const ConferencePage = () => {
   return (
-    <div>
-      <HeroSection />
-      <AboutEvent />
-      <OrganizingCommittee />
-      <EventLocation />
-      <FAQ />
-      <ContactUs />
+    <div className="flex flex-col min-h-screen w-full">
+      <Navbar />
+      <main className="flex-grow pt-16">
+        <section id="home">
+          <HeroSection />
+        </section>
+        <section id="about">
+          <AboutEvent />
+        </section>
+        <section id="committee">
+          <OrganizingCommittee />
+        </section>
+        <section id="location">
+          <EventLocation />
+        </section>
+        <section id="faq">
+          <FAQ />
+        </section>
+        <section id="contact">
+          <ContactUs />
+        </section>
+      </main>
+      <Footer />
     </div>
   )
 }
