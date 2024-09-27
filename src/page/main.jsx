@@ -6,7 +6,7 @@ import { FAQ } from '@/sections/faq'
 import { ContactUs } from "../sections/contact-us"
 import { Footer } from "../sections/footer"
 import { Navbar } from "../sections/navbar"
-
+import Register from "../sections/registration"
 
 const ConferencePage = () => {
   return (
@@ -27,6 +27,9 @@ const ConferencePage = () => {
         </section>
         <section id="faq">
           <FAQ />
+        </section>
+        <section id="register">
+          <Register />
         </section>
         <section id="contact">
           <ContactUs />
