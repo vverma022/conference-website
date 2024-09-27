@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
+import backgroundImage from '../assets/bg.jpg'
+
 
 export function HeroSection() {
   return (
@@ -11,8 +13,14 @@ export function HeroSection() {
     >
       <div
         className="absolute inset-0 bg-cover bg-center z-0 w-full"
-        style={{ backgroundImage: "url('/placeholder.svg?height=1080&width=1920')" }}
-      />
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          height: '100vh',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+      </div>
       <div className="absolute inset-0 bg-black opacity-50 z-10 w-full" />
       <div className="relative z-20 max-w-4xl mx-auto px-4 w-full">
         <motion.h1

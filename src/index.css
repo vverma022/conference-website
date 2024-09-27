@@ -134,6 +134,6 @@ button:focus-visible {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply dark:bg-background dark:text-foreground;
   }
 }
