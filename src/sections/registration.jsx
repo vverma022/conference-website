@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Select } from '@/components/ui/select'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 
 const plans = [
   {
@@ -31,7 +31,7 @@ const  Register = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="py-16 bg-white w-full"
+      className="py-16 bg-gray-100 w-full"
     >
       <div className="container mx-auto px-4">
         <motion.h2
@@ -42,35 +42,6 @@ const  Register = () => {
         >
           Register for TechConf 2024
         </motion.h2>
-        <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 mb-12">
-          {plans.map((plan, index) => (
-            <motion.div
-              key={plan.name}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 + index * 0.1, duration: 0.5 }}
-              className="w-full md:w-1/3 max-w-sm"
-            >
-              <Card className="h-full flex flex-col">
-                <CardHeader>
-                  <CardTitle>{plan.name}</CardTitle>
-                  <CardDescription>{plan.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-3xl font-bold mb-4">{plan.price}</p>
-                  <ul className="list-disc list-inside">
-                    {plan.features.map((feature, index) => (
-                      <li key={index} className="mb-2 text-sm">{feature}</li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button className="w-full">Select {plan.name}</Button>
-                </CardFooter>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
         <motion.form
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -84,29 +55,39 @@ const  Register = () => {
             <Input type="email" placeholder="Email Address" />
           </div>
           <div className="mb-4">
-            <Select>
-              <option value="">Select Ticket Type</option>
-              <option value="early-bird">Early Bird</option>
-              <option value="regular">Regular</option>
-              <option value="vip">VIP</option>
-            </Select>
+          <Select>
+           <SelectTrigger className="w-full">
+           <SelectValue placeholder="Select Ticket Type" />
+           </SelectTrigger>
+           <SelectContent>
+           <SelectItem value="early-bird">Early Bird</SelectItem>
+           <SelectItem value="regular">Regular</SelectItem>
+           <SelectItem value="vip">VIP</SelectItem>
+           </SelectContent>
+           </Select>
           </div>
           <div className="mb-4">
             <Input type="text" placeholder="Company/Organization" />
           </div>
           <div className="mb-4">
             <Select>
-              <option value="">Select Industry</option>
-              <option value="tech">Technology</option>
-              <option value="finance">Finance</option>
-              <option value="healthcare">Healthcare</option>
-              <option value="education">Education</option>
-              <option value="other">Other</option>
+              <SelectTrigger className="w-full">
+              <SelectValue placeholder="Select Industry" />
+              </SelectTrigger>
+              <SelectContent>
+              <SelectItem value="tech">Technology</SelectItem>
+              <SelectItem value="finance">Finance</SelectItem>
+              <SelectItem value="healthcare">Healthcare</SelectItem>
+              <SelectItem value="education">Education</SelectItem>
+              </SelectContent>
             </Select>
           </div>
-          <Button type="submit" className="w-full">
-            Complete Registration
-          </Button>
+          <Button type="submit" className="w-full relative hover:text-transparent">
+         <span className="hover:text-transparent">Complete Registration</span>
+        <span className="absolute inset-0 flex items-center justify-center text-transparent hover:text-white">
+        Opening Soon
+      </span>
+    </Button>
         </motion.form>
       </div>
     </motion.section>

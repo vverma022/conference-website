@@ -8,6 +8,7 @@ const navItems = [
   { name: 'Keynote Speakers', href: 'keynotespeakers' },
   { name: 'Organising Committee', href: 'committee' },
   { name: 'Location', href: 'location'},
+  { name: 'Session Speakers', href: 'speakers' },
   { name: 'FAQ', href: 'faq' },
   // { name: 'Contact', href: 'contact' },
   // { name: 'Register', href: 'register' },
@@ -41,7 +42,7 @@ export function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex">
             <a href="#home" className="flex-shrink-0 flex items-center" onClick={() => scrollToSection('home')}>
-              <span className="text-xl font-bold text-primary">ICADC 2025</span>
+              <span className="text-xl font-bold text-primary">ICSDC 2025</span>
             </a>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">

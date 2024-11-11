@@ -43,11 +43,11 @@ export function EventLocation() {
             className="w-full md:w-1/2 md:pl-8"
           >
             <div className="flex items-center mb-4">
-              <MapPin className="w-6 h-6 mr-2 text-primary" />
-              <h3 className="text-xl font-semibold">Conference Venue</h3>
+              <MapPin className="w-6 h-6 mr-2 text-green-800" />
+              <h3 className="text-xl font-semibold">ICADC 2025 Venue</h3>
             </div>
             <p className="text-lg mb-4">
-              Manipal Uinversity Jaipur
+              Manipal University Jaipur
               <br />
               Dehmi Kalan
               <br />

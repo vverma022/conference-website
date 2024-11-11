@@ -36,12 +36,12 @@ const ConferencePage = () => {
         <section id="faq">
           <FAQ />
         </section>
-        {/* <section id="register">
+        <section id="register">
           <Register />
         </section>
-        <section id="contact">
+        {/* <section id="contact">
           <ContactUs />
-        </section> */}
+        </section>  */}
       </main>
       <Footer />
     </div>

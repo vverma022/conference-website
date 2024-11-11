@@ -23,8 +23,8 @@ export function AboutEvent() {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="text-lg mb-6"
         >
-          School of Computing and Intelligent Systems, Manipal University Jaipur, India is organizing the International Conference on Automation and Distributed Computing (ICADC-2025). The conference invites industry professionals, academics, and researchers to submit original, high-quality, and previously unpublished research papers. The event focuses on tackling research challenges within the fields of Automation and Distributed Computing.
-          The conference will serve as a platform for presenting key research and literature in the fields of Engineering and Technology, with a particular emphasis on Automation and Distributed Computing. This gathering will enable leading experts to share their insights, offer guidance, and address participants’ questions and concerns.
+          School of Computing and Intelligent Systems, Manipal University Jaipur, India is organizing the International Conference on Smart and Distributed Computing (ICSDC-2025). The conference invites industry professionals, academics, and researchers to submit original, high-quality, and previously unpublished research papers. The event focuses on tackling research challenges within the fields of Automation and Distributed Computing.
+          The conference will serve as a platform for presenting key research and literature in the fields of Engineering and Technology, with a particular emphasis on Distributed Computing. This gathering will enable leading experts to share their insights, offer guidance, and address participants’ questions and concerns.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export function AboutEvent() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="text-lg"
         >
-          Whether you're a seasoned professional or just starting your tech journey, ICADC 2025 offers
+          Whether you're a seasoned professional or just starting your tech journey, ICSDC 2025 offers
           something for everyone. Join us to learn, connect, and be inspired by the future of technology.
         </motion.p>
       </div>
