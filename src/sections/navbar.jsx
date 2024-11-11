@@ -15,7 +15,7 @@ const navItems = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const scrollToSection = () => {
+  const scrollToSection = (sectionId) => {
     setIsOpen(false)
     const element = document.getElementById(sectionId)
     if (element) {
