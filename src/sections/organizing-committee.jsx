@@ -2,10 +2,18 @@ import { motion } from 'framer-motion'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const committeeMembers = [
-  { name: 'Dr. Jane Smith', role: 'Conference Chair', image: '/placeholder.svg?height=200&width=200' },
-  { name: 'Prof. John Doe', role: 'Program Director', image: '/placeholder.svg?height=200&width=200' },
-  { name: 'Ms. Emily Brown', role: 'Logistics Coordinator', image: '/placeholder.svg?height=200&width=200' },
-  { name: 'Mr. Michael Lee', role: 'Sponsorship Manager', image: '/placeholder.svg?height=200&width=200' },
+  { name: 'Prof. Vijaypal Singh Dhaka', role: 'Program Chair',Position: 'Director of SCIS, MUJ',image: 'https://jaipur.manipal.edu/foe/img/vs-dhaka.jpg?height=200&width=200' },
+  { name: 'Prof. Sunil Kumar', role: 'Program Co-Chair',Position: 'HoD of CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/135.jpg?height=200&width=200' },
+  { name: 'Dr. Kuldip Singh Sangwan', role: 'General Chair',Position: 'Dean of FoE, MUJ', image: 'https://jaipur.manipal.edu/foe/img/Dr%20Kuldip%20Singh.jpg?height=200&width=200' },
+  { name: 'Dr. Anil Kumar', role: 'Chief Patron',Position: 'Chairperson, MUJ', image: '/placeholder.svg?height=200&width=200' },
+  { name: 'Dr. Anil Kumar', role: 'Patron',Position: 'Persident, MUJ', image: '/placeholder.svg?height=200&width=200' },
+  { name: 'Dr. Anil Kumar', role: 'Co-Patron',Position: 'Pro-President, MUJ', image: '/placeholder.svg?height=200&width=200' },
+  { name: 'Dr. Anil Kumar', role: 'Co-Patron',Position: 'Registrar, MUJ', image: '/placeholder.svg?height=200&width=200' },
+  { name: 'Mr. Abhishek Narwaria', role: 'Convener',Position: 'Asst Professor in CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/311.jpg?height=200&width=200' },
+  { name: 'Mr. Aditya Narayan Hati', role: 'Convener',Position: 'Asst Professor in CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/645.jpg?height=200&width=200' },
+  { name: 'Dr. Somya Rakesh Goyal', role: 'Convener',Position: 'Asst Professor in CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/274.jpg?height=200&width=200' },
+
+  
 ]
 
 export function OrganizingCommittee() {
@@ -20,7 +28,7 @@ export function OrganizingCommittee() {
         >
           Organizing Committee
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {committeeMembers.map((member, index) => (
             <motion.div
               key={member.name}
@@ -34,7 +42,8 @@ export function OrganizingCommittee() {
                 <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
               </Avatar>
               <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-              <p className="text-gray-600">{member.role}</p>
+              <h2 className="text-gray-600 font-semibold">{member.Position}</h2>
+              <p>{member.role}</p>
             </motion.div>
           ))}
         </div>

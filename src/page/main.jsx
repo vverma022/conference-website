@@ -8,6 +8,7 @@ import { Footer } from "../sections/footer"
 import { Navbar } from "../sections/navbar"
 import Register from "../sections/registration"
 import { Speakers } from '@/sections/speakers'
+import { KeynoteSpeakers } from '@/sections/keynote'
 
 const ConferencePage = () => {
   return (
@@ -19,6 +20,9 @@ const ConferencePage = () => {
         </section>
         <section id="about">
           <AboutEvent />
+        </section>
+        <section id="keynotespeakers">
+          <KeynoteSpeakers />
         </section>
         <section id="speakers">
           <Speakers />
@@ -32,12 +36,12 @@ const ConferencePage = () => {
         <section id="faq">
           <FAQ />
         </section>
-        <section id="register">
+        {/* <section id="register">
           <Register />
         </section>
         <section id="contact">
           <ContactUs />
-        </section>
+        </section> */}
       </main>
       <Footer />
     </div>

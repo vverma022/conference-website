@@ -5,11 +5,12 @@ import { Menu, X } from 'lucide-react'
 const navItems = [
   { name: 'Home', href: 'home' },
   { name: 'About', href: 'about' },
-  { name: 'Committee', href: 'committee' },
-  { name: 'Location', href: 'location' },
+  { name: 'Keynote Speakers', href: 'keynotespeakers' },
+  { name: 'Organising Committee', href: 'committee' },
+  { name: 'Location', href: 'location'},
   { name: 'FAQ', href: 'faq' },
-  { name: 'Contact', href: 'contact' },
-  { name: 'Register', href: 'register' },
+  // { name: 'Contact', href: 'contact' },
+  // { name: 'Register', href: 'register' },
 ]
 
 export function Navbar() {
@@ -40,7 +41,7 @@ export function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex">
             <a href="#home" className="flex-shrink-0 flex items-center" onClick={() => scrollToSection('home')}>
-              <span className="text-xl font-bold text-primary">TechConf 2024</span>
+              <span className="text-xl font-bold text-primary">ICADC 2025</span>
             </a>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
@@ -57,6 +58,7 @@ export function Navbar() {
                 {item.name}
               </a>
             ))}
+            <a className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary">For Authors</a>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             <button

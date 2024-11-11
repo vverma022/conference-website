@@ -29,7 +29,7 @@ export function HeroSection() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
         >
-          TechConf 2024
+          ICADC 2025
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export function HeroSection() {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="text-lg sm:text-xl md:text-2xl mb-8"
         >
-          Join us for the most innovative tech conference of the year
+          Join us for the International Conference for Automation and Distributed Computing the most innovative tech conference of the year
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
