@@ -4,6 +4,13 @@ import backgroundImage from '../assets/bg.jpg'
 
 
 export function HeroSection() {
+  const handleScrollToRegister = () => {
+    const section = document.getElementById('register');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -44,9 +51,9 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <Button size="lg" variant="default">
-            Register Now
-          </Button>
+          <Button size="lg" variant="default" onClick={handleScrollToRegister}>
+      Register Now
+    </Button>
         </motion.div>
       </div>
     </motion.section>

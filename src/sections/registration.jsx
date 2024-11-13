@@ -40,7 +40,7 @@ const  Register = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-3xl font-bold mb-8 text-center"
         >
-          Register for TechConf 2024
+          Register for ICSDC 2024
         </motion.h2>
         <motion.form
           initial={{ opacity: 0, y: 20 }}
@@ -82,11 +82,8 @@ const  Register = () => {
               </SelectContent>
             </Select>
           </div>
-          <Button type="submit" className="w-full relative hover:text-transparent">
-         <span className="hover:text-transparent">Complete Registration</span>
-        <span className="absolute inset-0 flex items-center justify-center text-transparent hover:text-white">
+          <Button disabled className="w-full relative hover:text-transparent">
         Opening Soon
-      </span>
     </Button>
         </motion.form>
       </div>
