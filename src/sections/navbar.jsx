@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from '../components/ui/dropdown-menu'
+import { useNavigate } from 'react-router-dom'
 
 const navItems = [
   { name: 'Home', href: 'home' },
@@ -16,6 +18,7 @@ const navItems = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const Navigate = useNavigate()
 
   const scrollToSection = (sectionId) => {
     setIsOpen(false)
@@ -59,7 +62,13 @@ export function Navbar() {
                 {item.name}
               </a>
             ))}
-            <a className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary">For Authors</a>
+            <DropdownMenu >
+           <DropdownMenuTrigger className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary">For Author's</DropdownMenuTrigger>
+           <DropdownMenuContent className="text-center">
+           <DropdownMenuItem onClick={() => Navigate("/instructions")}>For Authors</DropdownMenuItem>
+           <DropdownMenuItem onClick={() => Navigate("/tracks")}>Call for Papers</DropdownMenuItem>
+           </DropdownMenuContent>
+           </DropdownMenu>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             <button
