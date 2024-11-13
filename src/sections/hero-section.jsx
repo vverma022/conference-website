@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import backgroundImage from '../assets/bg.jpg'
+import backgroundImage from '../assets/Manipal.jpg'
 
 
 export function HeroSection() {
