@@ -3,24 +3,24 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 const faqItems = [
   {
-    question: 'When and where is TechConf 2024 taking place?',
+    question: 'When and where is ICSDC 2025 taking place?',
     answer:
-      'TechConf 2024 will be held from September 15-17, 2024, at the TechConf Center in New York City.',
+      'The Dates for the International Conference for Smart and Distributed Computing are yet to be announced.',
   },
   {
     question: 'How can I register for the conference?',
     answer:
-      'You can register for TechConf 2024 through our online registration portal. Early bird discounts are available until March 31, 2024.',
+      'You can register for ISDC 2025 through our online registration portal once it is online',
   },
   {
-    question: 'What topics will be covered at TechConf 2024?',
+    question: 'What topics will be covered at ISDC 2025?',
     answer:
-      'TechConf 2024 will cover a wide range of topics including AI, machine learning, blockchain, cybersecurity, cloud computing, and more. A detailed schedule will be available closer to the event date.',
+      'ISDC 2025 will cover a wide range of topics including AI, machine learning, blockchain, cybersecurity, cloud computing, and more. A detailed schedule will be available closer to the event date.',
   },
   {
     question: 'Are there opportunities for networking at the conference?',
     answer:
-      'Yes, TechConf 2024 offers numerous networking opportunities including dedicated networking sessions, social events, and an interactive conference app for attendees to connect.',
+      'Yes, ISDC 2025 offers numerous networking opportunities including dedicated networking sessions, social events, and an interactive conference app for attendees to connect.',
   },
 ]
 
