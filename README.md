@@ -1,8 +1,4 @@
-# React + Vite
+![logo](https://github.com/user-attachments/assets/bb84d8a2-3fef-41e5-bf24-8c099c674e0d)
+# ICSDC 2025 - International Conference on Smart and Distributed Computing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to the **ICSDC 2025** repository! This project is the official website for the **International Conference on Smart and Distributed Computing 2025**.
