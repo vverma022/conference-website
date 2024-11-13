@@ -40,7 +40,7 @@ const  Register = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-3xl font-bold mb-8 text-center"
         >
-          Register for ICSDC 2024
+          Register for ICSDC 2025
         </motion.h2>
         <motion.form
           initial={{ opacity: 0, y: 20 }}
