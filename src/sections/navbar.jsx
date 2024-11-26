@@ -67,8 +67,8 @@ export function Navbar() {
             <DropdownMenu >
            <DropdownMenuTrigger className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary">For Author's</DropdownMenuTrigger>
            <DropdownMenuContent className="text-center">
-           <DropdownMenuItem onClick={() => Navigate("/instructions")}>For Authors</DropdownMenuItem>
-           <DropdownMenuItem onClick={() => Navigate("/tracks")}>Call for Papers</DropdownMenuItem>
+           <DropdownMenuItem onClick={() => Navigate("/tracks")}>For Authors</DropdownMenuItem>
+           <DropdownMenuItem onClick={() => Navigate("/instructions")}>Call for Papers</DropdownMenuItem>
            </DropdownMenuContent>
            </DropdownMenu>
           </div>
