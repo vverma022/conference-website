@@ -1,13 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { AlertCircle, BookOpen, Calendar, FileText, Globe, Lock, MessageSquare, PenTool, Search, Upload } from "lucide-react"
+import { Footer } from "@/sections/footer"
+import { Navbarwithout } from "@/sections/navbarwithout"
 
 export default function Instructions() {
   return (
+    <>
+    <Navbarwithout />
     <div className="container mx-auto p-4 space-y-6">
       <h1 className="text-3xl font-bold text-center mb-6">
         International Conference on Smart and Distrubuted Computing 2025
       </h1>
+      <p> ICSDC 2025 invites original research contributions from diverse fields as outlined in the conference's topics. Authors must clearly articulate the context of their work. Submissions are accepted until the paper submission deadline, after which new papers cannot be registered, though edits to existing submissions will still be allowed. </p>
       
       <Card>
         <CardHeader>
@@ -30,12 +35,13 @@ export default function Instructions() {
         </CardHeader>
         <CardContent>
           <ul className="list-disc pl-6 space-y-2">
-            <li>All submissions will be handled electronically using Microsoft's CMT platform.</li>
-            <li>Do not submit papers via email.</li>
-            <li>By submitting a paper, authors agree to the policies of ICSDS-2025.</li>
-            <li>The primary author must add details of all authors to the CMT portal.</li>
-            <li>Include at least one primary area to which your paper belongs.</li>
-            <li>You will be assigned a unique paper ID upon submission. Use this ID in all further communications.</li>
+            <li>All submissions will be handled electronically using Microsoft's CMT platform.Papers sent via email will not be accepted</li>
+            <li>The primary author ensures that all co-author details are accurately added to the CMT portal to facilitate communication.</li>
+            <li>Authors must specify a primary track or area for their submission during submission</li>
+            <li>Upon submission, each paper will be assigned a unique Paper ID, which must be referenced in all future communications</li>
+            <li>By submitting a paper, authors agree to adhere to all ICSDC 2025 policies</li>
+
+
           </ul>
         </CardContent>
       </Card>
@@ -49,7 +55,7 @@ export default function Instructions() {
             </span>
           </AccordionTrigger>
           <AccordionContent>
-            <p>Articles with novel research contribution on the theme of the conference should be submitted. Review/Survey articles are not encouraged.</p>
+            <p>ICSDC 2025 seeks submissions featuring novel research contributions relevant to the conference themes.  Review or survey articles are not encouraged</p>
           </AccordionContent>
         </AccordionItem>
 
@@ -61,7 +67,7 @@ export default function Instructions() {
             </span>
           </AccordionTrigger>
           <AccordionContent>
-            <p>The default language style is standard English only. Submit manuscripts in English language only.</p>
+            <p>Submissions must be in English. Manuscripts should adhere to standard English usage and be thoroughly proofread before submission</p>
           </AccordionContent>
         </AccordionItem>
 
@@ -74,26 +80,24 @@ export default function Instructions() {
           </AccordionTrigger>
           <AccordionContent>
             <ul className="list-decimal pl-6 space-y-2">
-              <li>Title: First letter of each word except helping verbs and connectors should be uppercase.</li>
-              <li>Avoid usage of first/second/third person (our, me, us, I, etc.).</li>
-              <li>Proofread the paper for English usage (possibly by a native speaker).</li>
-              <li>Avoid abbreviations in abstract.</li>
-              <li>Include high-resolution figures (DPI above 500).</li>
-              <li>Organize contents well: Title, objective, research gap, proposed methodology, and results should be inline.</li>
-              <li>Include motivation and paper organization at the end of the introduction section.</li>
-              <li>Number and caption all images and tables.</li>
-              <li>Do not paste tables as figures/snapshots.</li>
-              <li>Number all equations sequentially and discuss them in the text.</li>
-              <li>Cite all images, tables, equations, and references in the text.</li>
-              <li>Mention 5 to 8 keywords in the manuscript.</li>
-              <li>Expand abbreviations on first usage only. Avoid non-standard abbreviations.</li>
-              <li>Number all sections and subsections properly. Do not include headings beyond 3 levels.</li>
-              <li>Include acknowledgements (if any) after the conclusion section.</li>
-              <li>Keep author names and ordering identical in all places.</li>
-              <li>Include name, affiliation, and e-mail of all authors in both manuscript and submission portal.</li>
-              <li>Conclusion should be novel and supported by statistical remarks on experimental results.</li>
-              <li>Ensure reference items are complete and cited.</li>
-              <li>Use the provided word/LaTeX template and keep the manuscript within 10-15 pages.</li>
+ <li>Title: Capitalize the first letter of each word, excluding helping verbs and connectors.</li>
+<li>Avoid first/second/third person usage (e.g., our, me, us, I).</li>	
+<li>Proofread for proper English, preferably by a native speaker.</li>
+<li>Do not use abbreviations in the abstract. </li>	
+<li>Use high-resolution images (DPI 500). Blurred images are not acceptable.</li>	
+<li>Ensure a structured manuscript:  Title, Objectives, Research Gap, Proposed Methodology, Results, etc., must flow logically.</li>	 
+<li>Include Motivation and Paper Organization in the introduction section. </li>	
+<li>Number all images, tables, and equations sequentially and provide suitable captions. </li>	
+<li>Do not use images of tables; all tables must be created natively in text. </li>	
+<li>Cite all figures, tables, equations, and references in the manuscript text. </li>	
+<li>Provide 5 8 keywords and expand non-standard abbreviations on first use. </li>	
+<li>Structure headings to a maximum of 3 levels, with proper numbering. </li>	
+<li>Acknowledgments, if applicable, should follow the conclusion section. </li>	
+<li>Author names and orders must match across the manuscript, submission portal, and consent forms. </li>	
+<li>Include all authors' names, affiliations, and emails in the manuscript and submission portal. </li>	
+<li>The Conclusion must be novel and statistically supported by results.</li> 
+<li>Ensure references are complete, accurate, and cited in the text. </li>
+<li>Follow the provided template (Word/LaTeX) and adhere to a  10 15 page limit. </li>  
             </ul>
           </AccordionContent>
         </AccordionItem>
@@ -106,7 +110,7 @@ export default function Instructions() {
             </span>
           </AccordionTrigger>
           <AccordionContent>
-            <p>The review process will be strictly confidential. Misuse of confidential information is a severe professional failure. The Conference Organizers are not responsible for consequences when reviewers break confidentiality.</p>
+            <p className="text-justify">The peer review process will be strictly confidential. The conference organizers will address breaches of confidentiality by reviewers or others. </p>
           </AccordionContent>
         </AccordionItem>
 
@@ -118,7 +122,7 @@ export default function Instructions() {
             </span>
           </AccordionTrigger>
           <AccordionContent>
-            <p>Papers will undergo a single blind review process and be checked for plagiarism. Authors may be asked to revise their manuscript before final publication, even after the Conference.</p>
+            <p>ICSDC 2025 employs a single-blind review process. Submissions will undergo plagiarism checks (preferably with Turnitin). Papers exceeding 18% similarity or with more than 2% similarity per source will be rejected. Revisions based on review comments are mandatory. Further revisions may be requested even after acceptance. </p>
           </AccordionContent>
         </AccordionItem>
 
@@ -130,7 +134,7 @@ export default function Instructions() {
             </span>
           </AccordionTrigger>
           <AccordionContent>
-            <p>ICSDC-2025 respects Intellectual Property Rights. Papers with more than 18% similarity will be rejected. For a single source, the similarity index should not exceed 2%.</p>
+            <p>ICSDC 2025 enforces a strict policy against plagiarism and unethical practices. Any submission violating these principles will be rejected and reported. </p>
           </AccordionContent>
         </AccordionItem>
 
@@ -142,7 +146,7 @@ export default function Instructions() {
             </span>
           </AccordionTrigger>
           <AccordionContent>
-            <p>Submissions should not overlap with prior publications or other concurrent submissions. Contact the Program Chairs for any clarifications.</p>
+            <p>Submissions must not overlap with prior publications or concurrent submissions. Concurrent submissions must be cited, and differences must be explicitly justified. Authors may contact the Program Chairs for clarification. </p>
           </AccordionContent>
         </AccordionItem>
 
@@ -154,7 +158,7 @@ export default function Instructions() {
             </span>
           </AccordionTrigger>
           <AccordionContent>
-            <p>At least one author must register for the conference and present the paper if accepted. Only presented papers will be forwarded for publication.</p>
+            <p>At least one author of each accepted paper must register and present the paper at the conference.  Only presented papers will be forwarded for publication. </p>
           </AccordionContent>
         </AccordionItem>
 
@@ -166,10 +170,13 @@ export default function Instructions() {
             </span>
           </AccordionTrigger>
           <AccordionContent>
-            <p>Accepted and presented papers will be submitted for publication to our publication partner (preferably in SCOPUS indexed proceedings). Keep visiting the conference website for updates on publication details.</p>
+            <p>All accepted and presented papers will be submitted to our publication partner for potential inclusion in SCOPUS-indexed proceedings. Proof will be shared with the corresponding author for verification before publication. For updates on publication details, visit the conference website regularly. </p>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+      <p className="text-center">We look forward to your participation in ICSDC 2025! </p>
     </div>
+    <Footer />
+    </>
   )
 }
