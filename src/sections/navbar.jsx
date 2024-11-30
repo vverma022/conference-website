@@ -2,18 +2,18 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator } from '../components/ui/dropdown-menu'
-import { useNavigate } from 'react-router-dom'
+import { Route, useNavigate } from 'react-router-dom'
 import Logo from '../assets/logo.jpeg'
 
 const navItems = [
-  { name: 'Home', href: 'home' },
   { name: 'About', href: 'about' },
   { name: 'Keynote Speakers', href: 'keynotespeakers' },
   { name: 'Location', href: 'location'},
   { name: 'Session Speakers', href: 'speakers' },
-  { name: 'FAQ', href: 'faq' },
-  // { name: 'Contact', href: 'contact' },
-  // { name: 'Register', href: 'register' },
+  {name: 'Commitee', Route: '/commitee'},
+  {name: 'Tracks', Route: '/tracks'},
+  {name: 'Instructions', Route: '/instructions'}
+
 ]
 
 export function Navbar() {
@@ -56,21 +56,17 @@ export function Navbar() {
                 href={`#${item.href}`}
                 className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary"
                 onClick={(e) => {
-                  e.preventDefault()
-                  scrollToSection(item.href)
+                  e.preventDefault();
+                  if (item.Route) {
+                    Navigate(item.Route);
+                  } else {
+                    scrollToSection(item.href);
+                  }
                 }}
               >
                 {item.name}
               </a>
             ))}
-            <p className='inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary' onClick={() => Navigate("/commitee")}>Commitee</p>
-            <DropdownMenu >
-           <DropdownMenuTrigger className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary">For Author's</DropdownMenuTrigger>
-           <DropdownMenuContent className="text-center">
-           <DropdownMenuItem onClick={() => Navigate("/tracks")}>For Authors</DropdownMenuItem>
-           <DropdownMenuItem onClick={() => Navigate("/instructions")}>Call for Papers</DropdownMenuItem>
-           </DropdownMenuContent>
-           </DropdownMenu>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             <button
@@ -83,7 +79,6 @@ export function Navbar() {
           </div>
         </div>
       </div>
-
       <motion.div
         className={`sm:hidden ${isOpen ? 'block' : 'hidden'}`}
         initial="closed"
@@ -101,7 +96,10 @@ export function Navbar() {
               className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:border-primary hover:text-primary"
               onClick={(e) => {
                 e.preventDefault()
-                scrollToSection(item.href)
+                scrollToSection(item.href);
+                if(item.Route) {
+                  Navigate(item.Route);
+                }
               }}
             >
               {item.name}
