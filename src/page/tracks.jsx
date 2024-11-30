@@ -4,70 +4,89 @@ import { Footer } from "@/sections/footer"
 import { Cloud, Network, Brain, Stethoscope,Leaf, Bot } from "lucide-react"
 
 export default function Component() {
-  const tracks = [
+  const tracks = [{
+    title: "Distributed Computing",
+    icon: Cloud,
+    topics: [
+      "Cloud Computing",
+      "Fog Computing",
+      "Edge Computing",
+      "Grannular Computing",
+      "Clusters and HPC",
+      "Blockchains",
+      "Distributed log management",
+    ],
+  },
+  {
+    title: "Constraint Networks",
+    icon: Network,
+    topics: [
+      "IoT",
+      "WSN",
+      "IIoT",
+      "5G/6G Communication",
+      "Green Communication",
+      "SDIoT",
+    ],
+  },
+  {
+    title: "Computational Intelligence in Distributed Computing",
+    icon: Brain,
+    topics: [
+      "XAI in DC",
+      "Trustworthy AI in DC",
+      "Distributed ML and DL",
+      "Federated Learning",
+      "CI in service management",
+    ],
+  },
+  {
+    title: "Smart Computing in Biomedical and Healthcare",
+    icon: Stethoscope,
+    topics: [
+      "Distributed healthcare systems for remote diagnostics and telemedicine",
+      "Smart medical devices for patient monitoring in underserved areas",
+      "Federated learning for secure and privacy-preserving healthcare data analysis",
+      "AI-powered drug discovery and personalized medicine using distributed computing",
+    ],
+  },
+  {
+    title: "Smart Computing in Industrial Automation",
+    icon: Bot,
+    topics: [
+      "Distributed AI for predictive maintenance in manufacturing",
+      "IoT-enabled smart factories for energy and resource optimization",
+      "Blockchain for tracking sustainable manufacturing practices",
+      "Decentralized platforms for collaborative industrial innovation",
+      "Digital Twin",
+    ]
+  },
     {
-      title: "Distributed Computing",
-      icon: Cloud,
-      topics: [
-        "Cloud Computing",
-        "Fog Computing",
-        "Edge Computing",
-        "Grannular",
-        "Clusters and HPC",
-        "Blockchains",
-        "Distributed log management",
-      ],
-    },
-    {
-      title: "Constraint Networks",
-      icon: Network,
-      topics: [
-        "IoT",
-        "WSN",
-        "IIoT",
-        "Industry 5.0",
-        "5G/6G Communication",
-        "Green Communication",
-        "SDIoT",
-      ],
-    },
-    {
-      title: "Computational Intelligent in DC",
-      icon: Brain,
-      topics: [
-        "XAI in DC",
-        "Trustworthy AI in DC",
-        "Distributed ML and DL",
-        "Federated Learning",
-        "CI in service management",
-      ],
-    },
-    {
-      title: "DC in Biomedical and Healthcare",
-      icon: Stethoscope,
-      topics: [
-        "Biomedical SP and instrumentation",
-        "Wearable sensors and healthcare monitoring",
-        "healthcare informatics",
-        "Drug design",
-        "Digital twin in healthcare",
-      ],
-    },
-    {
-      title: "Automation",
+      title: "Smart Computing in Industrial Automation",
       icon: Bot,
       topics: [
-        "Vehicular communication",
-        "UAV / UWV / Swarm",
-        "Robotics",
-        "Industrial Automation",
+        "Distributed AI for predictive maintenance in manufacturing",
+        "IoT-enabled smart factories for energy and resource optimization",
+        "Blockchain for tracking sustainable manufacturing practices",
+        "Decentralized platforms for collaborative industrial innovation",
         "Digital Twin",
       ],
     },
     {
-      title: "DC in SDG",
+      title: "Smart Computing in Environmental Sustainability Planning",
       icon: Leaf,
-      topics: ["Sustainable Development Goals"],
+      topics: [
+        "Distributed energy systems and microgrids for renewable energy optimization",
+        "Smart energy management using IoT and AI for energy efficiency",
+        "Distributed systems for real-time climate monitoring and disaster prediction",
+        "Smart waste management and recycling using edge computing and AI",
+        "Blockchain for carbon credit tracking and sustainable resource usage",
+        "Distributed IoT for traffic optimization and air quality monitoring",
+        "Smart transportation systems powered by distributed AI",
+        "Blockchain for decentralized identity management in smart cities",
+        "IoT-based distributed systems for water quality monitoring",
+        "Smart water usage analytics using AI for conservation efforts",
+      ],
     },
   ]
 
