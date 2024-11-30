@@ -7,41 +7,41 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 export default function Commitee(){
 
     const TechnicalCommitteeMembers = [
-        { name: 'Dr. Vinay Kumar', role: 'IIIT-Raipur', image: '' },
-        { name: 'Dr. Subrata Dutta', role: 'NIT-JSR', image: '' },
-        { name: 'Dr. N. D. Jana', role: 'NIT-DGP', image: '' },
-        { name: 'Dr. Santosh Kumar Vipparthi', role: 'IIT-Ropar', image: '' },
-        { name: 'Prof. K. K. Pattanaik', role: 'IIITM-Gwalior', image: '' },
-        { name: 'Dr. R. K. Verma', role: 'IIIT-Lucknow', image: '' },
-        { name: 'Dr. Shubhra Jain', role: 'IIIT-Lucknow', image: '' },
-        { name: 'Dr. Swalpa Kumar Roy', role: 'AGEMC', image: '' },
-        { name: 'Dr. Rana Mukherji', role: 'The ICFAI University Jaipur', image: '' },
-        { name: 'Dr. Ruhul Amin', role: 'IIIT Naya Raipur', image: '' },
+        { name: 'Dr. Vinay Kumar', role: 'IIIT-Raipur', image: 'https://www.iiitnr.ac.in/sites/default/files/faculty_photo/vkj.jpg?height=200&width=200' },
+        { name: 'Dr. Subrata Dutta', role: 'NIT-JSR', image: 'https://www.nitjsr.ac.in/backend/uploads/Faculty/CS106/profile/5fa86fc6-7ea5-4c7b-b017-e810746495e7.png?height=200&width=200' },
+        { name: 'Dr. N. D. Jana', role: 'NIT-DGP', image: 'https://nitdgp.ac.in/uploads/386fff51724013622aad348f3146aca0.jpeg?height=200&width=200' },
+        { name: 'Dr. Santosh Kumar Vipparthi', role: 'IIT-Ropar', image: 'https://skvipparthi.github.io/img/skv.jpg?height=200&width=200' },
+        { name: 'Prof. K. K. Pattanaik', role: 'IIITM-Gwalior', image: 'https://iiitm.ac.in/images/demo/teachers/1679281910_KKPattanaik%20(2).jpg?height=200&width=200' },
+        { name: 'Dr. R. K. Verma', role: 'IIIT-Lucknow', image: 'https://iiitl.ac.in/wp-content/uploads/2021/08/Dr.-Rahul-Kr.-Verma-300x277.jpg?height=200&width=200' },
+        { name: 'Dr. Shubhra Jain', role: 'IIIT-Lucknow', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=WRmdy3UAAAAJ&citpid=1?height=200&width=200' },
+        { name: 'Dr. Swalpa Kumar Roy', role: 'AGEMC', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=1WVrFGwAAAAJ&citpid=1?height=200&width=200' },
+        { name: 'Dr. Rana Mukherji', role: 'The ICFAI University Jaipur', image: 'https://saiconference.com/Computing/Thumbnail/f7ab7bae-bd00-401b-bdc8-64206213538d?height=200&width=200' },
+        { name: 'Dr. Ruhul Amin', role: 'IIIT Naya Raipur', image: 'https://www.iiitnr.ac.in/sites/default/files/faculty_photo/ruhul_photo%20%281%29.jpg?height=200&width=200' },
         { name: 'Dr. Arijit Nandi', role: 'Eurecat, Barcelona, Spain', image: '' },
-        { name: 'Dr. Sanjit Kumar Roy', role: 'Uppsala University', image: '' },
-        { name: 'Dr. Ravishankar Mehta', role: 'IIIT Bhagalpur', image: '' }
+        { name: 'Dr. Sanjit Kumar Roy', role: 'Uppsala University', image: 'https://mp.uu.se/image/full_image?img_id=993295477&t=1693816585303?height=200&width=200' },
+        { name: 'Dr. Ravishankar Mehta', role: 'IIIT Bhagalpur', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=SDmfEg0AAAAJ&citpid=4?height=200&width=200' }
       ];
       const InternationalAdvisoryCommittee = [
-        { name: 'Prof. Keshav Dahal', role: 'UWS', image: '' },
-        { name: 'Dr. Ayodji Salau', role: 'Nigeria', image: '' },
-        { name: 'Dr. Ting Tin Tin', role: 'INTI International University Malaysia', image: '' },
+        { name: 'Prof. Keshav Dahal', role: 'UWS', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=yIkdopsAAAAJ&citpid=3?height=200&width=200' },
+        { name: 'Dr. Ayodji Salau', role: 'Nigeria', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=bvUoKrsAAAAJ&citpid=8?height=200&width=200' },
+        { name: 'Dr. Ting Tin Tin', role: 'INTI International University Malaysia', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=0ZM3lGIAAAAJ&citpid=1?height=200&width=200' },
         { name: 'Dr. Pranay Bhardwaj', role: 'New York University, Abudhabi', image: '' },
-        { name: 'Dr. Vikas Jaiman', role: 'PassApp-Berlin', image: '' },
+        { name: 'Dr. Vikas Jaiman', role: 'PassApp-Berlin', image: 'https://vjaiman.gitlab.io/vikas_pic.jpg?height=200&width=200' },
         { name: 'Mr. Ankit Kumar Sharma', role: 'HCL Tech-California', image: '' }
       ];
       const nationalAdvisoryCommittee = [
         { name: 'Dr. Sudesh Kumar Prajapati', role: '', image: '' },
-        { name: 'Prof. D. A. Khan', role: 'NIT-JSR', image: '' },
+        { name: 'Prof. D. A. Khan', role: 'NIT-JSR', image: 'https://www.nitjsr.ac.in/backend/uploads/Faculty/CA104/profile/0c34d489-4cab-4aca-b8ce-8fb9ebc1de85.png?height=200&width=200' },
         { name: 'Mr. Kuldeep', role: 'NIC, Sikkim', image: '' },
-        { name: 'Dr. Anshul Verma', role: 'BHU', image: '' },
-        { name: 'Dr. Debojyaty Banik', role: 'SRU', image: '' },
-        { name: 'Dr. Krishan Kumar Sethi', role: 'NIT Patna', image: '' },
-        { name: 'Dr. Geeta Sikka', role: 'NIT-D', image: '' },
+        { name: 'Dr. Anshul Verma', role: 'BHU', image: 'https://bhu.ac.in/Content/Photos/Faculties/FA000043.jpeg?height=200&width=200' },
+        { name: 'Dr. Debojyaty Banik', role: 'SRU', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=YKc7Kz0AAAAJ&citpid=8?height=200&width=200' },
+        { name: 'Dr. Krishan Kumar Sethi', role: 'NIT Patna', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hql1qicAAAAJ&citpid=1?height=200&width=200' },
+        { name: 'Dr. Geeta Sikka', role: 'NIT-D', image: 'https://nitdelhi.ac.in/wp-content/uploads/2024/07/Geeta_Sikka-2.jpg?height=200&width=200' },
         { name: 'Dr. Atul Tripathi', role: 'GGSIU', image: '' },
         { name: 'Dr. Shailendra', role: 'Bennett University', image: '' },
-        { name: 'Dr. Parul Tomar', role: 'YMCA', image: '' },
-        { name: 'Dr. Krishan Pal Sharma', role: 'NIT Jalandhar', image: '' },
-        { name: 'Dr. Djhanraj Rajesh', role: 'Symbiosis Pune', image: '' },
+        { name: 'Dr. Parul Tomar', role: 'YMCA', image: 'https://jcboseust.irins.org/assets/profile_images/187152.jpg?height=200&width=200' },
+        { name: 'Dr. Krishan Pal Sharma', role: 'NIT Jalandhar', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=QM9qltUAAAAJ&citpid=2?height=200&width=200' },
+        { name: 'Dr. Djhanraj Rajesh', role: 'Symbiosis Pune', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=8t9sO-QAAAAJ&citpid=2?height=200&width=200' },
         { name: 'Dr. Vinod Kumar Singh', role: 'NIT-JSR', image: '' }
       ];
 
