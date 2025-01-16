@@ -12,7 +12,7 @@ export function Navbarwithout() {
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
         <div className="flex">
-      <a href="#home" className="flex-shrink-0 flex items-center" onClick={() => scrollToSection('home')}>
+      <a href="/" className="flex-shrink-0 flex items-center" onClick={() => scrollToSection('home')}>
         <img src={Logo} alt="ICSDC Logo" className="w-10 h-10 mr-2" /> {/* Adjust width and height as needed */}
         <span className="text-xl font-bold text-primary">ICSDC 2025</span>
       </a>

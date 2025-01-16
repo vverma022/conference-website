@@ -1,5 +1,4 @@
 import { Footer } from '@/sections/footer'
-import { Navbarwithout } from '@/sections/navbarwithout'
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
@@ -46,8 +45,7 @@ export default function Commitee(){
       ];
 
   return (
-    <>
-    <Navbarwithout />
+    <div className="pt-16 flex flex-col min-h-screen w-full">
     <div className='pt-4'>
     <h1 className="text-4xl font-bold mb-4 text-center">Commitee Members</h1>
     <p className="text-center m-3">These are the Commitee Members for the International Comfernce on Smart and Distributed Computing 2025</p>
@@ -107,8 +105,7 @@ export default function Commitee(){
         </div>
       </div>
     </section>
-
     <Footer />
-  </>
+    </div>
   )
 }

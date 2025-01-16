@@ -91,7 +91,7 @@ export default function Component() {
   ]
 
   return (
-    <>
+    <div className="pt-16 flex flex-col min-h-screen w-full">
     <div className="container mx-auto p-4 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
       <h1 className="text-4xl font-bold mb-4 text-center">Conference Tracks</h1>
       <p className="text-center m-3">These are the Conference tracks for the ICSDC 2025</p>
@@ -123,6 +123,6 @@ export default function Component() {
       </div>
     </div>
      <Footer />
-     </>
+     </div>
   )
 }

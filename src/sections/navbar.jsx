@@ -44,7 +44,7 @@ export function Navbar() {
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
         <div className="flex">
-      <a href="#home" className="flex-shrink-0 flex items-center" onClick={() => scrollToSection('home')}>
+      <a href="/" className="flex-shrink-0 flex items-center" onClick={() => scrollToSection('home')}>
         <img src={Logo} alt="ICSDC Logo" className="w-10 h-10 mr-2" /> {/* Adjust width and height as needed */}
         <span className="text-xl font-bold text-primary">ICSDC 2025</span>
       </a>
@@ -53,14 +53,19 @@ export function Navbar() {
             {navItems.map((item) => (
               <a
                 key={item.name}
-                href={`#${item.href}`}
+                href={`/#${item.href}`}
                 className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary"
                 onClick={(e) => {
                   e.preventDefault();
                   if (item.Route) {
                     Navigate(item.Route);
                   } else {
-                    scrollToSection(item.href);
+                    if (window.location.pathname !== '/') {
+                      Navigate('/');
+                      setTimeout(() => scrollToSection(item.href), 100);
+                    } else {
+                      scrollToSection(item.href);
+                    }
                   }
                 }}
               >
@@ -95,11 +100,18 @@ export function Navbar() {
               href={`#${item.href}`}
               className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:border-primary hover:text-primary"
               onClick={(e) => {
-                e.preventDefault()
-                scrollToSection(item.href);
-                if(item.Route) {
+                e.preventDefault();
+                if (item.Route) {
                   Navigate(item.Route);
+                } else {
+                  if (window.location.pathname !== '/') {
+                    Navigate('/');
+                    setTimeout(() => scrollToSection(item.href), 100);
+                  } else {
+                    scrollToSection(item.href);
+                  }
                 }
+                setIsOpen(false);
               }}
             >
               {item.name}

@@ -2,12 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { AlertCircle, BookOpen, Calendar, FileText, Globe, Lock, MessageSquare, PenTool, Search, Upload } from "lucide-react"
 import { Footer } from "@/sections/footer"
-import { Navbarwithout } from "@/sections/navbarwithout"
 
 export default function Instructions() {
   return (
-    <>
-    <Navbarwithout />
+    <div className="pt-16 flex flex-col min-h-screen w-full">
     <div className="container mx-auto p-4 space-y-6">
       <h1 className="text-3xl font-bold text-center mb-6">
         International Conference on Smart and Distrubuted Computing 2025
@@ -177,6 +175,6 @@ export default function Instructions() {
       <p className="text-center">We look forward to your participation in ICSDC 2025! </p>
     </div>
     <Footer />
-    </>
+    </div>
   )
 }
