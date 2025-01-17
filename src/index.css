@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 
 @layer base {
@@ -62,12 +62,18 @@
   }
 }
 
-
 @layer base {
-  * {
-    @apply border-border;
+  :root {
+    --font-sans: 'Roboto Flex', sans-serif;
   }
-  body.dark {
+
+  /* Apply Roboto Flex to the body by default */
+  body {
+    @apply font-sans;
+    font-family: var(--font-sans);
+  }
+
+  .dark {
     @apply bg-background text-foreground;
   }
 }

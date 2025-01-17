@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import backgroundImage from '../assets/Manipal.jpg'
+import Video from '../assets/mujvideo.mp4'
 
 
 export function HeroSection() {
@@ -20,13 +21,18 @@ export function HeroSection() {
     >
       <div
         className="absolute inset-0 bg-cover bg-center z-0 w-full"
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-          height: '100vh',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
       >
+        <video
+    className="absolute inset-0 w-full h-full object-cover"
+    src={Video}
+    autoPlay
+    loop
+    muted
+    playsInline
+    poster={backgroundImage} // Fallback image
+  >
+    Your browser does not support the video tag.
+  </video>
       </div>
       <div className="absolute inset-0 bg-black opacity-50 z-10 w-full" />
       <div className="relative z-20 max-w-4xl mx-auto px-4 w-full">
