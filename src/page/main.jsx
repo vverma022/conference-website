@@ -9,6 +9,7 @@ import { Navbar } from "../sections/navbar"
 import Register from "../sections/registration"
 import { Speakers } from '@/sections/speakers'
 import { KeynoteSpeakers } from '@/sections/keynote'
+import PricingTiers from '@/sections/pricing'
 
 const ConferencePage = () => {
   return (
@@ -36,6 +37,9 @@ const ConferencePage = () => {
         <section id="faq">
           <FAQ />
         </section>
+        <section id="pricing">
+          <PricingTiers />
+         </section>
         <section id="register">
           <Register />
         </section>

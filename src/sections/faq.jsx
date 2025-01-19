@@ -32,7 +32,7 @@ export function FAQ() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-8 text-center"
+          className="text-3xl font-bold mb-8 text-center text-black"
         >
           Frequently Asked Questions
         </motion.h2>
@@ -41,7 +41,7 @@ export function FAQ() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto">
+          <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto text-black">
             {faqItems.map((item, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger>{item.question}</AccordionTrigger>

@@ -22,7 +22,7 @@ export function OrganizingCommittee() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-8 text-center"
+          className="text-3xl font-bold mb-8 text-center text-black"
         >
           Organizing Committee
         </motion.h2>
@@ -33,7 +33,7 @@ export function OrganizingCommittee() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="text-center"
+              className="text-center text-black"
             >
               <Avatar className="w-32 h-32 mx-auto mb-4">
                 <AvatarImage src={member.image} alt={member.name} />
