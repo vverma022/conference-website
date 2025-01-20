@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import backgroundImage from '../assets/Manipal.jpg'
+import backgroundImage from '../assets/Manipal.jpeg'
 import Video from '../assets/mujvideo.mp4'
 
 
