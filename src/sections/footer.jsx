@@ -4,6 +4,7 @@ import { useState } from 'react';
 export function Footer() {
   
   return (
+    <section id="contact-us">
     <footer className="bg-gray-800 text-white w-full">
       <div className="max-w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-16">
@@ -24,5 +25,6 @@ export function Footer() {
         </div>
       </div>
     </footer>
+    </section>
   );
 }

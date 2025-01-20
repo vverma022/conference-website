@@ -6,13 +6,17 @@ import { Route, useNavigate } from 'react-router-dom'
 import Logo from '../assets/logo.jpeg'
 
 const navItems = [
-  { name: 'About', href: 'about' },
-  { name: 'Keynote Speakers', href: 'keynotespeakers' },
-  { name: 'Location', href: 'location'},
-  { name: 'Session Speakers', href: 'speakers' },
-  {name: 'Commitee', Route: '/commitee'},
+  { name: 'Home', href: 'about' },
   {name: 'Tracks', Route: '/tracks'},
-  {name: 'Instructions', Route: '/instructions'}
+  {name: 'Instructions to Authors', Route: '/instructions'},
+  // { name: 'Keynote Speakers', href: 'keynotespeakers' },
+  {name: 'Commitee', Route: '/commitee'},
+  { name: 'Location', href: 'location'},
+  // { name: 'Session Speakers', href: 'speakers' },
+  { name: 'Contact us', href: 'contact-us' },
+ 
+  
+ 
 
 ]
 

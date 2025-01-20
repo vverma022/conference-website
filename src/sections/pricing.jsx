@@ -15,15 +15,15 @@ const pricingData = [
     title: "Academicians",
     icon: BookOpen,
     description: "Ideal for researchers and educators in academic institutions.",
-    domesticPrice: 9000,
-    internationalPrice: 300,
+    domesticPrice: 8500,
+    internationalPrice: 250,
   },
   {
     title: "Industrial",
     icon: Briefcase,
     description: "Tailored for professionals and organizations in the industry.",
-    domesticPrice: 10000,
-    internationalPrice: 400,
+    domesticPrice: 9000,
+    internationalPrice: 300,
   },
 ]
 
