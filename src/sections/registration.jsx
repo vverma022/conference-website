@@ -61,7 +61,7 @@ const  Register = () => {
         <div className="mb-4">
         <Select>
               <SelectTrigger className="w-full text-black">
-              <SelectValue placeholder="Select Industry" className="text-black" />
+              <SelectValue placeholder="Select type" className="text-black" />
               </SelectTrigger>
               <SelectContent className="text-black">
               <SelectItem value="tech" className="text-black">Students</SelectItem>
@@ -74,7 +74,7 @@ const  Register = () => {
         <div className="mb-4">
         <Select>
               <SelectTrigger className="w-full text-black">
-              <SelectValue placeholder="Select Industry" className="text-black" />
+              <SelectValue placeholder="Select Location" className="text-black" />
               </SelectTrigger>
               <SelectContent className="text-black">
               <SelectItem value="tech" className="text-black">Domestic</SelectItem>
