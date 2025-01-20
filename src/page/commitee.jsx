@@ -1,6 +1,7 @@
 import { Footer } from '@/sections/footer'
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { motion } from 'framer-motion'
 
 
 export default function Commitee(){
@@ -45,7 +46,12 @@ export default function Commitee(){
       ];
 
   return (
-    <div className="pt-16 flex flex-col min-h-screen w-full bg-white">
+    <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="py-16 bg-gray-100 w-full"
+  >
     <div className='pt-4'>
     <h1 className="text-4xl font-bold mb-4 text-center text-black">Commitee Members</h1>
     <p className="text-center m-3 text-black">These are the Commitee Members for the International Comfernce on Smart and Distributed Computing 2025</p>
@@ -108,6 +114,6 @@ export default function Commitee(){
     {/* National Advisory Committee Section */}
     
     <Footer />
-    </div>
+  </motion.section>
   )
 }

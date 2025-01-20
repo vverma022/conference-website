@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Footer } from "@/sections/footer"
 import { Cloud, Network, Brain, Stethoscope,Leaf, Bot } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function Component() {
   const tracks = [{
@@ -91,7 +92,12 @@ export default function Component() {
   ]
 
   return (
-    <div className="pt-16 flex flex-col min-h-screen w-full bg-gray-50">
+    <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="py-16 bg-gray-100 w-full"
+  >
     <div className="container mx-auto p-4 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
       <h1 className="text-4xl font-bold mb-4 text-center text-black">Conference Tracks</h1>
       <p className="text-center m-3 text-black">These are the Conference tracks for the ICSDC 2025</p>
@@ -123,6 +129,6 @@ export default function Component() {
       </div>
     </div>
      <Footer />
-     </div>
+     </motion.section>
   )
 }

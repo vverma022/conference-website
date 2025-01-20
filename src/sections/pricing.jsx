@@ -57,22 +57,19 @@ export default function PricingTiers() {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="space-y-2">
-                  <Badge variant="secondary" className="w-full justify-center py-1">
+                  <Badge variant="outline" className="w-full justify-center py-1">
                     Domestic
                   </Badge>
-                  <p className="text-3xl font-bold text-center">₹{tier.domesticPrice.toLocaleString()}</p>
+                  <p className="text-3xl font-semibold text-center">₹{tier.domesticPrice.toLocaleString()}</p>
                 </div>
                 <div className="space-y-2">
-                  <Badge variant="secondary" className="w-full justify-center py-1">
+                  <Badge variant="outline" className="w-full justify-center py-1">
                     International
                   </Badge>
-                  <p className="text-3xl font-bold text-center">${tier.internationalPrice} USD</p>
+                  <p className="text-3xl font-semibold text-center">${tier.internationalPrice} USD</p>
                 </div>
               </CardContent>
               <CardFooter>
-                <button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-2 rounded-md transition-colors">
-                  Select Plan
-                </button>
               </CardFooter>
             </Card>
           </motion.div>

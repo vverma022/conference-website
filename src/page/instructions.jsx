@@ -2,10 +2,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { AlertCircle, BookOpen, Calendar, FileText, Globe, Lock, MessageSquare, PenTool, Search, Upload } from "lucide-react"
 import { Footer } from "@/sections/footer"
+import { motion } from "framer-motion"
 
 export default function Instructions() {
   return (
-    <div className="pt-16 flex flex-col min-h-screen w-full bg-white">
+    <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="py-16 bg-gray-100 w-full"
+  >
     <div className="container mx-auto p-4 space-y-6">
       <h1 className="text-3xl font-bold text-center mb-6 text-black">
         International Conference on Smart and Distrubuted Computing 2025
@@ -13,16 +19,43 @@ export default function Instructions() {
       <p className="text-black"> ICSDC 2025 invites original research contributions from diverse fields as outlined in the conference's topics. Authors must clearly articulate the context of their work. Submissions are accepted until the paper submission deadline, after which new papers cannot be registered, though edits to existing submissions will still be allowed. </p>
       
       <Card>
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-black">
-            <Calendar className="h-6 w-6" />
-            Important Dates
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-black">Papers must be submitted on or before the last date of paper submission. After this deadline, you will not be able to register new papers, however you will be able to edit the information of existing submitted papers.</p>
-        </CardContent>
-      </Card>
+  <CardHeader>
+    <CardTitle className="flex items-center gap-2 text-black">
+      <Calendar className="h-6 w-6" />
+      Important Dates
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="text-black">
+      <strong>Conference Dates:</strong> 29, 30, 31 October 2025
+    </p>
+    <ul className="text-black list-disc pl-5">
+      <li>
+        <strong>Abstract Submission Deadline:</strong> 5 March 2025
+      </li>
+      <li>
+        <strong>Paper Submission Opens:</strong> 5 April 2025
+      </li>
+      <li>
+        <strong>Paper Submission Closes:</strong> 5 September 2025
+      </li>
+      <li>
+        <strong>Revision Deadline:</strong> 22 September 2025
+      </li>
+      <li>
+        <strong>Camera Ready Deadline:</strong> 10 October 2025
+      </li>
+      <li>
+        <strong>Final Notification:</strong> 17 October 2025
+      </li>
+    </ul>
+    <p className="text-black">
+      Papers must be submitted on or before the last date of paper submission.
+      After this deadline, you will not be able to register new papers; however,
+      you will be able to edit the information of existing submitted papers.
+    </p>
+  </CardContent>
+</Card>
 
       <Card>
         <CardHeader>
@@ -175,6 +208,6 @@ export default function Instructions() {
       <p className="text-center text-black">We look forward to your participation in ICSDC 2025! </p>
     </div>
     <Footer />
-    </div>
+    </motion.section>
   )
 }
