@@ -36,14 +36,22 @@ export function HeroSection() {
       </div>
       <div className="absolute inset-0 bg-black opacity-50 z-10 w-full" />
       <div className="relative z-20 max-w-4xl mx-auto px-4 w-full">
-        <motion.h1
+      <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
+          className="text-4xl sm:text-5xl md:text-5xl font-bold mb-4"
+        >
+          MANIPAL UNIVERSITY JAIPUR
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="text-3xl sm:text-5xl md:text-4xl font-bold mb-4"
         >
           ICSDC 2025
-        </motion.h1>
+        </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,7 +65,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <Button size="lg" variant="default" onClick={handleScrollToRegister}>
+          <Button size="lg" variant="outline" className="text-black" onClick={handleScrollToRegister}>
       Register Now
     </Button>
         </motion.div>

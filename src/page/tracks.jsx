@@ -99,7 +99,7 @@ export default function Component() {
     className="py-16 bg-gray-100 w-full"
   >
     <div className="container mx-auto p-4 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
-      <h1 className="text-4xl font-bold mb-4 text-center text-black">Conference Tracks</h1>
+      <h1 className="text-3xl font-semibold mb-4 text-center text-black">CONFERENCE TRACKS</h1>
       <p className="text-center m-3 text-black">These are the Conference tracks for the ICSDC 2025</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {tracks.map((track, index) => (
@@ -108,7 +108,7 @@ export default function Component() {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <track.icon className="w-6 h-6 text-primary" />
               </div>
-              <CardTitle className="text-xl font-semibold text-black">
+              <CardTitle className="text-lg text-black">
                 Track {index + 1}: {track.title}
               </CardTitle>
             </CardHeader>

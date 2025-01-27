@@ -14,9 +14,9 @@ export function EventLocation() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-3xl font-bold mb-8 text-center text-black"
+          className="text-3xl font-semibold  mb-8 text-center text-black"
         >
-          Event Location
+          EVENT LOCATION
         </motion.h2>
         <div className="flex flex-col md:flex-row items-center justify-center">
           <motion.div
@@ -43,8 +43,8 @@ export function EventLocation() {
             className="w-full md:w-1/2 md:pl-8"
           >
             <div className="flex items-center mb-4">
-              <MapPin className="w-6 h-6 mr-2 text-green-800" />
-              <h3 className="text-xl font-semibold text-black">ICADC 2025 Venue</h3>
+              <MapPin className="w-6 h-6 mr-2 text-red-700" />
+              <h3 className="text-xl font-semibold text-black">ICSDC 2025 Venue</h3>
             </div>
             <p className="text-lg mb-4 text-black">
               Manipal University Jaipur
@@ -54,7 +54,7 @@ export function EventLocation() {
               Jaipur, RJ 303007
             </p>
             <p className='text-black'>
-              Located on the highway connecting Jaipur-Ajmer, Manipal University Jaipur is a beautiful campus with all the modern facilities. The campus is spread over 122 acres of land and is surrounded by lush greenery.
+            Located on the highway connecting Jaipur and Ajmer, Manipal University Jaipur boasts a sprawling 122-acre campus that combines modern infrastructure with serene natural beauty.
             </p>
           </motion.div>
         </div>

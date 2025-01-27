@@ -13,10 +13,10 @@ export default function Instructions() {
     className="py-16 bg-gray-100 w-full"
   >
     <div className="container mx-auto p-4 space-y-6">
-      <h1 className="text-3xl font-bold text-center mb-6 text-black">
-        International Conference on Smart and Distrubuted Computing 2025
+      <h1 className="text-3xl font-semibold text-center mb-6 text-black">
+        INTERNATIONAL CONFERENCE ON SMART AND DISTRIBUTED COMPUTING 2025
       </h1>
-      <p className="text-black"> ICSDC 2025 invites original research contributions from diverse fields as outlined in the conference's topics. Authors must clearly articulate the context of their work. Submissions are accepted until the paper submission deadline, after which new papers cannot be registered, though edits to existing submissions will still be allowed. </p>
+      <p className="text-black text-center"> ICSDC 2025 invites original research contributions from diverse fields as outlined in the conference's topics. Authors must clearly articulate the context of their work. Submissions are accepted until the paper submission deadline, after which new papers cannot be registered, though edits to existing submissions will still be allowed. </p>
       
       <Card>
   <CardHeader>

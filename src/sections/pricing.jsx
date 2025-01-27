@@ -36,7 +36,7 @@ export default function PricingTiers() {
     className="py-16 bg-gray-100 w-full"
   >
     <div className="container mx-auto py-8 bg-gray-100">
-      <h1 className="text-3xl font-bold text-center mb-4 text-black">Pricing Tiers</h1>
+      <h1 className="text-3xl font-semibold text-center mb-4 text-black">PRICING TEIRS</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {pricingData.map((tier, index) => (
           <motion.div
@@ -51,22 +51,22 @@ export default function PricingTiers() {
                   <div className="p-2 bg-primary rounded-full">
                     <tier.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-2xl font-bold">{tier.title}</CardTitle>
+                  <CardTitle className="text-2xl font-semibold">{tier.title}</CardTitle>
                 </div>
-                <CardDescription>{tier.description}</CardDescription>
+                <CardDescription className="text-center">{tier.description}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="space-y-2">
                   <Badge variant="outline" className="w-full justify-center py-1">
                     Domestic
                   </Badge>
-                  <p className="text-3xl font-semibold text-center">₹{tier.domesticPrice.toLocaleString()}</p>
+                  <p className="text-3xl text-center">₹{tier.domesticPrice.toLocaleString()}</p>
                 </div>
                 <div className="space-y-2">
                   <Badge variant="outline" className="w-full justify-center py-1">
                     International
                   </Badge>
-                  <p className="text-3xl font-semibold text-center">${tier.internationalPrice} USD</p>
+                  <p className="text-3xl  text-center">${tier.internationalPrice} USD</p>
                 </div>
               </CardContent>
               <CardFooter>
