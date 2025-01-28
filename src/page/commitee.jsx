@@ -60,7 +60,7 @@ export default function Commitee(){
         { 
           name: 'Dr. Arijit Nandi', 
           role: 'Eurecat, Barcelona, Spain', 
-          image: '' 
+          image: '/Ajit.JPG?height=200&width=200' 
         },
         { 
           name: 'Dr. Sanjit Kumar Roy', 
@@ -102,7 +102,7 @@ export default function Commitee(){
         { 
           name: 'Mr. Ankit Kumar Sharma', 
           role: 'HCL Technologies, California', 
-          image: '' 
+          image: '/Ankit.JPG?height=200&width=200' 
         }
       ];
       const nationalAdvisoryCommittee = [
@@ -129,7 +129,7 @@ export default function Commitee(){
         { 
           name: 'Dr. Debojyaty Banik', 
           role: 'Sri Ramachandra University (SRU)', 
-          image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=YKc7Kz0AAAAJ&citpid=8?height=200&width=200' 
+          image: '/Bannik.JPG?height=200&width=200' 
         },
         { 
           name: 'Dr. Krishan Kumar Sethi', 
@@ -167,9 +167,9 @@ export default function Commitee(){
           image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=8t9sO-QAAAAJ&citpid=2?height=200&width=200' 
         },
         { 
-          name: 'Dr. Vinod Kumar Singh', 
+          name: 'Dr. Binod Kumar Singh', 
           role: 'National Institute of Technology, Jamshedpur', 
-          image: '' 
+          image: '/Binod.JPG?height=200&width=200' 
         }
       ];
 

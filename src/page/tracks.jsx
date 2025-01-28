@@ -63,17 +63,6 @@ export default function Component() {
     ]
   },
     {
-      title: "Smart Computing in Industrial Automation",
-      icon: Bot,
-      topics: [
-        "Distributed AI for predictive maintenance in manufacturing",
-        "IoT-enabled smart factories for energy and resource optimization",
-        "Blockchain for tracking sustainable manufacturing practices",
-        "Decentralized platforms for collaborative industrial innovation",
-        "Digital Twin",
-      ],
-    },
-    {
       title: "Smart Computing in Environmental Sustainability Planning",
       icon: Leaf,
       topics: [

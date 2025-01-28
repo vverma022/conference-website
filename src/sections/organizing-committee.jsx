@@ -12,11 +12,9 @@ const committeeMembers = [
   { name: 'Mr. Abhishek Narwaria', role: 'Convener',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/311.jpg?height=200&width=200' },
   { name: 'Mr. Aditya Narayan Hati', role: 'Convener',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/645.jpg?height=200&width=200' },
   { name: 'Dr. Somya Rakesh Goyal', role: 'Convener',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/274.jpg?height=200&width=200' },  
-  { name: 'Dr. Amit Kumar Sharma', role: 'Member',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/315.jpg' },
-  { name: 'Dr. Vijay Shankar Sharma', role: 'Member',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/285.jpg' },
-  { name: 'Mr. Sadineni Lakshminarayana', role: 'Member',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/309.jpg' },
-  
-
+  { name: 'Dr. Amit Kumar Sharma', role: 'Co-Chair',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/315.jpg' },
+  { name: 'Dr. Vijay Shankar Sharma', role: 'Co-Chair',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/285.jpg' },
+  { name: 'Mr. Sadineni Lakshminarayana', role: 'Co-Chair',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/309.jpg' },
 ]
 
 export function OrganizingCommittee() {
