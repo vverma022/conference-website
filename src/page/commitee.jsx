@@ -108,7 +108,7 @@ export default function Commitee(){
       const nationalAdvisoryCommittee = [
         { 
           name: 'Dr. Sudesh Kumar Prajapati', 
-          role: '', 
+          role: 'Indira Gandhi National Tribal University, Amarkantak', 
           image: '/Sudesh.jpeg?height=200&width=200' 
         },
         { 
