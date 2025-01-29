@@ -81,7 +81,7 @@ export default function Commitee(){
         },
         { 
           name: 'Dr. Ayodji Salau', 
-          role: 'Nigeria (Specific organization not mentioned)', 
+          role: 'Nigeria', 
           image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=bvUoKrsAAAAJ&citpid=8?height=200&width=200' 
         },
         { 
@@ -92,7 +92,7 @@ export default function Commitee(){
         { 
           name: 'Dr. Pranay Bhardwaj', 
           role: 'New York University, Abu Dhabi', 
-          image: '' 
+          image: '/Pranay.jpeg?height=200&width=200' 
         },
         { 
           name: 'Dr. Vikas Jaiman', 
@@ -108,8 +108,8 @@ export default function Commitee(){
       const nationalAdvisoryCommittee = [
         { 
           name: 'Dr. Sudesh Kumar Prajapati', 
-          role: '(Organization not mentioned)', 
-          image: '' 
+          role: '', 
+          image: '/Sudesh.jpeg?height=200&width=200' 
         },
         { 
           name: 'Prof. D. A. Khan', 
