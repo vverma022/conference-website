@@ -60,6 +60,14 @@ export function HeroSection() {
         >
           Join us for the International Conference for Smart and Distributed Computing the most innovative tech conference of the year
         </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="sm:text-xl md:text-2xl font-semibold mb-8"
+        >
+         31 October - 1 November 2025
+        </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -32,7 +32,7 @@ const  Register = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="py-16 bg-white w-full text-black"
+    className="py-16 bg-gray-100 w-full text-black"
   >
     <div className="container mx-auto px-4">
       <motion.h2
@@ -66,8 +66,8 @@ const  Register = () => {
               <SelectContent className="text-black">
               <SelectItem value="tech" className="text-black">Students</SelectItem>
               <SelectItem value="finance" className="text-black">Academicians</SelectItem>
-              <SelectItem value="healthcare" className="text-black">Industrial</SelectItem>
-              
+              <SelectItem value="healthcare" className="text-black">Academic Professionals</SelectItem>
+              <SelectItem value="healthcare" className="text-black">Visitors</SelectItem>
               </SelectContent>
             </Select>
         </div>

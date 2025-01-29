@@ -5,26 +5,33 @@ import { motion } from "framer-motion"
 
 const pricingData = [
   {
-    title: "Students",
+    title: "Students UG/PG",
     icon: GraduationCap,
     description: "Perfect for students looking to enhance their skills and knowledge.",
-    domesticPrice: 8000,
+    domesticPrice: 10000,
     internationalPrice: 200,
   },
   {
     title: "Academicians",
     icon: BookOpen,
     description: "Ideal for researchers and educators in academic institutions.",
-    domesticPrice: 8500,
-    internationalPrice: 250,
-  },
-  {
-    title: "Industrial",
-    icon: Briefcase,
-    description: "Tailored for professionals and organizations in the industry.",
-    domesticPrice: 9000,
+    domesticPrice: 11000,
     internationalPrice: 300,
   },
+  {
+    title: "Academic Professionals",
+    icon: Briefcase,
+    description: "Tailored for professionals",
+    domesticPrice: 12000,
+    internationalPrice: 400,
+  },
+  {
+    title: "Visitors",
+    icon: Briefcase,
+    description: "People who are passionate about the field and want to learn more.",
+    domesticPrice: 4000,
+    internationalPrice: 100,
+  }
 ]
 
 export default function PricingTiers() {
@@ -33,11 +40,11 @@ export default function PricingTiers() {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="py-16 bg-gray-100 w-full"
+    className="py-16 w-full"
   >
-    <div className="container mx-auto py-8 bg-gray-100">
+    <div className="container mx-auto py-8 ">
       <h1 className="text-3xl font-semibold text-center mb-4 text-black">PRICING TEIRS</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {pricingData.map((tier, index) => (
           <motion.div
             key={index}
@@ -51,7 +58,7 @@ export default function PricingTiers() {
                   <div className="p-2 bg-primary rounded-full">
                     <tier.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-2xl font-semibold">{tier.title}</CardTitle>
+                  <CardTitle className="text-xl font-semibold">{tier.title}</CardTitle>
                 </div>
                 <CardDescription className="text-center">{tier.description}</CardDescription>
               </CardHeader>

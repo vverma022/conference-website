@@ -3,13 +3,11 @@ import { AboutEvent } from '@/sections/about-event'
 import { OrganizingCommittee } from '@/sections/organizing-committee'
 import { EventLocation } from '@/sections/event-location'
 import { FAQ } from '@/sections/faq'
-import { ContactUs } from "../sections/contact-us"
 import { Footer } from "../sections/footer"
 import { Navbar } from "../sections/navbar"
 import Register from "../sections/registration"
 import { Speakers } from '@/sections/speakers'
 import { KeynoteSpeakers } from '@/sections/keynote'
-import PricingTiers from '@/sections/pricing'
 
 const ConferencePage = () => {
   return (
@@ -37,9 +35,6 @@ const ConferencePage = () => {
         <section id="faq">
           <FAQ />
         </section>
-        <section id="pricing">
-          <PricingTiers />
-         </section>
         <section id="register">
           <Register />
         </section>

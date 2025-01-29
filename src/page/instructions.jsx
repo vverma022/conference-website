@@ -3,6 +3,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { AlertCircle, BookOpen, Calendar, FileText, Globe, Lock, MessageSquare, PenTool, Search, Upload } from "lucide-react"
 import { Footer } from "@/sections/footer"
 import { motion } from "framer-motion"
+import PricingTiers from "@/sections/pricing"
+import CardContentCalender from "@/components/addtocalender"
 
 export default function Instructions() {
   return (
@@ -17,7 +19,7 @@ export default function Instructions() {
         INTERNATIONAL CONFERENCE ON SMART AND DISTRIBUTED COMPUTING 2025
       </h1>
       <p className="text-black text-center"> ICSDC 2025 invites original research contributions from diverse fields as outlined in the conference's topics. Authors must clearly articulate the context of their work. Submissions are accepted until the paper submission deadline, after which new papers cannot be registered, though edits to existing submissions will still be allowed. </p>
-      
+      <PricingTiers />
       <Card>
   <CardHeader>
     <CardTitle className="flex items-center gap-2 text-black">
@@ -26,35 +28,8 @@ export default function Instructions() {
     </CardTitle>
   </CardHeader>
   <CardContent>
-    <p className="text-black">
-      <strong>Conference Dates:</strong> 29, 30, 31 October 2025
-    </p>
-    <ul className="text-black list-disc pl-5">
-      <li>
-        <strong>Abstract Submission Deadline:</strong> 5 March 2025
-      </li>
-      <li>
-        <strong>Paper Submission Opens:</strong> 5 April 2025
-      </li>
-      <li>
-        <strong>Paper Submission Closes:</strong> 5 September 2025
-      </li>
-      <li>
-        <strong>Revision Deadline:</strong> 22 September 2025
-      </li>
-      <li>
-        <strong>Camera Ready Deadline:</strong> 10 October 2025
-      </li>
-      <li>
-        <strong>Final Notification:</strong> 17 October 2025
-      </li>
-    </ul>
-    <p className="text-black">
-      Papers must be submitted on or before the last date of paper submission.
-      After this deadline, you will not be able to register new papers; however,
-      you will be able to edit the information of existing submitted papers.
-    </p>
-  </CardContent>
+  <CardContentCalender />
+</CardContent>
 </Card>
 
       <Card>
