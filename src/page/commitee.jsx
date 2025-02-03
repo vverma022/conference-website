@@ -180,67 +180,63 @@ export default function Commitee(){
     transition={{ duration: 0.5 }}
     className="py-16 bg-white w-full"
   >
-    <div className='pt-4'>
-    <h1 className="text-3xl font-semibold mb-4 text-center text-black">COMMITEE MEMBERS</h1>
-    <p className="text-center m-3 text-black">These are the Commitee Members for the International Comfernce on Smart and Distributed Computing 2025</p>
+    <div className="pt-4">
+      <h1 className="text-3xl font-semibold mb-4 text-center text-black">
+        COMMITTEE MEMBERS
+      </h1>
+      <p className="text-center m-3 text-black">
+        These are the Committee Members for the International Conference on Smart and Distributed Computing 2025
+      </p>
     </div>
+  
+    {/* International Advisory Committee Section */}
     <section className="py-10 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-semibold mb-8 text-center text-black">INTERNATIONAL ADVISORY COMMITEE</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <h2 className="text-3xl font-semibold mb-8 text-center text-black">
+          INTERNATIONAL ADVISORY COMMITTEE
+        </h2>
+        <ul className="list-disc pl-6 text-gray-700">
           {InternationalAdvisoryCommittee.map((member) => (
-            <div key={member.name} className="text-center">
-              <Avatar className="w-32 h-32 mx-auto mb-4">
-                {/* <AvatarImage src={member.image} alt={member.name} /> */}
-                {/* <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback> */}
-              </Avatar>
-              <h3 className="text-xl  mb-2 text-black">{member.name}</h3>
-              <p className="text-gray-600 ">{member.role}</p>
-            </div>
+            <li key={member.name}>
+              <span className="font-semibold">{member.name}</span> - {member.role}
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
+  
+    {/* National Advisory Committee Section */}
     <section className="py-10 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-semibold mb-8 text-center text-black">NATIONAL ADVISORY COMMITEE</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <h2 className="text-3xl font-semibold mb-8 text-center text-black">
+          NATIONAL ADVISORY COMMITTEE
+        </h2>
+        <ul className="list-disc pl-6 text-gray-700">
           {nationalAdvisoryCommittee.map((member) => (
-            <div key={member.name} className="text-center">
-              <Avatar className="w-32 h-32 mx-auto mb-4">
-                {/* <AvatarImage src={member.image} alt={member.name} />
-                <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback> */}
-              </Avatar>
-              <h3 className="text-xl  mb-2 text-black">{member.name}</h3>
-              <p className="text-gray-600">{member.role}</p>
-            </div>
+            <li key={member.name}>
+              <span className="font-semibold">{member.name}</span> - {member.role}
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
+  
+    {/* Technical Committee Section */}
     <section className="py-10 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-semibold mb-8 text-center text-black">TECHNICAL COMMITEE</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <h2 className="text-3xl font-semibold mb-8 text-center text-black">
+          TECHNICAL COMMITTEE
+        </h2>
+        <ul className="list-disc pl-6 text-gray-700">
           {TechnicalCommitteeMembers.map((member) => (
-            <div key={member.name} className="text-center">
-              <Avatar className="w-32 h-32 mx-auto mb-4">
-                {/* <AvatarImage src={member.image} alt={member.name} />
-                <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback> */}
-              </Avatar>
-              <h3 className="text-xl  mb-2 text-black">{member.name}</h3>
-              <p className="text-gray-600">{member.role}</p>
-            </div>
+            <li key={member.name}>
+              <span className="font-semibold">{member.name}</span> - {member.role}
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
-
-    {/* International Advisory Committee Section */}
-    
-
-    {/* National Advisory Committee Section */}
-    
+  
     <Footer />
   </motion.section>
   )
