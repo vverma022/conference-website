@@ -19,7 +19,7 @@ const committeeMembers = [
 
 export function OrganizingCommittee() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 gradientbgt">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

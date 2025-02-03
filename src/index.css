@@ -65,6 +65,7 @@
 @layer base {
   :root {
     --font-sans: 'Roboto Flex', sans-serif;
+    
   }
 
   /* Apply Roboto Flex to the body by default */
@@ -76,4 +77,16 @@
   .dark {
     @apply bg-white text-foreground;
   }
+}
+
+.gradientbg {
+  background: linear-gradient(to bottom, #eaeaea, #ffffff); /* Subtle gradient from darker gray to white */
+  padding-top: 4rem; /* Equivalent to py-16 */
+  padding-bottom: 4rem;
+}
+
+.gradientbgt {
+  background: linear-gradient(to top, #eaeaea, #ffffff); /* Subtle gradient from darker gray to white */
+  padding-top: 4rem; /* Equivalent to py-16 */
+  padding-bottom: 4rem;
 }

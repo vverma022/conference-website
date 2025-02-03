@@ -6,7 +6,7 @@ export function AboutEvent() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="py-16 bg-gray-100"
+      className="py-16 gradientbg"
     >
       <div className="container mx-auto px-4">
         <motion.h2

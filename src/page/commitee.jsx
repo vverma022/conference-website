@@ -178,7 +178,7 @@ export default function Commitee(){
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="py-16 bg-white w-full"
+    className="py-16 gradientbg w-full"
   >
     <div className="pt-4">
       <h1 className="text-3xl font-semibold mb-4 text-center text-black">
@@ -190,7 +190,7 @@ export default function Commitee(){
     </div>
   
     {/* International Advisory Committee Section */}
-    <section className="py-10 bg-gray-100">
+    <section className="py-10 gradeintbgt">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8 text-center text-black">
           INTERNATIONAL ADVISORY COMMITTEE
@@ -206,7 +206,7 @@ export default function Commitee(){
     </section>
   
     {/* National Advisory Committee Section */}
-    <section className="py-10 bg-white">
+    <section className="py-10 gradeintbg">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8 text-center text-black">
           NATIONAL ADVISORY COMMITTEE
@@ -222,7 +222,7 @@ export default function Commitee(){
     </section>
   
     {/* Technical Committee Section */}
-    <section className="py-10 bg-gray-100">
+    <section className="py-10 gradeintbgt">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8 text-center text-black">
           TECHNICAL COMMITTEE

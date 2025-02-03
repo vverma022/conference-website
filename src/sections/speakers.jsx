@@ -19,7 +19,7 @@ const committeeMembers = [
 
 export function Speakers() {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 gradientbg">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

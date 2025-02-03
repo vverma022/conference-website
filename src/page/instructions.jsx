@@ -12,7 +12,7 @@ export default function Instructions() {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="py-16 bg-gray-100 w-full"
+    className="py-16 gradientbg w-full"
   >
     <div className="container mx-auto p-4 space-y-6">
       <h1 className="text-3xl font-semibold text-center mb-6 text-black">
