@@ -26,21 +26,41 @@ export function ContactUs() {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="max-w-lg mx-auto"
         >
-          <div className="mb-4">
-            <Input type="text" placeholder="Your Name" />
-          </div>
-          <div className="mb-4">
-            <Input type="email" placeholder="Your Email" />
-          </div>
-          <div className="mb-4">
-            <Input type="text" placeholder="Subject" />
-          </div>
-          <div className="mb-4">
-            <Textarea placeholder="Your Message" rows={4} />
-          </div>
-          <Button type="submit" className="w-full">
-            Send Message
-          </Button>
+      <div className="mb-4">
+        <Select>
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="Select a Person to Contact" />
+          </SelectTrigger>
+          <SelectContent>
+            {people.map((person, index) => (
+              <SelectItem key={index} value={person.email}>
+                {person.name} - {person.email}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+      <div className="mb-4">
+        <Input type="text" placeholder="Dr. Sunil Kumar" />
+      </div>
+      <div className="mb-4">
+        <Input type="email" placeholder="kumar.sunil@jaipur.manipal.edu"/>
+      </div>
+      <div className="mb-4">
+        <Input type="text" placeholder="Dr. Amit Kumar Sharma" />
+      </div>
+      <div className="mb-4">
+        <Input type="email" placeholder="amit.sharma@jaipur.manipal.edu"/>
+      </div>
+      <div className="mb-4">
+        <Input type="text" placeholder="Subject" />
+      </div>
+      <div className="mb-4">
+        <Textarea placeholder="Your Message" rows={4} />
+      </div>
+      <Button type="submit" className="w-full">
+        Send Message
+      </Button>
         </motion.form>
       </div>
     </motion.section>

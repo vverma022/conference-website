@@ -1,4 +1,4 @@
-import { ContactForm } from '@/components/ui/contact-form';
+import ContactForm from './contact-usbetter';
 import { InstagramIcon, FacebookIcon, TwitterIcon, LinkedinIcon } from 'lucide-react';
 
 
@@ -14,9 +14,9 @@ export function Footer() {
           <p className="text-gray-300 text-base">
             The premier technology conference bringing together industry leaders from top universities across the country.
           </p>
-          <p className="text-gray-400 text-base">
+          {/* <p className="text-gray-400 text-base">
             For queries, contact: <a href="mailto:hod.cce@jaipur.manipal.edu" className="underline">hod.cce@jaipur.manipal.edu</a>
-          </p>
+          </p> */}
           <div className="flex space-x-4 mt-4">
             <a href="#" className="text-gray-400 hover:text-white">
               <FacebookIcon />
@@ -33,7 +33,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 xl:mt-0 xl:col-span-1 xl:col-start-3"> 
-          <ContactForm />
+         <ContactForm />
         </div>
       </div>
       <div className="mt-10 border-t border-gray-700 pt-4">

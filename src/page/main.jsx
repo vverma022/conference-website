@@ -8,6 +8,7 @@ import { Navbar } from "../sections/navbar"
 import Register from "../sections/registration"
 import { Speakers } from '@/sections/speakers'
 import { KeynoteSpeakers } from '@/sections/keynote'
+import SDCGoalsSection from '@/sections/sdcgoals'
 
 const ConferencePage = () => {
   return (
@@ -35,12 +36,15 @@ const ConferencePage = () => {
         <section id="faq">
           <FAQ />
         </section>
-        <section id="register">
+        {/* <section id="register">
           <Register />
-        </section>
+        </section> */}
         {/* <section id="contact">
           <ContactUs />
         </section>  */}
+        <section>
+         <SDCGoalsSection />
+        </section>
       </main>
       <Footer />
     </div>

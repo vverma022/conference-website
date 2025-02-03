@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "../components/ui/badge"
-import { GraduationCap, BookOpen, Briefcase } from 'lucide-react'
+import { GraduationCap, BookOpen, Briefcase , PersonStandingIcon } from 'lucide-react'
 import { motion } from "framer-motion"
 
 const pricingData = [
@@ -27,7 +27,7 @@ const pricingData = [
   },
   {
     title: "Visitors",
-    icon: Briefcase,
+    icon: PersonStandingIcon,
     description: "People who are passionate about the field and want to learn more.",
     domesticPrice: 4000,
     internationalPrice: 100,

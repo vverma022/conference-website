@@ -39,17 +39,17 @@ const CardContentCalender = () => {
       <p>
         <strong>Dates:</strong>{" "}
         <span
-          className="text-gray-600 cursor-pointer underline"
-          onClick={() =>
-            addToCalendar(
-              "Conference 2025",
-              "Conference taking place on 29, 30, and 31 October 2025.",
-              "20251029T090000",
-              "20251031T170000"
-            )
-          }
+          className="text-gray-600"
+          // onClick={() =>
+          //   addToCalendar(
+          //     "Conference 2025",
+          //     "Conference taking place on 31 October 2025 and 1 November 2025.",
+          //     "20251029T090000",
+          //     "20251031T170000"
+          //   )
+          // }
         >
-          29, 30, 31 October 2025
+          31 October 2025 and 1 November 2025
         </span>
       </p>
       <div className="mt-4">
@@ -71,7 +71,7 @@ const CardContentCalender = () => {
               1 March 2025
             </span>
           </li>
-          <li>
+          {/* <li>
             <strong>Abstract Submission Deadline:</strong>{" "}
             <span
               className="text-gray-600 cursor-pointer underline"
@@ -86,8 +86,8 @@ const CardContentCalender = () => {
             >
               5 March 2025
             </span>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <strong>Paper Submission Opens:</strong>{" "}
             <span
               className="text-gray-600 cursor-pointer underline"
@@ -102,7 +102,7 @@ const CardContentCalender = () => {
             >
               5 April 2025
             </span>
-          </li>
+          </li> */}
           <li>
             <strong>Submission Deadline:</strong>{" "}
             <span
@@ -119,7 +119,7 @@ const CardContentCalender = () => {
               1 September 2025
             </span>
           </li>
-          <li>
+          {/* <li>
             <strong>Paper Submission Closes:</strong>{" "}
             <span
               className="text-gray-600 cursor-pointer underline"
@@ -134,8 +134,8 @@ const CardContentCalender = () => {
             >
               5 September 2025
             </span>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <strong>Revision Deadline:</strong>{" "}
             <span
               className="text-gray-600 cursor-pointer underline"
@@ -150,7 +150,7 @@ const CardContentCalender = () => {
             >
               22 September 2025
             </span>
-          </li>
+          </li> */}
           <li>
             <strong>Acceptance Notification:</strong>{" "}
             <span
@@ -167,7 +167,7 @@ const CardContentCalender = () => {
               1 October 2025
             </span>
           </li>
-          <li>
+          {/* <li>
             <strong>Camera Ready Deadline:</strong>{" "}
             <span
               className="text-gray-600 cursor-pointer underline"
@@ -182,7 +182,7 @@ const CardContentCalender = () => {
             >
               10 October 2025
             </span>
-          </li>
+          </li> */}
           <li>
             <strong>Registration Deadline:</strong>{" "}
             <span
@@ -199,7 +199,7 @@ const CardContentCalender = () => {
               15 October 2025
             </span>
           </li>
-          <li>
+          {/* <li>
             <strong>Final Notification:</strong>{" "}
             <span
               className="text-gray-600 cursor-pointer underline"
@@ -214,7 +214,7 @@ const CardContentCalender = () => {
             >
               17 October 2025
             </span>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="mt-4">
