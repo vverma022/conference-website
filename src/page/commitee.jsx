@@ -191,7 +191,7 @@ export default function Commitee(){
           {InternationalAdvisoryCommittee.map((member) => (
             <div key={member.name} className="text-center">
               <Avatar className="w-32 h-32 mx-auto mb-4">
-                <AvatarImage src={member.image} alt={member.name} />
+                {/* <AvatarImage src={member.image} alt={member.name} /> */}
                 <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
               </Avatar>
               <h3 className="text-xl  mb-2 text-black">{member.name}</h3>
