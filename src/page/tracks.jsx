@@ -89,7 +89,7 @@ export default function Component() {
   >
     <div className="container mx-auto p-4 gradientbg min-h-screen">
       <h1 className="text-3xl font-semibold mb-4 text-center text-black">CONFERENCE TRACKS</h1>
-      <p className="text-center m-3 text-black">These are the Conference tracks for the ICSDC 2025</p>
+    
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {tracks.map((track, index) => (
           <Card key={index} className="flex flex-col h-[300px] shadow-lg hover:shadow-xl transition-shadow duration-300">

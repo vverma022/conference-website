@@ -2,6 +2,7 @@ import { Footer } from '@/sections/footer'
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { motion } from 'framer-motion'
+import { OrganizingCommittee } from '@/sections/organizing-committee';
 
 
 export default function Commitee(){
@@ -71,38 +72,86 @@ export default function Commitee(){
           name: 'Dr. Ravishankar Mehta', 
           role: 'Indian Institute of Information Technology, Bhagalpur', 
           image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=SDmfEg0AAAAJ&citpid=4?height=200&width=200' 
-        }
+        },
+        {
+          name: 'Dr. Dhruba Joyti Kalita',
+          role: 'Indian Institute of Technology Gandhinagar, Gandhinagar, India',
+        },
+        {
+          name: 'Dr. Sk Md Obaidullah',
+          role: 'Aliah University, Kolkata, India',
+          image: '',
+        },
+        {
+          name: 'Dr. Arunangshu Pal',
+          role: 'ICFAI University, Tripura, India',
+          image: '',
+        },
+        {
+          name: 'Dr. Sandipan Dhar',
+          role: 'Indian Institute of Technology, Bombay, India',
+        },
+        {
+        name: 'Dr. Sanjay Kumar',
+        role: 'SRM University AP, Amravati, India',
+        image: '',
+        },
       ];
       const InternationalAdvisoryCommittee = [
-        { 
-          name: 'Prof. Keshav Dahal', 
-          role: 'University of the West of Scotland (UWS)', 
-          image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=yIkdopsAAAAJ&citpid=3?height=200&width=200' 
+        {
+          name: 'Prof. Keshav Dahal',
+          role: 'University of the West of Scotland (UWS), Paisley, Scotland',
+          image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=yIkdopsAAAAJ&citpid=3?height=200&width=200'
         },
-        { 
-          name: 'Dr. Ayodji Salau', 
-          role: 'Nigeria', 
-          image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=bvUoKrsAAAAJ&citpid=8?height=200&width=200' 
+        {
+          name: 'Dr. Ting Tin Tin',
+          role: 'INTI International University, Nilai, Malaysia',
+          image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=0ZM3lGIAAAAJ&citpid=1?height=200&width=200'
         },
-        { 
-          name: 'Dr. Ting Tin Tin', 
-          role: 'INTI International University, Malaysia', 
-          image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=0ZM3lGIAAAAJ&citpid=1?height=200&width=200' 
+        {
+          name: 'Dr. Pranay Bhardwaj',
+          role: 'New York University, Abu Dhabi, UAE',
+          image: '/Pranay.jpeg?height=200&width=200'
         },
-        { 
-          name: 'Dr. Pranay Bhardwaj', 
-          role: 'New York University, Abu Dhabi', 
-          image: '/Pranay.jpeg?height=200&width=200' 
+        {
+          name: 'Dr. Vikas Jaiman',
+          role: 'PassApp, Berlin, Germany',
+          image: 'https://vjaiman.gitlab.io/vikas_pic.jpg?height=200&width=200'
         },
-        { 
-          name: 'Dr. Vikas Jaiman', 
-          role: 'PassApp, Berlin', 
-          image: 'https://vjaiman.gitlab.io/vikas_pic.jpg?height=200&width=200' 
+        {
+          name: 'Mr. Ankit Kumar Sharma',
+          role: 'HCL Technologies, California, USA',
+          image: '/Ankit.JPG?height=200&width=200'
         },
-        { 
-          name: 'Mr. Ankit Kumar Sharma', 
-          role: 'HCL Technologies, California', 
-          image: '/Ankit.JPG?height=200&width=200' 
+        {
+          name: 'Dr. Dijana Capeska Bogatinoska',
+          role: 'University for Information Science and Technology, Saint Paul the Apostle, Ohrid, Republic of North Macedonia',
+          image: ''
+        },
+        {
+          name: 'Dr. Hamurabi Gamboa Rosales',
+          role: 'Universidad Autónoma de Zacatecas, Zacatecas, Mexico',
+          image: ''
+        },
+        {
+          name: 'Dr. Ladislav Polak',
+          role: 'Brno University of Technology, Brno, Czech Republic',
+          image: ''
+        },
+        {
+          name: 'Dr. Edmar Candeia Gurjao',
+          role: 'Federal University of Campina Grande (UFCG), Campina Grande, Brazil',
+          image: ''
+        },
+        {
+          name: 'Dr. Farid Nait-Abdesselam',
+          role: 'Department of Computer Science, Paris Cité University, Paris, France',
+          image: ''
+        },
+        {
+          name: 'Dr. Suman Ghosh',
+          role: 'Huawei Finland Research Center, Helsinki, Finland',
+          image:'',
         }
       ];
       const nationalAdvisoryCommittee = [
@@ -184,9 +233,6 @@ export default function Commitee(){
       <h1 className="text-3xl font-semibold mb-4 text-center text-black">
         COMMITTEE MEMBERS
       </h1>
-      <p className="text-center m-3 text-black">
-        These are the Committee Members for the International Conference on Smart and Distributed Computing 2025
-      </p>
     </div>
   
     {/* International Advisory Committee Section */}
@@ -222,7 +268,7 @@ export default function Commitee(){
     </section>
   
     {/* Technical Committee Section */}
-    <section className="py-10 gradeintbgt">
+    <section className="py-10 gradeintbg">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8 text-center text-black">
           TECHNICAL COMMITTEE
@@ -236,6 +282,8 @@ export default function Commitee(){
         </ul>
       </div>
     </section>
+
+    <OrganizingCommittee />
   
     <Footer />
   </motion.section>

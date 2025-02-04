@@ -7,7 +7,7 @@ export function EventLocation() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="py-16 gradientbg"
+      className="py-16 gradientbgt"
     >
       <div className="container mx-auto px-4">
         <motion.h2
@@ -51,11 +51,9 @@ export function EventLocation() {
               <br />
               Dehmi Kalan
               <br />
-              Jaipur, RJ 303007
+              Jaipur, Rajasthan - 303007, India 
             </p>
-            <p className='text-black'>
-            Located on the highway connecting Jaipur and Ajmer, Manipal University Jaipur boasts a sprawling 122-acre campus that combines modern infrastructure with serene natural beauty.
-            </p>
+            
           </motion.div>
         </div>
       </div>

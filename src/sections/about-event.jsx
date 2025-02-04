@@ -21,18 +21,10 @@ export function AboutEvent() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="text-lg mb-6 text-black text-center"
+          className="text-lg mb-6 text-black text-justify"
         >
           Department of Computer and Communication Engineering, Manipal University Jaipur, India is organizing the International Conference on Smart and Distributed Computing (ICSDC-2025). The conference invites industry professionals, academics, and researchers to submit original, high-quality, and previously unpublished research papers. The event focuses on tackling research challenges within the fields of Smart and Distributed Computing.
-          The conference will serve as a platform for presenting key research and literature in the fields of Engineering and Technology, with a particular emphasis on Distributed Computing. This gathering will enable leading experts to share their insights, offer guidance, and address participants’ questions and concerns.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          className="text-lg text-black text-center"
-        >
-          Whether you're a seasoned professional or just starting your tech journey, ICSDC 2025 offers
+          The conference will serve as a platform for presenting key research and literature in the fields of Engineering and Technology, with a particular emphasis on Distributed Computing. This gathering will enable leading experts to share their insights, offer guidance, and address participants questions and concerns.   Whether you're a seasoned professional or just starting your tech journey, ICSDC 2025 offers
           something for everyone. Join us to learn, connect, and be inspired by the future of technology.
         </motion.p>
       </div>

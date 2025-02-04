@@ -5,28 +5,28 @@ const faqItems = [
   {
     question: 'When and where is ICSDC 2025 taking place?',
     answer:
-      'The Dates for the International Conference for Smart and Distributed Computing are yet to be announced.',
+      'The Dates for the ICSDC 2025 are 31 October to 1 November 2025. The conference will be held at Manipal University Jaipur, Dehmi Kalan, Jaipur, Rajasthan - 303007, India',
   },
   {
     question: 'How can I register for the conference?',
     answer:
-      'You can register for ISDC 2025 through our online registration portal once it is online',
+      'You can register for ICSDC 2025 through our online registration portal once it is online',
   },
   {
-    question: 'What topics will be covered at ISDC 2025?',
+    question: 'What topics will be covered at ICSDC 2025?',
     answer:
-      'ISDC 2025 will cover a wide range of topics including AI, machine learning, blockchain, cybersecurity, cloud computing, and more. A detailed schedule will be available closer to the event date.',
+       'ICSDC 2025 will cover a wide range of topics including AI, machine learning, blockchain, cybersecurity, cloud computing, and more. A detailed schedule will be available closer to the event date.',
   },
   {
     question: 'Are there opportunities for networking at the conference?',
     answer:
-      'Yes, ISDC 2025 offers numerous networking opportunities including dedicated networking sessions, social events, and an interactive conference app for attendees to connect.',
+      'Yes, ICSDC 2025 offers numerous networking opportunities including dedicated networking sessions, social events, and an interactive conference app for attendees to connect.',
   },
 ]
 
 export function FAQ() {
   return (
-    <section className="py-16 gradientbgt">
+    <section className="py-16 gradientbg">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export function FAQ() {
             {faqItems.map((item, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-center" >{item.question}</AccordionTrigger>
-                <AccordionContent className="text-center">{item.answer}</AccordionContent>
+                <AccordionContent className="text-justify-center">{item.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>

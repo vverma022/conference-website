@@ -2,19 +2,25 @@ import { motion } from 'framer-motion'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const committeeMembers = [
-  { name: 'Sh. S. Vaitheeswaran', role: 'Cheif Patron',Position: 'Chairperson, MUJ', image: 'https://icicv.co.in/wp-content/uploads/2023/08/Mr.-S.-Vaitheeswaran.jpg?height=200&width=200' },
-  { name: 'Dr. N N Sharma', role: 'Patron',Position: 'President, MUJ', image: 'https://jaipur.manipal.edu/img/N%20N%20Sharma.png?height=200&width=200' },
-  { name: 'Dr. Karunakar Kotegar A', role: 'Co-Patron',Position: 'Pro-President, MUJ', image: 'https://www.manipal.edu/content/dam/manipal/mu/mit/images/computer_applications_mit/KK.jpg.transform/manipal-edu-transform-width-height-528px/image.jpg?height=200&width=200' },
-  { name: 'Dr. Amit Soni', role: 'Co-Patron',Position: 'Registrar, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/23/273.jpg?height=200&width=200' },
-  { name: 'Dr. Kuldip Singh Sangwan', role: 'Program Chair',Position: 'Dean FoE, MUJ', image: 'https://jaipur.manipal.edu/foe/img/Dr%20Kuldip%20Singh.jpg?height=200&width=200' },
-  { name: 'Prof. Vijaypal Singh Dhaka', role: 'Program Chair',Position: 'Professor & Dean(Quality & Accreditation), MUJ',image: 'https://jaipur.manipal.edu/foe/img/vs-dhaka.jpg?height=200&width=200' },
-  { name: 'Prof. Sunil Kumar', role: 'General Chair',Position: 'HoD CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/135.jpg?height=200&width=200' },
-  { name: 'Mr. Abhishek Narwaria', role: 'Convener',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/311.jpg?height=200&width=200' },
-  { name: 'Mr. Aditya Narayan Hati', role: 'Convener',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/645.jpg?height=200&width=200' },
-  { name: 'Dr. Somya Rakesh Goyal', role: 'Convener',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/274.jpg?height=200&width=200' },  
-  { name: 'Dr. Amit Kumar Sharma', role: 'Co-Chair',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/315.jpg' },
-  { name: 'Dr. Vijay Shankar Sharma', role: 'Co-Chair',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/285.jpg' },
-  { name: 'Mr. Sadineni Lakshminarayana', role: 'Co-Chair',Position: 'Asst Professor CCE, MUJ', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/309.jpg' },
+  { name: 'Sh. S. Vaitheeswaran', role: 'Chief Patron', Position: 'Chairperson, Manipal University Jaipur, India', image: 'https://icicv.co.in/wp-content/uploads/2023/08/Mr.-S.-Vaitheeswaran.jpg?height=200&width=200' },
+  { name: 'Prof. N. N. Sharma', role: 'Patron', Position: 'President, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/img/N%20N%20Sharma.png?height=200&width=200' },
+  { name: 'Prof. Karunakar Kotegar A', role: 'Co-Patron', Position: 'Pro-President, Manipal University Jaipur, India', image: 'https://www.manipal.edu/content/dam/manipal/mu/mit/images/computer_applications_mit/KK.jpg.transform/manipal-edu-transform-width-height-528px/image.jpg?height=200&width=200' },
+  { name: 'Prof. Amit Soni', role: 'Co-Patron', Position: 'Registrar, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/23/273.jpg?height=200&width=200' },
+  { name: 'Prof. Kuldip Singh Sangwan', role: 'General Chair', Position: 'Dean FoE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/foe/img/Dr%20Kuldip%20Singh.jpg?height=200&width=200' },
+  { name: 'Prof. Roheet Bhatnagar', role: 'General Co-Chair', Position: 'Associate Dean, SCSE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/12/151.jpg?height=200&width=200' },
+  { name: 'Prof. Vijaypal Singh Dhaka', role: 'General Co-Chair', Position: 'Professor & Dean (Quality & Accreditation), Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/foe/img/vs-dhaka.jpg?height=200&width=200' },
+  { name: 'Prof. Sunil Kumar', role: 'Program Chair', Position: 'HoD CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/135.jpg?height=200&width=200' },
+  { name: 'Dr. Somya Rakesh Goyal', role: 'Program Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/274.jpg?height=200&width=200' }, 
+  { name: 'Mr. Aditya Narayan Hati', role: 'Program Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/645.jpg?height=200&width=200' },
+  { name: 'Dr. Lal Pratap Verma', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/281.jpg' },
+  { name: 'Dr. Arvind Dhaka ', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/317.jpg' },
+  { name: 'Dr. Amit Chaurasia', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/280.jpg' },
+  { name: 'Dr. Anshika Malsaria', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/291.jpg' },
+  { name: 'Dr. Shalini Phatak', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/312.jpg' },
+  { name: 'Dr. Abhishek Narwaria', role: 'Organizing Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/311.jpg?height=200&width=200' },
+  { name: 'Dr. Amit Kumar Sharma', role: 'Organizing Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/315.jpg' },
+  { name: 'Dr. Vijay Shankar Sharma', role: 'Organizing Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/285.jpg' },
+  { name: 'Dr. Sadineni Lakshminarayana', role: 'Organizing Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/309.jpg' }
 ]
 
 export function OrganizingCommittee() {
@@ -27,7 +33,7 @@ export function OrganizingCommittee() {
           transition={{ duration: 0.5 }}
           className="text-3xl font-semibold mb-8 text-center text-black"
         >
-          ORGANISING COMMITEE
+          ORGANIZING COMMITTEE
         </motion.h2>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {committeeMembers.map((member, index) => (

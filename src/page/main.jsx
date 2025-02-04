@@ -27,9 +27,9 @@ const ConferencePage = () => {
         <section id="speakers">
           <Speakers />
         </section>
-        <section id="committee">
+        {/* <section id="committee">
           <OrganizingCommittee />
-        </section>
+        </section> */}
         <section id="location">
           <EventLocation />
         </section>
