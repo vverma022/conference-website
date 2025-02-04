@@ -146,78 +146,118 @@ export default function Commitee(){
         {
           name: 'Dr. Farid Nait-Abdesselam',
           role: 'Department of Computer Science, Paris Cité University, Paris, France',
-          image: ''
+          image: '',
         },
         {
           name: 'Dr. Suman Ghosh',
           role: 'Huawei Finland Research Center, Helsinki, Finland',
-          image:'',
-        }
+          image: '',
+        },
+        {
+          name: 'Dr. Eleonora De Fillipi',
+          role: 'University of Strasbourg, Strasbourg, France',
+          image: '',
+        },
+        {
+          name: 'Dr. Mihnea Tufis',
+          role: 'Eurecat, Barcelona, Spain',
+          image: '',
+        },
+        {
+          name: 'Dr. Rohit Kumar',
+          role: 'AstreZenica, Barcelona, Spain',
+          image: '',
+        },
+        {
+          name: 'Prof. Fatos Xhafa',
+          role: 'Universitat Politècnica de Catalunya, Barcelona, Spain',
+          image: '',
+        },
+        {
+          name: 'Dr. Laia Subirats',
+          role: 'Open University of Catalonia, Barcelona, Spain',
+          image: '',
+        },
+        {
+          name: 'Dr. Naveen Kumar Meena',
+          role: 'Beca Limited, Sydney, Australia',
+          image: '',
+        },
+        {
+          name: 'Dr. Nishit Aman',
+          role: 'Chulalongkorn University, Bangkok, Thailand',
+          image: '',
+        },
+        {
+          name: 'Dr. Vishal Mathur',
+          role: 'American International University, Kuwait',
+          image: '',
+        },
       ];
       const nationalAdvisoryCommittee = [
         { 
           name: 'Dr. Sudesh Kumar Prajapati', 
-          role: 'Indira Gandhi National Tribal University, Amarkantak', 
+          role: 'Indira Gandhi National Tribal University, Amarkantak, India', 
           image: '/Sudesh.jpeg?height=200&width=200' 
         },
         { 
           name: 'Prof. D. A. Khan', 
-          role: 'National Institute of Technology, Jamshedpur', 
+          role: 'National Institute of Technology, Jamshedpur, India', 
           image: 'https://www.nitjsr.ac.in/backend/uploads/Faculty/CA104/profile/0c34d489-4cab-4aca-b8ce-8fb9ebc1de85.png?height=200&width=200' 
         },
         { 
           name: 'Mr. Kuldeep', 
-          role: 'National Informatics Centre, Sikkim', 
+          role: 'National Informatics Centre, Sikkim, India', 
           image: '' 
         },
         { 
           name: 'Dr. Anshul Verma', 
-          role: 'Banaras Hindu University (BHU)', 
+          role: 'Banaras Hindu University (BHU), Varanasi, India', 
           image: 'https://bhu.ac.in/Content/Photos/Faculties/FA000043.jpeg?height=200&width=200' 
         },
         { 
           name: 'Dr. Debojyaty Banik', 
-          role: 'Sri Ramachandra University (SRU)', 
+          role: 'Sri Ramachandra University (SRU), Chennai, India', 
           image: '/Bannik.JPG?height=200&width=200' 
         },
         { 
           name: 'Dr. Krishan Kumar Sethi', 
-          role: 'National Institute of Technology, Patna', 
+          role: 'National Institute of Technology, Patna, India', 
           image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hql1qicAAAAJ&citpid=1?height=200&width=200' 
         },
         { 
           name: 'Dr. Geeta Sikka', 
-          role: 'National Institute of Technology, Delhi', 
+          role: 'National Institute of Technology, Delhi, India', 
           image: 'https://nitdelhi.ac.in/wp-content/uploads/2024/07/Geeta_Sikka-2.jpg?height=200&width=200' 
         },
         { 
           name: 'Dr. Atul Tripathi', 
-          role: 'Guru Gobind Singh Indraprastha University (GGSIU)', 
+          role: 'Guru Gobind Singh Indraprastha University (GGSIU), Delhi, India', 
           image: '' 
         },
         { 
-          name: 'Dr. Shailendra', 
-          role: 'Bennett University', 
+          name: 'Shailendra Pratap Singh', 
+          role: 'Bennett University, Greater Noida, India', 
           image: '' 
         },
         { 
           name: 'Dr. Parul Tomar', 
-          role: 'J. C. Bose University of Science and Technology, YMCA', 
+          role: 'J. C. Bose University of Science and Technology, YMCA, Faridabad, India', 
           image: 'https://jcboseust.irins.org/assets/profile_images/187152.jpg?height=200&width=200' 
         },
         { 
           name: 'Dr. Krishan Pal Sharma', 
-          role: 'National Institute of Technology, Jalandhar', 
+          role: 'National Institute of Technology, Jalandhar, India', 
           image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=QM9qltUAAAAJ&citpid=2?height=200&width=200' 
         },
         { 
           name: 'Dr. Djhanraj Rajesh', 
-          role: 'Symbiosis International University, Pune', 
+          role: 'Symbiosis International University, Pune, India', 
           image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=8t9sO-QAAAAJ&citpid=2?height=200&width=200' 
         },
         { 
           name: 'Dr. Binod Kumar Singh', 
-          role: 'National Institute of Technology, Jamshedpur', 
+          role: 'National Institute of Technology, Jamshedpur, India', 
           image: '/Binod.JPG?height=200&width=200' 
         }
       ];
@@ -244,7 +284,7 @@ export default function Commitee(){
         <ul className="list-disc pl-6 text-gray-700">
           {InternationalAdvisoryCommittee.map((member) => (
             <li key={member.name}>
-              <span className="font-semibold">{member.name}</span> - {member.role}
+              <span className="font-semibold">{member.name}</span>,{member.role}
             </li>
           ))}
         </ul>
@@ -260,7 +300,7 @@ export default function Commitee(){
         <ul className="list-disc pl-6 text-gray-700">
           {nationalAdvisoryCommittee.map((member) => (
             <li key={member.name}>
-              <span className="font-semibold">{member.name}</span> - {member.role}
+              <span className="font-semibold">{member.name}</span>,{member.role}
             </li>
           ))}
         </ul>
@@ -276,7 +316,7 @@ export default function Commitee(){
         <ul className="list-disc pl-6 text-gray-700">
           {TechnicalCommitteeMembers.map((member) => (
             <li key={member.name}>
-              <span className="font-semibold">{member.name}</span> - {member.role}
+              <span className="font-semibold">{member.name}</span>,{member.role}
             </li>
           ))}
         </ul>
