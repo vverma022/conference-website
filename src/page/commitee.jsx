@@ -284,7 +284,7 @@ export default function Commitee(){
         <ul className="list-disc pl-6 text-gray-700">
           {InternationalAdvisoryCommittee.map((member) => (
             <li key={member.name}>
-              <span className="font-semibold">{member.name}</span>,{member.role}
+              <span className="font-semibold">{member.name}</span><span> </span>{member.role}
             </li>
           ))}
         </ul>
@@ -300,7 +300,7 @@ export default function Commitee(){
         <ul className="list-disc pl-6 text-gray-700">
           {nationalAdvisoryCommittee.map((member) => (
             <li key={member.name}>
-              <span className="font-semibold">{member.name}</span>,{member.role}
+              <span className="font-semibold">{member.name}</span> {member.role}
             </li>
           ))}
         </ul>
@@ -316,7 +316,7 @@ export default function Commitee(){
         <ul className="list-disc pl-6 text-gray-700">
           {TechnicalCommitteeMembers.map((member) => (
             <li key={member.name}>
-              <span className="font-semibold">{member.name}</span>,{member.role}
+              <span className="font-semibold">{member.name}</span> {member.role}
             </li>
           ))}
         </ul>

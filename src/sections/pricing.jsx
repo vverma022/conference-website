@@ -43,7 +43,7 @@ export default function PricingTiers() {
     className="py-16 w-full"
   >
     <div className="container mx-auto py-8 ">
-      <h1 className="text-3xl font-semibold text-center mb-4 text-black">PRICING TEIRS</h1>
+      <h1 className="text-3xl font-semibold text-center mb-4 text-black">Registration Fees</h1>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {pricingData.map((tier, index) => (
           <motion.div
