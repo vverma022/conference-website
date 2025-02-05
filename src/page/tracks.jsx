@@ -1,83 +1,75 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Footer } from "@/sections/footer"
-import { Cloud, Network, Brain, Stethoscope,Leaf, Bot } from "lucide-react"
+import { Cloud, Lightbulb,Shield, Leaf , Rocket } from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function Component() {
-  const tracks = [{
-    title: "Distributed Computing",
-    icon: Cloud,
-    topics: [
-      "Cloud Computing",
-      "Fog Computing",
-      "Edge Computing",
-      "Grannular Computing",
-      "Clusters and HPC",
-      "Blockchains",
-      "Distributed log management",
-    ],
-  },
-  {
-    title: "Constraint Networks",
-    icon: Network,
-    topics: [
-      "IoT",
-      "WSN",
-      "IIoT",
-      "5G/6G Communication",
-      "Green Communication",
-      "SDIoT",
-    ],
-  },
-  {
-    title: "Computational Intelligence in Distributed Computing",
-    icon: Brain,
-    topics: [
-      "XAI in DC",
-      "Trustworthy AI in DC",
-      "Distributed ML and DL",
-      "Federated Learning",
-      "CI in service management",
-    ],
-  },
-  {
-    title: "Smart Computing in Biomedical and Healthcare",
-    icon: Stethoscope,
-    topics: [
-      "Distributed healthcare systems for remote diagnostics and telemedicine",
-      "Smart medical devices for patient monitoring in underserved areas",
-      "Federated learning for secure and privacy-preserving healthcare data analysis",
-      "AI-powered drug discovery and personalized medicine using distributed computing",
-    ],
-  },
-  {
-    title: "Smart Computing in Industrial Automation",
-    icon: Bot,
-    topics: [
-      "Distributed AI for predictive maintenance in manufacturing",
-      "IoT-enabled smart factories for energy and resource optimization",
-      "Blockchain for tracking sustainable manufacturing practices",
-      "Decentralized platforms for collaborative industrial innovation",
-      "Digital Twin",
-    ]
-  },
+  const tracks = [
     {
-      title: "Smart Computing in Environmental Sustainability Planning",
+      title: "Emerging Trends in Smart Computing",
+      icon: Lightbulb,
+      topics: [
+        "Smart Computing Paradigms",
+        "Algorithms for Smart Computing",
+        "Artificial Intelligence and Machine Learning in Smart Computing",
+        "Security and Privacy in Smart Computing",
+        "Internet of Things and Cyber-Physical Systems",
+        "Communication Technologies for Smart Computing",
+        "Low Power Communication and Computing",
+        "Interdisciplinary Approaches in Smart Computing"
+      ]
+    },
+    {
+      title: "Advances in Distributed and Decentralized Computing",
+      icon: Cloud,
+      topics: [
+        "Algorithms and Theoretical Foundations of Distributed Computing",
+        "Scheduling and Resource Management in Distributed Systems",
+        "Blockchain Technology and Smart Contracts",
+        "Artificial Intelligence and Machine Learning in Distributed Systems",
+        "Cloud Computing and Virtualization Technologies",
+        "Mobile Computing and Edge Intelligence",
+        "Federated Learning and Distributed AI"
+      ]
+    },
+    {
+      title: "Automation and Intelligent Systems",
+      icon: Rocket,
+      topics: [
+        "Industry 5.0 and Cyber-Physical Systems",
+        "Artificial Intelligence in Healthcare and Medical Systems",
+        "Smart Agriculture and Precision Farming",
+        "Smart Cities and Intelligent Urban Systems",
+        "Vehicular Networks and Autonomous Systems",
+        "Digital Twin Technologies for Automation"
+      ]
+    },
+    {
+      title: "Security, Privacy, and Trust in Smart & Distributed Systems",
+      icon: Shield,
+      topics: [
+        "Security Challenges in Smart Systems",
+        "Security Frameworks for Distributed Systems",
+        "Blockchain Security and Cryptographic Protocols",
+        "Trust Management in Smart and Distributed Systems",
+        "Privacy-Preserving Technologies in Smart Computing",
+        "Digital Forensics and Cybercrime Investigation"
+      ]
+    },
+    {
+      title: "Smart and Distributed Computing for Sustainability",
       icon: Leaf,
       topics: [
-        "Distributed energy systems and microgrids for renewable energy optimization",
-        "Smart energy management using IoT and AI for energy efficiency",
-        "Distributed systems for real-time climate monitoring and disaster prediction",
-        "Smart waste management and recycling using edge computing and AI",
-        "Blockchain for carbon credit tracking and sustainable resource usage",
-        "Distributed IoT for traffic optimization and air quality monitoring",
-        "Smart transportation systems powered by distributed AI",
-        "Blockchain for decentralized identity management in smart cities",
-        "IoT-based distributed systems for water quality monitoring",
-        "Smart water usage analytics using AI for conservation efforts",
-      ],
-    },
+        "Green Computing and Energy-Efficient Technologies",
+        "Distributed Energy Systems and Microgrid Management",
+        "Smart Energy Management and Optimization",
+        "Climate Monitoring and Disaster Prediction using Distributed Systems",
+        "Smart Waste Management and Recycling Technologies",
+        "Distributed IoT for Traffic and Environmental Monitoring",
+        "Artificial Intelligence and IoT for Sustainable Agriculture"
+      ]
+    }
   ]
 
   return (

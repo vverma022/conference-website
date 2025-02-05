@@ -8,7 +8,7 @@ const committeeMembers = [
   { name: 'Prof. Amit Soni', role: 'Co-Patron', Position: 'Registrar, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/23/273.jpg?height=200&width=200' },
   { name: 'Prof. Kuldip Singh Sangwan', role: 'General Chair', Position: 'Dean FoE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/foe/img/Dr%20Kuldip%20Singh.jpg?height=200&width=200' },
   { name: 'Prof. Roheet Bhatnagar', role: 'General Co-Chair', Position: 'Associate Dean, SCSE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/12/151.jpg?height=200&width=200' },
-  { name: 'Prof. Vijaypal Singh Dhaka', role: 'General Co-Chair', Position: 'Professor & Dean (Quality & Accreditation), Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/foe/img/vs-dhaka.jpg?height=200&width=200' },
+  { name: 'Prof. Vijaypal Singh Dhaka', role: 'General Co-Chair', Position: 'Professor & Dean (Quality & Accreditation), Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/133.jpg' },
   { name: 'Prof. Sunil Kumar', role: 'Program Chair', Position: 'HoD CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/135.jpg?height=200&width=200' },
   { name: 'Dr. Somya Rakesh Goyal', role: 'Program Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/274.jpg?height=200&width=200' }, 
   { name: 'Mr. Aditya Narayan Hati', role: 'Program Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/645.jpg?height=200&width=200' },
@@ -16,16 +16,17 @@ const committeeMembers = [
   { name: 'Dr. Arvind Dhaka ', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/317.jpg' },
   { name: 'Dr. Amit Chaurasia', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/280.jpg' },
   { name: 'Dr. Anshika Malsaria', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/291.jpg' },
-  { name: 'Dr. Shalini Phatak', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/312.jpg' },
-  { name: 'Dr. Abhishek Narwaria', role: 'Organizing Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/311.jpg?height=200&width=200' },
+  { name: 'Dr. Shalini Phatak', role: 'Publicity Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/312.jpg' },
+  {name: 'Dr. Ghanshyam Raghuwanshi', role: 'Finance Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/270.jpg'},
+  { name: 'Dr. Abhishek Narwaria', role: 'Organizing Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/311.jpg?height=200&width=200'},
   { name: 'Dr. Amit Kumar Sharma', role: 'Organizing Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/315.jpg' },
   { name: 'Dr. Vijay Shankar Sharma', role: 'Organizing Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/285.jpg' },
-  { name: 'Dr. Sadineni Lakshminarayana', role: 'Organizing Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/309.jpg' }
+  { name: 'Dr. Sadineni Lakshminarayana', role: 'Organizing Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/309.jpg' },
 ]
 
 export function OrganizingCommittee() {
   return (
-    <section className="py-16 gradientbgt">
+    <section className="py-16 gradientbg">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

@@ -100,7 +100,7 @@ export default function Commitee(){
       ];
       const InternationalAdvisoryCommittee = [
         {
-       name: 'Shitharth Selvarajan',
+       name: 'Dr. Shitharth Selvarajan',
         role:'Leeds Beckett University, Leeds, U.K.',
         image: '',
 
@@ -117,12 +117,12 @@ export default function Commitee(){
           image: '',
         },
         {
-          name: 'Muhammad Fazal',
+          name: 'Dr. Muhammad Fazal',
           role: 'Melbourne Institute of Technology, Australia',
           email: 'mfazal@mit.edu.au',
         },
         {
-          name: 'Muna Elsadig',
+          name: 'Prof. Muna Elsadig',
           role: 'Princess Nourah bint Abdulrahman University, Riyadh, Saudi Arabia',
           email: 'Memohamedahmed@pnu.edu.sa',
         },
@@ -132,47 +132,47 @@ export default function Commitee(){
           email: 'aysha@kku.edu.sa',
         },
         {
-          name: 'Shakila Basheer',
+          name: 'Dr. Shakila Basheer',
           role: 'Princess Nourah bint Abdulrahman University, Riyadh, Saudi Arabia',
           email: 'sbbasheer@pnu.edu.sa',
         },
         {
-          name: 'Hasmat Malik',
+          name: 'Dr. Hasmat Malik',
           role: 'Universiti Teknologi Malaysia (UTM), Malaysia',
           email: 'hasmat@utm.my, hasmat@fke.utm.my',
         },
         {
-          name: 'Thippa Reddy Gadekallu',
+          name: 'Dr. Thippa Reddy Gadekallu',
           role: 'College of Information Science and Engineering, Jiaxing University, Jiaxing 314001, China',
           email: 'thippa@zhongda.cn, krish.chaitanya143@gmail.com',
         },
         {
-          name: 'Jaejeung Kim',
+          name: 'Prof. Jaejeung Kim',
           role: 'Department of Computer Science and Engineering, Chungnam National University, Daejeon, South Korea',
           email: 'jjkim@cnu.ac.kr',
         },
         {
-          name: 'Saurabh Singh',
+          name: 'Dr. Saurabh Singh',
           role: 'Department of AI and Big Data, Woosong University, Daejeon, South Korea',
           email: 'singh.saurabh@wsu.ac.kr',
         },
         {
-          name: 'Mohammed Abdulaziz Alsubhi',
+          name: 'Prof. Mohammed Abdulaziz Alsubhi',
           role: 'Department of Computer Science, University College in Umluj, University of Tabuk, Saudi Arabia',
           email: 'malsubhi@ut.edu.sa',
         },
         {
-          name: 'Abdullatif Saleh Alfaqiri',
+          name: 'Prof. Abdullatif Saleh Alfaqiri',
           role: 'Department of Computer, Applied College, Taibah University, Saudi Arabia',
           email: 'afaqiri@taibahu.edu.sa',
         },
         {
-          name: 'Mohammad Zubair Khan',
+          name: 'Prof. Mohammad Zubair Khan',
           role: 'Department of Computer Science and Information, Taibah University, Madinah, Saudi Arabia',
           email: 'mkhanb@taibahu.edu.sa',
         },
         {
-          name: 'Arfat Ahmad Khan',
+          name: 'Dr. Arfat Ahmad Khan',
           role: 'Department of Computer Science, College of Computing, Khon Kaen University, Thailand',
           email: 'arfatkhan@kku.ac.th',
         },
@@ -309,7 +309,7 @@ export default function Commitee(){
           image: '' 
         },
         { 
-          name: 'Shailendra Pratap Singh', 
+          name: 'Dr. Shailendra Pratap Singh', 
           role: 'Bennett University, Greater Noida, India', 
           image: '' 
         },
@@ -347,12 +347,12 @@ export default function Commitee(){
           image: '',
         },
         {
-          name: 'Abhishek Pandey',
+          name: 'Prof. Abhishek Pandey',
           role: 'Chandigarh University, Chandigarh, India',
           image: '',
         },
         {
-          name: 'Dr. Geetanjali',
+          name: 'Dr. Geetanjali Rathee',
           role: 'Netaji Subhas Institute of Technology, New Delhi, India',
           email: 'geetanjali.rathee123@gmail.com',
         },
@@ -393,7 +393,7 @@ export default function Commitee(){
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="py-16 gradientbg w-full"
+    className="py-16 gradientbgt w-full"
   >
     <div className="pt-4">
       <h1 className="text-3xl font-semibold mb-4 text-center text-black">
@@ -402,7 +402,13 @@ export default function Commitee(){
     </div>
   
     {/* International Advisory Committee Section */}
-    <section className="py-10 gradeintbgt">
+    <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="py-10 gradientbgt w-full"
+  >
+    <section className=" gradeintbg">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8 text-center text-black">
           INTERNATIONAL ADVISORY COMMITTEE
@@ -416,9 +422,16 @@ export default function Commitee(){
         </ul>
       </div>
     </section>
+    </ motion.section>
   
     {/* National Advisory Committee Section */}
-    <section className="py-10 gradeintbg">
+    <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="py-10 gradientbg w-full"
+  >
+    <section className="gradeintbgt">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8 text-center text-black">
           NATIONAL ADVISORY COMMITTEE
@@ -432,9 +445,16 @@ export default function Commitee(){
         </ul>
       </div>
     </section>
+    </motion.section>
   
     {/* Technical Committee Section */}
-    <section className="py-10 gradeintbg">
+    <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="py-10 gradientbgt w-full"
+  >
+    <section className="gradeintbg">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8 text-center text-black">
           TECHNICAL COMMITTEE
@@ -448,6 +468,7 @@ export default function Commitee(){
         </ul>
       </div>
     </section>
+    </motion.section>
 
     <OrganizingCommittee />
   
