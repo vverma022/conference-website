@@ -51,135 +51,49 @@ export default function Instructions() {
           </ul>
         </CardContent>
       </Card>
-
-      <Accordion type="single" collapsible className="w-full">
-        <AccordionItem value="article-types">
-          <AccordionTrigger className="text-lg font-semibold text-black">
-            <span className="flex items-center gap-2">
-              <BookOpen className="h-5 w-5" />
-              Article Types
-            </span>
-          </AccordionTrigger>
-          <AccordionContent className="text-black">
-            <p>ICSDC 2025 seeks submissions featuring novel research contributions relevant to the conference themes.  Review or survey articles are not encouraged</p>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="language-style">
-          <AccordionTrigger className="text-lg font-semibold text-black">
-            <span className="flex items-center gap-2">
-              <Globe className="h-5 w-5" />
-              Language Style
-            </span>
-          </AccordionTrigger>
-          <AccordionContent className="text-black">
-            <p>Submissions must be in English. Manuscripts should adhere to standard English usage and be thoroughly proofread before submission</p>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="manuscript-preparation">
-          <AccordionTrigger className="text-lg font-semibold text-black">
-            <span className="flex items-center gap-2">
-              <PenTool className="h-5 w-5" />
-              Manuscript Preparation Guidelines
-            </span>
-          </AccordionTrigger>
-          <AccordionContent className="text-black">
-            <ul className="list-decimal pl-6 space-y-2">
- <li>Title: Capitalize the first letter of each word, excluding helping verbs and connectors.</li>
-<li>Avoid first/second/third person usage (e.g., our, me, us, I).</li>	
-<li>Proofread for proper English, preferably by a native speaker.</li>
-<li>Do not use abbreviations in the abstract. </li>	
-<li>Use high-resolution images (DPI 500). Blurred images are not acceptable.</li>	
-<li>Ensure a structured manuscript:  Title, Objectives, Research Gap, Proposed Methodology, Results, etc., must flow logically.</li>	 
-<li>Include Motivation and Paper Organization in the introduction section. </li>	
-<li>Number all images, tables, and equations sequentially and provide suitable captions. </li>	
-<li>Do not use images of tables; all tables must be created natively in text. </li>	
-<li>Cite all figures, tables, equations, and references in the manuscript text. </li>	
-<li>Provide 5 8 keywords and expand non-standard abbreviations on first use. </li>	
-<li>Structure headings to a maximum of 3 levels, with proper numbering. </li>	
-<li>Acknowledgments, if applicable, should follow the conclusion section. </li>	
-<li>Author names and orders must match across the manuscript, submission portal, and consent forms. </li>	
-<li>Include all authors' names, affiliations, and emails in the manuscript and submission portal. </li>	
-<li>The Conclusion must be novel and statistically supported by results.</li> 
-<li>Ensure references are complete, accurate, and cited in the text. </li>
-<li>Follow the provided template (Word/LaTeX) and adhere to a  10 15 page limit. </li>  
-            </ul>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="confidentiality">
-          <AccordionTrigger className="text-lg font-semibold text-black">
-            <span className="flex items-center gap-2">
-              <Lock className="h-5 w-5" />
-              Confidentiality
-            </span>
-          </AccordionTrigger>
-          <AccordionContent className="text-black">
-            <p className="text-justify">The peer review process will be strictly confidential. The conference organizers will address breaches of confidentiality by reviewers or others. </p>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="review-process">
-          <AccordionTrigger className="text-lg font-semibold text-black">
-            <span className="flex items-center gap-2">
-              <MessageSquare className="h-5 w-5" />
-              Review Process
-            </span>
-          </AccordionTrigger>
-          <AccordionContent className="text-black">
-            <p>ICSDC 2025 employs a single-blind review process. Submissions will undergo plagiarism checks (preferably with Turnitin). Papers exceeding 18% similarity or with more than 2% similarity per source will be rejected. Revisions based on review comments are mandatory. Further revisions may be requested even after acceptance. </p>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="plagiarism">
-          <AccordionTrigger className="text-lg font-semibold text-black">
-            <span className="flex items-center gap-2">
-              <AlertCircle className="h-5 w-5" />
-              Plagiarism
-            </span>
-          </AccordionTrigger>
-          <AccordionContent className="text-black">
-            <p>ICSDC 2025 enforces a strict policy against plagiarism and unethical practices. Any submission violating these principles will be rejected and reported. </p>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="dual-submissions">
-          <AccordionTrigger className="text-lg font-semibold text-black">
-            <span className="flex items-center gap-2">
-              <FileText className="h-5 w-5" />
-              Dual/Double Submissions
-            </span>
-          </AccordionTrigger>
-          <AccordionContent className="text-black">
-            <p>Submissions must not overlap with prior publications or concurrent submissions. Concurrent submissions must be cited, and differences must be explicitly justified. Authors may contact the Program Chairs for clarification. </p>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="attendance">
-          <AccordionTrigger className="text-lg font-semibold text-black">
-            <span className="flex items-center gap-2">
-              <Calendar className="h-5 w-5" />
-              Attendance Responsibilities
-            </span>
-          </AccordionTrigger>
-          <AccordionContent className="text-black">
-            <p>At least one author of each accepted paper must register and present the paper at the conference.  Only presented papers will be forwarded for publication. </p>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="publication">
-          <AccordionTrigger className="text-lg font-semibold text-black">
-            <span className="flex items-center gap-2">
-              <BookOpen className="h-5 w-5" />
-              Publication
-            </span>
-          </AccordionTrigger>
-          <AccordionContent className="text-black">
-            <p>All accepted and presented papers will be submitted to our publication partner for potential inclusion in SCOPUS-indexed proceedings. Proof will be shared with the corresponding author for verification before publication. For updates on publication details, visit the conference website regularly. </p>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <div className="w-full">
+  <div className="mb-4">
+    <h2 className="text-lg font-semibold text-black flex items-center gap-2">
+      <PenTool className="h-5 w-5" />
+      Manuscript Preparation Guidelines
+    </h2>
+    <ul className="list-decimal pl-6 space-y-2 text-black">
+      <li>Title: Capitalize the first letter of each word, excluding helping verbs and connectors.</li>
+      <li>Avoid first/second/third person usage (e.g., our, me, us, I).</li>
+      <li>Proofread for proper English, preferably by a native speaker.</li>
+      <li>Do not use abbreviations in the abstract.</li>
+      <li>Use high-resolution images (DPI 500). Blurred images are not acceptable.</li>
+      <li>Ensure a structured manuscript: Title, Objectives, Research Gap, Proposed Methodology, Results, etc., must flow logically.</li>
+      <li>Include Motivation and Paper Organization in the introduction section.</li>
+      <li>Number all images, tables, and equations sequentially and provide suitable captions.</li>
+      <li>Do not use images of tables; all tables must be created natively in text.</li>
+      <li>Cite all figures, tables, equations, and references in the manuscript text.</li>
+      <li>Provide 5–8 keywords and expand non-standard abbreviations on first use.</li>
+      <li>Structure headings to a maximum of 3 levels, with proper numbering.</li>
+      <li>Acknowledgments, if applicable, should follow the conclusion section.</li>
+      <li>Author names and orders must match across the manuscript, submission portal, and consent forms.</li>
+      <li>Include all authors' names, affiliations, and emails in the manuscript and submission portal.</li>
+      <li>The Conclusion must be novel and statistically supported by results.</li>
+      <li>Ensure references are complete, accurate, and cited in the text.</li>
+      <li>Follow the provided template (Word/LaTeX) and adhere to a 10–15 page limit.</li>
+      <li>ICSDC 2025 seeks submissions featuring novel research contributions relevant to the conference themes. Review or survey articles are not encouraged.</li>
+      <li>Submissions must be in English. Manuscripts should adhere to standard English usage and be thoroughly proofread before submission.</li>
+      <li>The peer review process will be strictly confidential. The conference organizers will address breaches of confidentiality by reviewers or others.</li>
+      <li>ICSDC 2025 employs a single-blind review process. Submissions will undergo plagiarism checks (preferably with Turnitin). Papers exceeding 18% similarity or with more than 2% similarity per source will be rejected. Revisions based on review comments are mandatory. Further revisions may be requested even after acceptance.</li>
+      <li> Submissions must not overlap with prior publications or concurrent submissions. Concurrent submissions must be cited, and differences must be explicitly justified. Authors may contact the Program Chairs for clarification.</li>
+      <li>  At least one author of each accepted paper must register and present the paper at the conference. Only presented papers will be forwarded for publication.</li>
+    </ul>
+  </div>
+  <div>
+    <h2 className="text-lg font-semibold text-black flex items-center gap-4">
+      <BookOpen className="h-5 w-5" />
+      Publication
+    </h2>
+    <p className="text-black">
+      All accepted and presented papers will be submitted to our publication partner for potential inclusion in SCOPUS-indexed proceedings. Proof will be shared with the corresponding author for verification before publication. For updates on publication details, visit the conference website regularly.
+    </p>
+  </div>
+</div>
       <p className="text-center text-black">We look forward to your participation in ICSDC 2025! </p>
     </div>
     <Footer />

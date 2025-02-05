@@ -8,6 +8,7 @@ import { OrganizingCommittee } from '@/sections/organizing-committee';
 export default function Commitee(){
 
     const TechnicalCommitteeMembers = [
+
         { 
           name: 'Dr. Vinay Kumar', 
           role: 'Indian Institute of Information Technology, Raipur', 
@@ -45,7 +46,7 @@ export default function Commitee(){
         },
         { 
           name: 'Dr. Swalpa Kumar Roy', 
-          role: 'Advanced Global Education and Management Council (AGEMC)', 
+          role: ' Alipurduar Govt. Engineering & Management College, Alipur, India', 
           image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=1WVrFGwAAAAJ&citpid=1?height=200&width=200' 
         },
         { 
@@ -98,6 +99,88 @@ export default function Commitee(){
         },
       ];
       const InternationalAdvisoryCommittee = [
+        {
+       name: 'Shitharth Selvarajan',
+        role:'Leeds Beckett University, Leeds, U.K.',
+        image: '',
+
+        },
+
+        {
+          name: 'Prof. Fatos Xhafa',
+          role: 'Universitat Politècnica de Catalunya, Barcelona, Spain',
+          image: '',
+        },
+        {
+          name: 'Dr. Laia Subirats',
+          role: 'Open University of Catalonia, Barcelona, Spain',
+          image: '',
+        },
+        {
+          name: 'Muhammad Fazal',
+          role: 'Melbourne Institute of Technology, Australia',
+          email: 'mfazal@mit.edu.au',
+        },
+        {
+          name: 'Muna Elsadig',
+          role: 'Princess Nourah bint Abdulrahman University, Riyadh, Saudi Arabia',
+          email: 'Memohamedahmed@pnu.edu.sa',
+        },
+        {
+          name: 'Mariyam Aysha Bivi',
+          role: 'King Khalid University, Gregar, Abha 61421, Saudi Arabia',
+          email: 'aysha@kku.edu.sa',
+        },
+        {
+          name: 'Shakila Basheer',
+          role: 'Princess Nourah bint Abdulrahman University, Riyadh, Saudi Arabia',
+          email: 'sbbasheer@pnu.edu.sa',
+        },
+        {
+          name: 'Hasmat Malik',
+          role: 'Universiti Teknologi Malaysia (UTM), Malaysia',
+          email: 'hasmat@utm.my, hasmat@fke.utm.my',
+        },
+        {
+          name: 'Thippa Reddy Gadekallu',
+          role: 'College of Information Science and Engineering, Jiaxing University, Jiaxing 314001, China',
+          email: 'thippa@zhongda.cn, krish.chaitanya143@gmail.com',
+        },
+        {
+          name: 'Jaejeung Kim',
+          role: 'Department of Computer Science and Engineering, Chungnam National University, Daejeon, South Korea',
+          email: 'jjkim@cnu.ac.kr',
+        },
+        {
+          name: 'Saurabh Singh',
+          role: 'Department of AI and Big Data, Woosong University, Daejeon, South Korea',
+          email: 'singh.saurabh@wsu.ac.kr',
+        },
+        {
+          name: 'Mohammed Abdulaziz Alsubhi',
+          role: 'Department of Computer Science, University College in Umluj, University of Tabuk, Saudi Arabia',
+          email: 'malsubhi@ut.edu.sa',
+        },
+        {
+          name: 'Abdullatif Saleh Alfaqiri',
+          role: 'Department of Computer, Applied College, Taibah University, Saudi Arabia',
+          email: 'afaqiri@taibahu.edu.sa',
+        },
+        {
+          name: 'Mohammad Zubair Khan',
+          role: 'Department of Computer Science and Information, Taibah University, Madinah, Saudi Arabia',
+          email: 'mkhanb@taibahu.edu.sa',
+        },
+        {
+          name: 'Arfat Ahmad Khan',
+          role: 'Department of Computer Science, College of Computing, Khon Kaen University, Thailand',
+          email: 'arfatkhan@kku.ac.th',
+        },
+        {
+          name: 'Dr. Adil Rasool',
+          role: 'Associate Professor, Department of Computer, Bakhtar University, Kabul, Afghanistan',
+          email: 'adilrasool@bakhtar.edu.af',
+        },
         {
           name: 'Prof. Keshav Dahal',
           role: 'University of the West of Scotland (UWS), Paisley, Scotland',
@@ -166,16 +249,6 @@ export default function Commitee(){
         {
           name: 'Dr. Rohit Kumar',
           role: 'AstreZenica, Barcelona, Spain',
-          image: '',
-        },
-        {
-          name: 'Prof. Fatos Xhafa',
-          role: 'Universitat Politècnica de Catalunya, Barcelona, Spain',
-          image: '',
-        },
-        {
-          name: 'Dr. Laia Subirats',
-          role: 'Open University of Catalonia, Barcelona, Spain',
           image: '',
         },
         {
@@ -259,7 +332,60 @@ export default function Commitee(){
           name: 'Dr. Binod Kumar Singh', 
           role: 'National Institute of Technology, Jamshedpur, India', 
           image: '/Binod.JPG?height=200&width=200' 
-        }
+        },
+        {name: 'Dr. Prasenjit Das',
+        role: 'smartData Enterprises, Panchkula, India',
+        image: '',
+        },
+        {name: 'Prof. Rashmi Agarwal',
+        role: 'Manav Rachna University, Faridabad, India',
+        image: '',
+        },
+        {
+          name: 'Dr. Shobit Srivastava',
+          role: 'Dr. Ram Manohar Lohia Avadh University, Ayodhya, India',
+          image: '',
+        },
+        {
+          name: 'Abhishek Pandey',
+          role: 'Chandigarh University, Chandigarh, India',
+          image: '',
+        },
+        {
+          name: 'Dr. Geetanjali',
+          role: 'Netaji Subhas Institute of Technology, New Delhi, India',
+          email: 'geetanjali.rathee123@gmail.com',
+        },
+        {
+          name: 'Dr. Sandeep Kumar Panda',
+          role: 'ICFAI University, Hyderabad, India',
+          email: 'sandeeppanda@ifheindia.org',
+        },
+        {
+          name: 'Dr. Aditya Gupta',
+          role: 'Thapar Institute of Engineering & Technology, Patiala, Punjab, India',
+          email: 'aditya.gupta@thaper.edu',
+        },
+        {
+          name: 'Dr. Vibha Jain',
+          role: 'Chitkara University, Chandigarh, India',
+          email: 'jvibha0@gmail.com',
+        },
+        {
+          name: 'Dr. Monu Bhagat',
+          role: 'India Institute of Technology Kharagpur, Kharagpur, India',
+          email: 'monu98041@gmail.com',
+        },
+        {
+          name: 'Dr. Saumitra Gangwar',
+          role: 'Bennet University, Delhi, India',
+          email: 'saumitragangwar@gmail.com',
+        },
+        {
+          name: 'Prof. N. C. Barwar',
+          role: 'MBM University, Jodhpur, India',
+          email: 'ncbarwar@gmail.com',
+        },
       ];
 
   return (

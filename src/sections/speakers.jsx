@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const committeeMembers = [
+  {name: 'Prof. Surbhi Bhatia Khan', college: 'University of Salford, Manchester, U.K.', image: '/Surbhipicture-2.jpg' },
   { name: 'Dr. Arka Prokash Mazumdar', college: 'Malaviya National Institute of Technology, Jaipur, India', image: 'https://mnit.ac.in/PortalProfile/images/faculty/mnitjas205.png?height=200&width=200' },
   { name: 'Dr. E.S Pilli', college: 'Malaviya National Institute of Technology, Jaipur, India', image: 'https://mnit.ac.in/PortalProfile/images/faculty/mnitjas200.png?height=200&width=200' },
   { name: 'Dr. Deepak Ranjan Nayak', college: 'Malaviya National Institute of Technology, Jaipur, India', image: 'https://mnit.ac.in/PortalProfile/images/faculty/mnitjas341.png?height=200&width=200' },
@@ -13,7 +14,8 @@ const committeeMembers = [
   { name: 'Dr. Bhavna Saini', college: 'Central University of Rajasthan, Ajmer, India', image: 'https://www.curaj.ac.in/sites/default/files/styles/150_150/public/bhav_0.jpg?itok=39-UWU8B?height=200&width=200' },
   { name: 'Dr. Ajay Nehra', college: 'Indian Institute of Information Technology Kota, Kota, India', image: 'https://files.iiitkota.ac.in/images/faculty/ajaynehra.webp?height=200&width=200' },
   { name: 'Dr. Rajesh Ranjan', college: 'The LNM Institute of Information Technology Jaipur, Jaipur, India', image: '/random.jpeg?height=200&width=200' },
-  { name: 'Dr. Krishan Kumar Sethi', college: 'National Institute of Technology Patna, Patna, India', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hql1qicAAAAJ&citpid=1?height=200&width=200' }
+  { name: 'Dr. Krishan Kumar Sethi', college: 'National Institute of Technology Patna, Patna, India', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hql1qicAAAAJ&citpid=1' },
+  
 ]
 
 export function Speakers() {
@@ -28,7 +30,7 @@ export function Speakers() {
         >
           SESSION CHAIRS
         </motion.h2>
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {committeeMembers.map((member, index) => (
             <motion.div
               key={member.name}
@@ -38,7 +40,7 @@ export function Speakers() {
               className="text-center text-black"
             >
               <Avatar className="w-32 h-32 mx-auto mb-4">
-                <AvatarImage src={member.image} alt={member.name} />
+                <AvatarImage src={member.image} alt={member.name}/>
                 <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
               </Avatar>
               <h3 className="text-xl font mb-2">{member.name}</h3>
