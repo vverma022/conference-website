@@ -324,7 +324,7 @@ export default function Commitee(){
           image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=QM9qltUAAAAJ&citpid=2?height=200&width=200' 
         },
         { 
-          name: 'Dr. Djhanraj Rajesh', 
+          name: 'Dr. Dhanraj Rajesh', 
           role: 'Symbiosis International University, Pune, India', 
           image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=8t9sO-QAAAAJ&citpid=2?height=200&width=200' 
         },
