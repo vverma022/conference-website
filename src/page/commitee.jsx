@@ -128,7 +128,7 @@ export default function Commitee(){
         },
         {
           name: 'Mariyam Aysha Bivi',
-          role: 'King Khalid University, Gregar, Abha 61421, Saudi Arabia',
+          role: 'King Khalid University, Gregar, Saudi Arabia',
           email: 'aysha@kku.edu.sa',
         },
         {
@@ -143,42 +143,42 @@ export default function Commitee(){
         },
         {
           name: 'Dr. Thippa Reddy Gadekallu',
-          role: 'College of Information Science and Engineering, Jiaxing University, Jiaxing 314001, China',
+          role: 'Jiaxing University, Jiaxing, China',
           email: 'thippa@zhongda.cn, krish.chaitanya143@gmail.com',
         },
         {
           name: 'Prof. Jaejeung Kim',
-          role: 'Department of Computer Science and Engineering, Chungnam National University, Daejeon, South Korea',
+          role: 'Chungnam National University, Daejeon, South Korea',
           email: 'jjkim@cnu.ac.kr',
         },
         {
           name: 'Dr. Saurabh Singh',
-          role: 'Department of AI and Big Data, Woosong University, Daejeon, South Korea',
+          role: 'Woosong University, Daejeon, South Korea',
           email: 'singh.saurabh@wsu.ac.kr',
         },
         {
           name: 'Prof. Mohammed Abdulaziz Alsubhi',
-          role: 'Department of Computer Science, University College in Umluj, University of Tabuk, Saudi Arabia',
+          role: 'University of Tabuk, Saudi Arabia',
           email: 'malsubhi@ut.edu.sa',
         },
         {
           name: 'Prof. Abdullatif Saleh Alfaqiri',
-          role: 'Department of Computer, Applied College, Taibah University, Saudi Arabia',
+          role: 'Taibah University, Madinah, Saudi Arabia',
           email: 'afaqiri@taibahu.edu.sa',
         },
         {
           name: 'Prof. Mohammad Zubair Khan',
-          role: 'Department of Computer Science and Information, Taibah University, Madinah, Saudi Arabia',
+          role: 'Taibah University, Madinah, Saudi Arabia',
           email: 'mkhanb@taibahu.edu.sa',
         },
         {
           name: 'Dr. Arfat Ahmad Khan',
-          role: 'Department of Computer Science, College of Computing, Khon Kaen University, Thailand',
+          role: 'Khon Kaen University, Thailand',
           email: 'arfatkhan@kku.ac.th',
         },
         {
           name: 'Dr. Adil Rasool',
-          role: 'Associate Professor, Department of Computer, Bakhtar University, Kabul, Afghanistan',
+          role: 'Bakhtar University, Kabul, Afghanistan',
           email: 'adilrasool@bakhtar.edu.af',
         },
         {
@@ -208,7 +208,7 @@ export default function Commitee(){
         },
         {
           name: 'Dr. Dijana Capeska Bogatinoska',
-          role: 'University for Information Science and Technology, Saint Paul the Apostle, Ohrid, Republic of North Macedonia',
+          role: 'University for Information Science and Technology, Ohrid, Republic of North Macedonia',
           image: ''
         },
         {
@@ -386,6 +386,11 @@ export default function Commitee(){
           role: 'MBM University, Jodhpur, India',
           email: 'ncbarwar@gmail.com',
         },
+        {
+          name: 'Dr. Vijay Kumar Vyas',
+          role: 'ICFAI University, Jaipur, India',
+          email: '',
+        }
       ];
 
   return (

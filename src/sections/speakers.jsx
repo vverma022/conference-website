@@ -6,7 +6,7 @@ const committeeMembers = [
   { name: 'Dr. Arka Prokash Mazumdar', college: 'Malaviya National Institute of Technology, Jaipur, India', image: 'https://mnit.ac.in/PortalProfile/images/faculty/mnitjas205.png?height=200&width=200' },
   {name: 'Dr. Satyendra Singh Chouhan', college: 'Malaviya National Institute of Technology, Jaipur, India', image: '/ssc.jpeg' },
   {name: 'Dr. Dinesh Kumar Tyagi', college: 'Malaviya National Institute of Technology, Jaipur, India', image: '/dkt.jpeg' },
-  { name: 'Dr. E.S Pilli', college: 'Malaviya National Institute of Technology, Jaipur, India', image: 'https://mnit.ac.in/PortalProfile/images/faculty/mnitjas200.png?height=200&width=200' },
+  { name: 'Dr. E.S. Pilli', college: 'Malaviya National Institute of Technology, Jaipur, India', image: 'https://mnit.ac.in/PortalProfile/images/faculty/mnitjas200.png?height=200&width=200' },
   { name: 'Dr. Debojyaty Banik', college: 'Anurag University, Hyderabad, India', image: '/Bannik.JPG?height=200&width=200' },
   { name: 'Dr. Subrata Dutta', college: 'National Institute of Technology Jamshedpur, Jamshedpur, India', image: 'https://www.nitjsr.ac.in/backend/uploads/Faculty/CS106/profile/5fa86fc6-7ea5-4c7b-b017-e810746495e7.png?height=200&width=200' },
   { name: 'Dr. Geeta Sikka', college: 'National Institute of Technology Delhi, Delhi, India', image: 'https://nitdelhi.ac.in/wp-content/uploads/2024/07/Geeta_Sikka-2.jpg?height=200&width=200' },
