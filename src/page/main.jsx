@@ -3,9 +3,7 @@ import { AboutEvent } from '@/sections/about-event'
 import { OrganizingCommittee } from '@/sections/organizing-committee'
 import { EventLocation } from '@/sections/event-location'
 import { FAQ } from '@/sections/faq'
-import { Footer } from "../sections/footer"
 import { Navbar } from "../sections/navbar"
-import Register from "../sections/registration"
 import { Speakers } from '@/sections/speakers'
 import { KeynoteSpeakers } from '@/sections/keynote'
 import SDCGoalsSection from '@/sections/sdcgoals'
@@ -25,7 +23,6 @@ const ConferencePage = () => {
           <KeynoteSpeakers />
         </section>
         <section id="speakers">
-          <Speakers />
         </section>
         {/* <section id="committee">
           <OrganizingCommittee />
@@ -45,8 +42,8 @@ const ConferencePage = () => {
         <section>
          <SDCGoalsSection />
         </section>
+        {/* <Footer /> */}
       </main>
-      <Footer />
     </div>
   )
 }

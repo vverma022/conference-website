@@ -3,6 +3,8 @@ import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { motion } from 'framer-motion'
 import { OrganizingCommittee } from '@/sections/organizing-committee';
+import { Speaker } from 'lucide-react';
+import { Speakers } from '@/sections/speakers';
 
 
 export default function Commitee(){
@@ -487,6 +489,8 @@ export default function Commitee(){
       </div>
     </section>
     </motion.section>
+
+    <Speakers />
 
     <OrganizingCommittee />
   
