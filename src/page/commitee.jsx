@@ -100,6 +100,11 @@ export default function Commitee(){
       ];
       const InternationalAdvisoryCommittee = [
         {
+          name: "Prof. Bahman Javadi" , 
+          role: "The Smart and Distributed Computing (SDC) Lab School of Computer, Data and Mathematical Sciences Western Sydney University, Australia",
+          image: "" ,
+        },
+        {
        name: 'Dr. Shitharth Selvarajan',
         role:'Leeds Beckett University, Leeds, U.K.',
         image: '',
@@ -266,6 +271,7 @@ export default function Commitee(){
           role: 'American International University, Kuwait',
           image: '',
         },
+       
       ];
       const nationalAdvisoryCommittee = [
         { 
@@ -390,6 +396,11 @@ export default function Commitee(){
           name: 'Dr. Vijay Kumar Vyas',
           role: 'ICFAI University, Jaipur, India',
           email: '',
+        },
+        {
+          name: "Prof. M. N. Hoda" , 
+          role: "Bharati Vidyapeeth Institute of Computer Applications and Management (BVICAM), New Delhi, India",
+          image: " " ,
         }
       ];
 
