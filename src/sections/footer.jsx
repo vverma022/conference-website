@@ -32,7 +32,7 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <div className="mt-12 xl:mt-0 xl:col-span-1 xl:col-start-3"> 
+        <div className=" xl:col-start-3"> 
          <ContactForm />
         </div>
       </div>

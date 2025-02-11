@@ -101,7 +101,7 @@ export default function Commitee(){
       const InternationalAdvisoryCommittee = [
         {
           name: "Prof. Bahman Javadi" , 
-          role: "The Smart and Distributed Computing (SDC) Lab School of Computer, Data and Mathematical Sciences Western Sydney University, Australia",
+          role: "The Smart and Distributed Computing (SDC) Lab School of Computer, Data and Mathematical Sciences Western Sydney University, Sydney, Australia",
           image: "" ,
         },
         {
@@ -274,134 +274,136 @@ export default function Commitee(){
        
       ];
       const nationalAdvisoryCommittee = [
-        { 
-          name: 'Dr. Sudesh Kumar Prajapati', 
-          role: 'Indira Gandhi National Tribal University, Amarkantak, India', 
-          image: '/Sudesh.jpeg?height=200&width=200' 
-        },
-        { 
-          name: 'Prof. D. A. Khan', 
-          role: 'National Institute of Technology, Jamshedpur, India', 
-          image: 'https://www.nitjsr.ac.in/backend/uploads/Faculty/CA104/profile/0c34d489-4cab-4aca-b8ce-8fb9ebc1de85.png?height=200&width=200' 
-        },
-        { 
-          name: 'Mr. Kuldeep', 
-          role: 'National Informatics Centre, Sikkim, India', 
-          image: '' 
-        },
-        { 
-          name: 'Dr. Anshul Verma', 
-          role: 'Banaras Hindu University (BHU), Varanasi, India', 
-          image: 'https://bhu.ac.in/Content/Photos/Faculties/FA000043.jpeg?height=200&width=200' 
-        },
-        { 
-          name: 'Dr. Debojyaty Banik', 
-          role: 'Sri Ramachandra University (SRU), Chennai, India', 
-          image: '/Bannik.JPG?height=200&width=200' 
-        },
-        { 
-          name: 'Dr. Krishan Kumar Sethi', 
-          role: 'National Institute of Technology, Patna, India', 
-          image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hql1qicAAAAJ&citpid=1?height=200&width=200' 
-        },
-        { 
-          name: 'Dr. Geeta Sikka', 
-          role: 'National Institute of Technology, Delhi, India', 
-          image: 'https://nitdelhi.ac.in/wp-content/uploads/2024/07/Geeta_Sikka-2.jpg?height=200&width=200' 
-        },
-        { 
-          name: 'Dr. Atul Tripathi', 
-          role: 'Guru Gobind Singh Indraprastha University (GGSIU), Delhi, India', 
-          image: '' 
-        },
-        { 
-          name: 'Dr. Shailendra Pratap Singh', 
-          role: 'Bennett University, Greater Noida, India', 
-          image: '' 
-        },
-        { 
-          name: 'Dr. Parul Tomar', 
-          role: 'J. C. Bose University of Science and Technology, YMCA, Faridabad, India', 
-          image: 'https://jcboseust.irins.org/assets/profile_images/187152.jpg?height=200&width=200' 
-        },
-        { 
-          name: 'Dr. Krishan Pal Sharma', 
-          role: 'National Institute of Technology, Jalandhar, India', 
-          image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=QM9qltUAAAAJ&citpid=2?height=200&width=200' 
-        },
-        { 
-          name: 'Dr. Dhanraj Rajesh', 
-          role: 'Symbiosis International University, Pune, India', 
-          image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=8t9sO-QAAAAJ&citpid=2?height=200&width=200' 
-        },
-        { 
-          name: 'Dr. Binod Kumar Singh', 
-          role: 'National Institute of Technology, Jamshedpur, India', 
-          image: '/Binod.JPG?height=200&width=200' 
-        },
-        {name: 'Dr. Prasenjit Das',
-        role: 'smartData Enterprises, Panchkula, India',
-        image: '',
-        },
-        {name: 'Prof. Rashmi Agarwal',
-        role: 'Manav Rachna University, Faridabad, India',
-        image: '',
-        },
-        {
-          name: 'Dr. Shobit Srivastava',
-          role: 'Dr. Ram Manohar Lohia Avadh University, Ayodhya, India',
-          image: '',
-        },
-        {
-          name: 'Prof. Abhishek Pandey',
-          role: 'Chandigarh University, Chandigarh, India',
-          image: '',
-        },
-        {
-          name: 'Dr. Geetanjali Rathee',
-          role: 'Netaji Subhas Institute of Technology, New Delhi, India',
-          email: 'geetanjali.rathee123@gmail.com',
-        },
-        {
-          name: 'Dr. Sandeep Kumar Panda',
-          role: 'ICFAI University, Hyderabad, India',
-          email: 'sandeeppanda@ifheindia.org',
-        },
-        {
-          name: 'Dr. Aditya Gupta',
-          role: 'Thapar Institute of Engineering & Technology, Patiala, Punjab, India',
-          email: 'aditya.gupta@thaper.edu',
-        },
-        {
-          name: 'Dr. Vibha Jain',
-          role: 'Chitkara University, Chandigarh, India',
-          email: 'jvibha0@gmail.com',
-        },
-        {
-          name: 'Dr. Monu Bhagat',
-          role: 'India Institute of Technology Kharagpur, Kharagpur, India',
-          email: 'monu98041@gmail.com',
-        },
-        {
-          name: 'Dr. Saumitra Gangwar',
-          role: 'Bennet University, Delhi, India',
-          email: 'saumitragangwar@gmail.com',
-        },
-        {
-          name: 'Prof. N. C. Barwar',
-          role: 'MBM University, Jodhpur, India',
-          email: 'ncbarwar@gmail.com',
-        },
-        {
-          name: 'Dr. Vijay Kumar Vyas',
-          role: 'ICFAI University, Jaipur, India',
-          email: '',
-        },
-        {
-          name: "Prof. M. N. Hoda" , 
-          role: "Bharati Vidyapeeth Institute of Computer Applications and Management (BVICAM), New Delhi, India",
-          image: " " ,
-        }
+          {
+            "name": "Prof. Abhishek Pandey",
+            "role": "Chandigarh University, Chandigarh, India",
+            "image": ""
+          },
+          {
+            "name": "Prof. D. A. Khan",
+            "role": "National Institute of Technology, Jamshedpur, India",
+            "image": "https://www.nitjsr.ac.in/backend/uploads/Faculty/CA104/profile/0c34d489-4cab-4aca-b8ce-8fb9ebc1de85.png?height=200&width=200"
+          },
+          {
+            "name": "Prof. M. N. Hoda",
+            "role": "Bharati Vidyapeeth Institute of Computer Applications and Management (BVICAM), New Delhi, India",
+            "image": " "
+          },
+          {
+            "name": "Prof. N. C. Barwar",
+            "role": "MBM University, Jodhpur, India",
+            "email": "ncbarwar@gmail.com"
+          },
+          {
+            "name": "Prof. Rashmi Agarwal",
+            "role": "Manav Rachna University, Faridabad, India",
+            "image": ""
+          },
+          {
+            "name": "Dr. Aditya Gupta",
+            "role": "Thapar Institute of Engineering & Technology, Patiala, Punjab, India",
+            "email": "aditya.gupta@thaper.edu"
+          },
+          {
+            "name": "Dr. Anshul Verma",
+            "role": "Banaras Hindu University (BHU), Varanasi, India",
+            "image": "https://bhu.ac.in/Content/Photos/Faculties/FA000043.jpeg?height=200&width=200"
+          },
+          {
+            "name": "Dr. Atul Tripathi",
+            "role": "Guru Gobind Singh Indraprastha University (GGSIU), Delhi, India",
+            "image": ""
+          },
+          {
+            "name": "Dr. Binod Kumar Singh",
+            "role": "National Institute of Technology, Jamshedpur, India",
+            "image": "/Binod.JPG?height=200&width=200"
+          },
+          {
+            "name": "Dr. Debojyaty Banik",
+            "role": "Sri Ramachandra University (SRU), Chennai, India",
+            "image": "/Bannik.JPG?height=200&width=200"
+          },
+          {
+            "name": "Dr. Dhanraj Rajesh",
+            "role": "Symbiosis International University, Pune, India",
+            "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=8t9sO-QAAAAJ&citpid=2?height=200&width=200"
+          },
+          {
+            "name": "Dr. Geeta Sikka",
+            "role": "National Institute of Technology, Delhi, India",
+            "image": "https://nitdelhi.ac.in/wp-content/uploads/2024/07/Geeta_Sikka-2.jpg?height=200&width=200"
+          },
+          {
+            "name": "Dr. Geetanjali Rathee",
+            "role": "Netaji Subhas Institute of Technology, New Delhi, India",
+            "email": "geetanjali.rathee123@gmail.com"
+          },
+          {
+            "name": "Dr. Krishan Kumar Sethi",
+            "role": "National Institute of Technology, Patna, India",
+            "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hql1qicAAAAJ&citpid=1?height=200&width=200"
+          },
+          {
+            "name": "Dr. Krishan Pal Sharma",
+            "role": "National Institute of Technology, Jalandhar, India",
+            "image": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=QM9qltUAAAAJ&citpid=2?height=200&width=200"
+          },
+          {
+            "name": "Dr. Monu Bhagat",
+            "role": "India Institute of Technology Kharagpur, Kharagpur, India",
+            "email": "monu98041@gmail.com"
+          },
+          {
+            "name": "Dr. Parul Tomar",
+            "role": "J. C. Bose University of Science and Technology, YMCA, Faridabad, India",
+            "image": "https://jcboseust.irins.org/assets/profile_images/187152.jpg?height=200&width=200"
+          },
+          {
+            "name": "Dr. Prasenjit Das",
+            "role": "smartData Enterprises, Panchkula, India",
+            "image": ""
+          },
+          {
+            "name": "Dr. Sandeep Kumar Panda",
+            "role": "ICFAI University, Hyderabad, India",
+            "email": "sandeeppanda@ifheindia.org"
+          },
+          {
+            "name": "Dr. Saumitra Gangwar",
+            "role": "Bennet University, Delhi, India",
+            "email": "saumitragangwar@gmail.com"
+          },
+          {
+            "name": "Dr. Shailendra Pratap Singh",
+            "role": "Bennett University, Greater Noida, India",
+            "image": ""
+          },
+          {
+            "name": "Dr. Shobit Srivastava",
+            "role": "Dr. Ram Manohar Lohia Avadh University, Ayodhya, India",
+            "image": ""
+          },
+          {
+            "name": "Dr. Sudesh Kumar Prajapati",
+            "role": "Indira Gandhi National Tribal University, Amarkantak, India",
+            "image": "/Sudesh.jpeg?height=200&width=200"
+          },
+          {
+            "name": "Dr. Vibha Jain",
+            "role": "Chitkara University, Chandigarh, India",
+            "email": "jvibha0@gmail.com"
+          },
+          {
+            "name": "Dr. Vijay Kumar Vyas",
+            "role": "ICFAI University, Jaipur, India",
+            "email": ""
+          },
+          {
+            "name": "Mr. Kuldeep",
+            "role": "National Informatics Centre, Sikkim, India",
+            "image": ""
+          },
       ];
 
   return (
@@ -413,7 +415,7 @@ export default function Commitee(){
   >
     <div className="pt-4">
       <h1 className="text-3xl font-semibold mb-4 text-center text-black">
-        COMMITTEE MEMBERS
+        COMMITTEE'S
       </h1>
     </div>
   
