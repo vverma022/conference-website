@@ -16,13 +16,23 @@ const SDCGoalsSection = () => {
             title: "Responsible Consumption and Production",
             description: "Ensure sustainable consumption and production patterns.",
           },
+          {
+            imageUrl: "/sdc/13.svg.png",
+            title: "Climate Action",
+            description: "Take urgent action to combat climate change and its impacts.",
+          },
+          {
+            imageUrl: "/sdc/17.svg.png",
+            title: "Partnerships for the Goals",
+            description: "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.",
+          },
     ]
   
     return (
       <section className="py-16 gradientbgt">
         <div className="container mx-auto px-4">
           {/* <h2 className="text-3xl font-semibold text-center mb-12 text-black">SDC Goals</h2> */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {goals.map((goal, index) => (
               <div
                 key={index}
