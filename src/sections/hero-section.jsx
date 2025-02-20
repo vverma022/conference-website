@@ -36,22 +36,41 @@ export function HeroSection() {
       </div>
       <div className="absolute inset-0 bg-black opacity-50 z-10 w-full" />
       <div className="relative z-20 max-w-4xl mx-auto px-4 w-full">
-        {/* <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-3xl sm:text-5xl md:text-4xl font-bold mb-4"
-        >
-          ICSDC 2025
-        </motion.h2> */}
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          className="text-2xl sm:text-5xl md:text-4xl font-semibold mb-4"
-        >
-          International Conference on Smart and Distributed Computing (ICSDC 2025)
-        </motion.h1>
+      <div className="flex flex-col items-center">
+      <div className="flex items-center justify-center gap-4 p-4">
+  <motion.img
+    src="https://upload.wikimedia.org/wikipedia/en/1/1f/Manipal_University_Jaipur_logo.png"
+    alt="MUJ Logo"
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.3, duration: 0.5 }}
+    className="w-24 h-24 rounded-full bg-white p-2"
+  />
+
+  {/* X Separator */}
+  <h2 className="text-3xl font-bold text-white">X</h2>
+
+  {/* Second Image */}
+  <motion.img
+    src="src/assets/logo.jpeg" // Replace with your second image path
+    alt="Second Logo"
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.3, duration: 0.5 }}
+    className="w-24 h-24 rounded-full bg-white  p-2"
+  />
+</div>
+
+  {/* Heading Section */}
+  <motion.h1
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.4, duration: 0.5 }}
+    className="text-2xl sm:text-5xl md:text-4xl font-semibold mb-4 text-center"
+  >
+    International Conference on Smart and Distributed Computing (ICSDC 2025)
+  </motion.h1>
+</div>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
