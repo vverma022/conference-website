@@ -79,6 +79,23 @@
   }
 }
 
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-horizontal {
+  animation: scroll-horizontal 20s linear infinite;
+}
+
+.animate-scroll-horizontal:hover {
+  animation-play-state: paused;
+}
+
 .gradientbg {
   background: linear-gradient(to bottom, #eaeaea, #ffffff); /* Subtle gradient from darker gray to white */
   padding-top: 4rem; /* Equivalent to py-16 */

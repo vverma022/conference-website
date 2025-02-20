@@ -1,14 +1,12 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Footer } from "@/sections/footer"
-import { Cloud, Lightbulb,Shield, Leaf , Rocket } from "lucide-react"
-import { motion } from "framer-motion"
+import { FocusCards } from "@/components/ui/focus-cards";
+import { Footer } from "../sections/footer";
+import { motion } from "framer-motion";
 
-export default function Component() {
-  const tracks = [
+export default function TracksPage() {
+  const cards = [
     {
       title: "Emerging Trends in Smart Computing",
-      icon: Lightbulb,
+      src: "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8MXwwfHx8MA%3D%3D",
       topics: [
         "Smart Computing Paradigms",
         "Algorithms for Smart Computing",
@@ -17,12 +15,12 @@ export default function Component() {
         "Internet of Things and Cyber-Physical Systems",
         "Communication Technologies for Smart Computing",
         "Low Power Communication and Computing",
-        "Interdisciplinary Approaches in Smart Computing"
-      ]
+        "Interdisciplinary Approaches in Smart Computing",
+      ],
     },
     {
       title: "Advances in Distributed and Decentralized Computing",
-      icon: Cloud,
+      src: "https://plus.unsplash.com/premium_photo-1673709635882-3bd099a72359?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXIlMjBoYXJkd2FyZXxlbnwwfDF8MHx8fDA%3D",
       topics: [
         "Algorithms and Theoretical Foundations of Distributed Computing",
         "Scheduling and Resource Management in Distributed Systems",
@@ -30,12 +28,12 @@ export default function Component() {
         "Artificial Intelligence and Machine Learning in Distributed Systems",
         "Cloud Computing and Virtualization Technologies",
         "Mobile Computing and Edge Intelligence",
-        "Federated Learning and Distributed AI"
-      ]
+        "Federated Learning and Distributed AI",
+      ],
     },
     {
       title: "Automation and Intelligent Systems",
-      icon: Rocket,
+      src: "https://plus.unsplash.com/premium_photo-1682144827510-bbe3cd636253?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXV0b21hdGlvbnxlbnwwfDF8MHx8fDA%3D",
       topics: [
         "Industry 5.0 and Cyber-Physical Systems",
         "Artificial Intelligence in Healthcare and Medical Systems",
@@ -47,19 +45,19 @@ export default function Component() {
     },
     {
       title: "Security, Privacy, and Trust in Smart & Distributed Systems",
-      icon: Shield,
+      src: "https://images.unsplash.com/photo-1719255418097-acf2f18306ce?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGN5YmVyc2VjdXJpdHl8ZW58MHwxfDB8fHww",
       topics: [
         "Security Challenges in Smart Systems",
         "Security Frameworks for Distributed Systems",
         "Blockchain Security and Cryptographic Protocols",
         "Trust Management in Smart and Distributed Systems",
         "Privacy-Preserving Technologies in Smart Computing",
-        "Digital Forensics and Cybercrime Investigation"
-      ]
+        "Digital Forensics and Cybercrime Investigation",
+      ],
     },
     {
       title: "Smart and Distributed Computing for Sustainability",
-      icon: Leaf,
+      src: "https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfDF8MHx8fDA%3D",
       topics: [
         "Green Computing and Energy-Efficient Technologies",
         "Distributed Energy Systems and Microgrid Management",
@@ -67,10 +65,10 @@ export default function Component() {
         "Climate Monitoring and Disaster Prediction using Distributed Systems",
         "Smart Waste Management and Recycling Technologies",
         "Distributed IoT for Traffic and Environmental Monitoring",
-        "Artificial Intelligence and IoT for Sustainable Agriculture"
-      ]
-    }
-  ]
+        "Artificial Intelligence and IoT for Sustainable Agriculture",
+      ],
+    },
+  ];
 
   return (
     <motion.section
@@ -79,36 +77,11 @@ export default function Component() {
     transition={{ duration: 0.5 }}
     className="py-16 gradientbg w-full"
   >
-    <div className="container mx-auto p-4 gradientbg min-h-screen">
-      <h1 className="text-3xl font-semibold mb-4 text-center text-black">CONFERENCE TRACKS</h1>
-    
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {tracks.map((track, index) => (
-          <Card key={index} className="flex flex-col h-[300px] shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardHeader className="flex flex-row items-center space-x-4 pb-2">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <track.icon className="w-6 h-6 text-primary" />
-              </div>
-              <CardTitle className="text-lg text-black">
-                Track {index + 1}: {track.title}
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="flex-auto overflow-y-auto">
-                <ul className="space-y-2">
-                  {track.topics.map((topic, topicIndex) => (
-                    <li key={topicIndex} className="text-sm flex items-center text-black">
-                      <div className="w-2 h-2 rounded-full bg-primary/60 mr-2" />
-                      {topic}
-                    </li>
-                  ))}
-                </ul>
-         
-            </CardContent>
-          </Card>
-        ))}
+     <div className="container mx-auto p-4 gradientbg min-h-screen">
+     <h1 className="text-3xl font-semibold mb-6 text-center text-black">CONFERENCE TRACKS</h1>
+        <FocusCards cards={cards} />
       </div>
-    </div>
-     <Footer />
-     </motion.section>
-  )
+      <Footer />
+  </motion.section>
+  );
 }

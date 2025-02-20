@@ -4,7 +4,7 @@ import Tracks from './page/tracks'
 import Instructions from './page/instructions'
 import Commitee from './page/commitee'
 import { Navbar } from './sections/navbar'
-import TracksPage from './sections/tracks'
+import TracksPage from './page/tracks'
 
 function App() {
   return (
@@ -12,10 +12,9 @@ function App() {
     <Navbar />
       <Routes>
        <Route path="/" element={<ConferencePage />} />
-       <Route path="/tracks" element={<Tracks />} />
        <Route path="/instructions" element={<Instructions />} />
         <Route path="/commitee" element={<Commitee />} />
-        <Route path='/t' element={<TracksPage />} />
+        <Route path='/tracks' element={<TracksPage />} />
       </Routes>
     </BrowserRouter>
   )

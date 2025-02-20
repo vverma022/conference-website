@@ -8,6 +8,7 @@ import { Speakers } from '@/sections/speakers'
 import { KeynoteSpeakers } from '@/sections/keynote'
 import SDCGoalsSection from '@/sections/sdcgoals'
 import { Footer } from '@/sections/footer'
+import ConferenceDates from '@/sections/main/dates'
 
 const ConferencePage = () => {
   return (
@@ -16,6 +17,9 @@ const ConferencePage = () => {
       <main className="flex-grow pt-16">
         <section id="home">
           <HeroSection />
+        </section>
+        <section id="dates">
+          <ConferenceDates />
         </section>
         <section id="about">
           <AboutEvent />
