@@ -48,17 +48,17 @@ export function HeroSection() {
   />
 
   {/* X Separator */}
-  <h2 className="text-3xl font-bold text-white">X</h2>
+  {/* <h2 className="text-3xl font-bold text-white">X</h2> */}
 
   {/* Second Image */}
-  <motion.img
+  {/* <motion.img
     src="src/assets/logo.jpeg" // Replace with your second image path
     alt="Second Logo"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.3, duration: 0.5 }}
     className="w-24 h-24 rounded-full bg-white  p-2"
-  />
+  /> */}
 </div>
 
   {/* Heading Section */}
