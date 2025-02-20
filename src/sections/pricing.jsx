@@ -76,7 +76,8 @@ export default function PricingTiers() {
                   <p className="text-3xl  text-center">${tier.internationalPrice} USD</p>
                 </div>
               </CardContent>
-              <CardFooter>
+              <CardFooter className=" flex justify-center ">
+                <p className="flex font-light items-center text-center text-xs justify-center">Prices including GST</p>
               </CardFooter>
             </Card>
           </motion.div>

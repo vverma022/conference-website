@@ -8,7 +8,7 @@ const ContactForm = () => {
   const [selectedEmail, setSelectedEmail] = useState("");
 
   const people = [
-    { name: "Dr. Sunil Kumar", email: "icsdcmuj@gmail.com" },
+    { name: "Mr. Aditya Narayan Hati", address:"227, Academic Block 1, Manipal Univeristy Jaipur, Jaipur, Rajasthan, India, 3003007", email: "icsdcmuj@gmail.com" },
   ];
 
   const handleSendEmail = () => {
@@ -46,6 +46,9 @@ const ContactForm = () => {
                 <Mail className="text-gray-300 w-5 h-5" />
                 <span className="font-semibold">{person.name}</span>
               </div>
+              {person.address && (
+                <span className="text-gray-300">{person.address}</span>
+              )}
               {person.email && (
                 <span
                   className={`text-gray-300 ${
@@ -59,7 +62,7 @@ const ContactForm = () => {
           ))}
         </ul>
       </div>
-      <div className="mt-4">
+      {/* <div className="mt-4">
         <textarea
           className="w-full bg-gray-700 text-white p-3 rounded resize-none h-24"
           placeholder="Type your message here..."
@@ -73,7 +76,7 @@ const ContactForm = () => {
         >
           Send
         </Button>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

@@ -79,7 +79,7 @@ export default function Instructions() {
       <li>ICSDC 2025 seeks submissions featuring novel research contributions relevant to the conference themes. Review or survey articles are not encouraged.</li>
       <li>Submissions must be in English. Manuscripts should adhere to standard English usage and be thoroughly proofread before submission.</li>
       <li>The peer review process will be strictly confidential. The conference organizers will address breaches of confidentiality by reviewers or others.</li>
-      <li>ICSDC 2025 employs a single-blind review process. Submissions will undergo plagiarism checks (preferably with Turnitin). Papers exceeding 18% similarity or with more than 2% similarity per source will be rejected. Revisions based on review comments are mandatory. Further revisions may be requested even after acceptance.</li>
+      <li>ICSDC 2025 employs a single-blind review process. Submissions will undergo plagiarism checks (preferably with Turnitin). Papers exceeding 15% similarity or with more than 2% similarity per source will be rejected. Revisions based on review comments are mandatory. Further revisions may be requested even after acceptance.</li>
       <li> Submissions must not overlap with prior publications or concurrent submissions. Concurrent submissions must be cited, and differences must be explicitly justified. Authors may contact the Program Chairs for clarification.</li>
       <li>  At least one author of each accepted paper must register and present the paper at the conference. Only presented papers will be forwarded for publication.</li>
     </ul>

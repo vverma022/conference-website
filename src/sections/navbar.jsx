@@ -14,10 +14,35 @@ const navItems = [
   { name: 'Location', href: 'location'},
   // { name: 'Session Speakers', href: 'speakers' },
   { name: 'Contact us', href: 'contact-us' },
- 
-  
- 
+]
 
+const goals = [
+  {
+      imageUrl: "/sdc/download.png",
+      title: "Good Health and Well-being",
+      description: "Ensure healthy lives and promote well-being for all at all ages.",
+    },
+    {
+      imageUrl: "/sdc/download 9.png",
+      title: "Quality Education",
+      description:
+        "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+    },
+    {
+      imageUrl: "/sdc/download 11.png",
+      title: "Responsible Consumption and Production",
+      description: "Ensure sustainable consumption and production patterns.",
+    },
+    {
+      imageUrl: "/sdc/13.svg.png",
+      title: "Climate Action",
+      description: "Take urgent action to combat climate change and its impacts.",
+    },
+    {
+      imageUrl: "/sdc/17.svg.png",
+      title: "Partnerships for the Goals",
+      description: "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.",
+    },
 ]
 
 export function Navbar() {
@@ -50,7 +75,24 @@ export function Navbar() {
         <div className="flex">
       <a href="/" className="flex-shrink-0 flex items-center" onClick={() => scrollToSection('home')}>
         <img src={Logo} alt="ICSDC Logo" className="w-10 h-10 mr-2" /> {/* Adjust width and height as needed */}
-        <span className="text-xl font-bold text-primary">ICSDC 2025</span>
+        <span className="text-xl font-bold text-primary">ICSDC 2025
+        </span>
+            {goals.map((goal, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center space-x-2"
+              >
+                <div className="w-8 h-8 relative mx-1">
+                  <img
+                    src={goal.imageUrl || "/placeholder.svg"}
+                    alt={goal.title}
+                    className=" object-cover w-full h-full rounded-sm"
+                  />
+                </div>
+                {/* <h3 className="text-xl font-semibold mb-2 text-gray-800">{goal.title}</h3>
+                <p className="text-gray-600">{goal.description}</p> */}
+              </div>
+            ))}
       </a>
     </div>
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">

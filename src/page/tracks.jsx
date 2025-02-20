@@ -93,8 +93,7 @@ export default function Component() {
                 Track {index + 1}: {track.title}
               </CardTitle>
             </CardHeader>
-            <CardContent className="flex-grow overflow-hidden">
-              <ScrollArea className="h-full pr-4">
+            <CardContent className="flex-auto overflow-y-auto">
                 <ul className="space-y-2">
                   {track.topics.map((topic, topicIndex) => (
                     <li key={topicIndex} className="text-sm flex items-center text-black">
@@ -103,7 +102,7 @@ export default function Component() {
                     </li>
                   ))}
                 </ul>
-              </ScrollArea>
+         
             </CardContent>
           </Card>
         ))}

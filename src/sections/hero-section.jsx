@@ -36,35 +36,35 @@ export function HeroSection() {
       </div>
       <div className="absolute inset-0 bg-black opacity-50 z-10 w-full" />
       <div className="relative z-20 max-w-4xl mx-auto px-4 w-full">
-      <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-4xl sm:text-5xl md:text-5xl font-bold mb-4"
-        >
-          MANIPAL UNIVERSITY JAIPUR
-        </motion.h1>
-        <motion.h2
+        {/* <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-3xl sm:text-5xl md:text-4xl font-bold mb-4"
         >
           ICSDC 2025
-        </motion.h2>
-        <motion.p
+        </motion.h2> */}
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="text-lg sm:text-xl md:text-2xl mb-8"
+          className="text-2xl sm:text-5xl md:text-4xl font-semibold mb-4"
         >
-          Join us for the International Conference for Smart and Distributed Computing the most innovative tech conference of the year
+          International Conference on Smart and Distributed Computing (ICSDC 2025)
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="text-2xl sm:text-2xl md:text-2xl font-bold mb-4"
+        >
+          MANIPAL UNIVERSITY JAIPUR
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="sm:text-xl md:text-2xl font-semibold mb-8"
+          className="sm:text-lg md:text-lg font-semibold mb-8"
         >
          31 October - 1 November 2025
         </motion.p>
@@ -73,9 +73,9 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <Button size="lg" disable variant="outline" className="text-black" >
+          {/* <Button size="lg" disable variant="outline" className="text-black" >
       Registration Soon
-    </Button>
+    </Button> */}
         </motion.div>
       </div>
     </motion.section>
