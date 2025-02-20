@@ -69,82 +69,40 @@ export function Navbar() {
   }, [])
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-        <div className="flex">
-      <a href="/" className="flex-shrink-0 flex items-center" onClick={() => scrollToSection('home')}>
-        <img src={Logo} alt="ICSDC Logo" className="w-10 h-10 mr-2" /> {/* Adjust width and height as needed */}
-        <span className="text-xl font-bold text-primary">ICSDC 2025
-        </span>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/40 backdrop-blur-md shadow-md">
+    <div className="max-w-full mx-auto px-3 sm:px-5 lg:px-6">
+      <div className="flex justify-between h-16 items-center">
+        {/* Logo and Title Section */}
+        <div className="flex items-center space-x-3">
+          <a
+            href="/"
+            className="flex items-center space-x-2"
+            onClick={() => scrollToSection('home')}
+          >
+            <img src={Logo} alt="ICSDC Logo" className="w-8 h-8 rounded-full shadow-md" />
+            <span className="text-lg font-bold text-primary">ICSDC 2025</span>
+          </a>
+          {/* SDG Icons */}
+          <div className="flex space-x-1">
             {goals.map((goal, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center space-x-2"
-              >
-                <div className="w-8 h-8 relative mx-1">
-                  <img
-                    src={goal.imageUrl || "/placeholder.svg"}
-                    alt={goal.title}
-                    className=" object-cover w-full h-full rounded-sm"
-                  />
-                </div>
-                {/* <h3 className="text-xl font-semibold mb-2 text-gray-800">{goal.title}</h3>
-                <p className="text-gray-600">{goal.description}</p> */}
+              <div key={index} className="w-6 h-6">
+                <img
+                  src={goal.imageUrl || "/placeholder.svg"}
+                  alt={goal.title}
+                  className="w-full h-full object-cover rounded-sm shadow-sm"
+                />
               </div>
             ))}
-      </a>
-    </div>
-          <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={`/#${item.href}`}
-                className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-primary hover:text-primary"
-                onClick={(e) => {
-                  e.preventDefault();
-                  if (item.Route) {
-                    Navigate(item.Route);
-                  } else {
-                    if (window.location.pathname !== '/') {
-                      Navigate('/');
-                      setTimeout(() => scrollToSection(item.href), 100);
-                    } else {
-                      scrollToSection(item.href);
-                    }
-                  }
-                }}
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-          <div className="-mr-2 flex items-center sm:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
-            >
-              <span className="sr-only">Open main menu</span>
-              {isOpen ? <X className="block h-6 w-6" /> : <Menu className="block h-6 w-6" />}
-            </button>
           </div>
         </div>
-      </div>
-      <motion.div
-        className={`sm:hidden ${isOpen ? 'block' : 'hidden'}`}
-        initial="closed"
-        animate={isOpen ? 'open' : 'closed'}
-        variants={{
-          open: { opacity: 1, height: 'auto' },
-          closed: { opacity: 0, height: 0 }
-        }}
-      >
-        <div className="pt-2 pb-3 space-y-1">
+  
+        {/* Desktop Navigation */}
+        <div className="hidden sm:flex sm:space-x-6">
           {navItems.map((item) => (
             <a
               key={item.name}
-              href={`#${item.href}`}
-              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:border-primary hover:text-primary"
+              href={`/#${item.href}`}
+              className="text-gray-600 hover:text-primary px-2 py-1 text-sm font-medium border-b-2 border-transparent hover:border-primary transition"
               onClick={(e) => {
                 e.preventDefault();
                 if (item.Route) {
@@ -157,14 +115,62 @@ export function Navbar() {
                     scrollToSection(item.href);
                   }
                 }
-                setIsOpen(false);
               }}
             >
               {item.name}
             </a>
           ))}
         </div>
-      </motion.div>
-    </nav>
+  
+        {/* Mobile Menu Button */}
+        <div className="flex items-center sm:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="p-1 rounded-md text-gray-600 hover:bg-gray-200 transition focus:outline-none focus:ring-2 focus:ring-primary"
+          >
+            <span className="sr-only">Open main menu</span>
+            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    {/* Mobile Menu */}
+    <motion.div
+      className={`sm:hidden ${isOpen ? 'block' : 'hidden'}`}
+      initial="closed"
+      animate={isOpen ? 'open' : 'closed'}
+      variants={{
+        open: { opacity: 1, height: 'auto' },
+        closed: { opacity: 0, height: 0 },
+      }}
+    >
+      <div className="pt-2 pb-2 space-y-1 bg-white/40 backdrop-blur-md">
+        {navItems.map((item) => (
+          <a
+            key={item.name}
+            href={`#${item.href}`}
+            className="block pl-3 pr-4 py-1 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-primary transition"
+            onClick={(e) => {
+              e.preventDefault();
+              if (item.Route) {
+                Navigate(item.Route);
+              } else {
+                if (window.location.pathname !== '/') {
+                  Navigate('/');
+                  setTimeout(() => scrollToSection(item.href), 100);
+                } else {
+                  scrollToSection(item.href);
+                }
+              }
+              setIsOpen(false);
+            }}
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </motion.div>
+  </nav>
   )
 }

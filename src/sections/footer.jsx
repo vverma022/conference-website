@@ -29,14 +29,14 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <div className=" xl:col-start-3"> 
+        <div className="xl:col-start-3"> 
          <ContactForm />
         </div>
       </div>
-      <div className="mt-10 border-t border-gray-700 pt-4">
-        <p className="text-base text-gray-400 xl:text-center">
-          &copy; 2025 ICSDC. All rights reserved.
-        </p>
+      <div className="mt-5 border-t border-gray-700 pt-4">
+  <p className="text-base text-gray-400 xl:text-center">
+    &copy; 2025 ICSDC. All rights reserved.
+  </p>
       </div>
     </div>
   </footer>
