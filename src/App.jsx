@@ -5,6 +5,7 @@ import Instructions from './page/instructions'
 import Commitee from './page/commitee'
 import { Navbar } from './sections/navbar'
 import TracksPage from './page/tracks'
+import { Footer } from './sections/footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/commitee" element={<Commitee />} />
         <Route path='/tracks' element={<TracksPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

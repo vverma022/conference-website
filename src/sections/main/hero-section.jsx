@@ -1,16 +1,15 @@
 import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import backgroundImage from '../assets/Manipal.jpeg'
-import Video from '../assets/mujvideo.mp4'
+import backgroundImage from '../../assets/Manipal.jpeg'
+import Video from '../../assets/mujvideo.mp4'
 
 
 export function HeroSection() {
-  const handleScrollToRegister = () => {
-    const section = document.getElementById('register');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const handleScrollToRegister = () => {
+  //   const section = document.getElementById('register');
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
   return (
     <motion.section

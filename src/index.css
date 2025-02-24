@@ -101,7 +101,12 @@
   padding-top: 4rem; /* Equivalent to py-16 */
   padding-bottom: 4rem;
 }
-
+.gradienttext {
+  background: linear-gradient(to right, #94a3b8, #fb923c); /* Tailwind's slate-400 to orange-400 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .gradientbgt {
   background: linear-gradient(to top, #eaeaea, #ffffff); /* Subtle gradient from darker gray to white */
   padding-top: 4rem; /* Equivalent to py-16 */

@@ -96,7 +96,6 @@ export default function Instructions() {
 </div>
       <p className="text-center text-black">We look forward to your participation in ICSDC 2025! </p>
     </div>
-    <Footer />
     </motion.section>
   )
 }

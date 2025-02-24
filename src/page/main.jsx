@@ -1,4 +1,4 @@
-import { HeroSection } from '@/sections/hero-section'
+import { HeroSection } from '@/sections/main/hero-section'
 import { AboutEvent } from '@/sections/about-event'
 import { OrganizingCommittee } from '@/sections/organizing-committee'
 import { EventLocation } from '@/sections/event-location'
@@ -9,6 +9,7 @@ import { KeynoteSpeakers } from '@/sections/keynote'
 import SDCGoalsSection from '@/sections/sdcgoals'
 import { Footer } from '@/sections/footer'
 import ConferenceDates from '@/sections/main/dates'
+import JaipurInfo from '@/sections/main/aboutcity'
 
 const ConferencePage = () => {
   return (
@@ -35,6 +36,9 @@ const ConferencePage = () => {
         <section id="location">
           <EventLocation />
         </section>
+        <section>
+          <JaipurInfo />
+        </section>
         <section id="faq">
           <FAQ />
         </section>
@@ -47,7 +51,6 @@ const ConferencePage = () => {
         <section>
          <SDCGoalsSection />
         </section>
-        <Footer />
       </main>
     </div>
   )

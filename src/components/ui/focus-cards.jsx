@@ -29,7 +29,7 @@ export const Card = React.memo(({ card, index, hovered, setHovered }) => (
   </div>
 
   {/* Topics List */}
-  <ul className="text-white text-base space-y-2 overflow-hidden">
+  <ul className="text-white text-base space-y-2 overflow-hidden sm:overflow-scroll ">
     {card.topics.map((topic, idx) => (
       <li key={idx} className="flex items-start">
         <span className="mr-2">•</span> {topic}
