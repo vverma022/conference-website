@@ -1,15 +1,14 @@
 import { HeroSection } from '@/sections/main/hero-section'
 import { AboutEvent } from '@/sections/about-event'
-import { OrganizingCommittee } from '@/sections/organizing-committee'
-import { EventLocation } from '@/sections/event-location'
+import { EventLocation } from '@/sections/main/event-location'
 import { FAQ } from '@/sections/faq'
 import { Navbar } from "../sections/navbar"
-import { Speakers } from '@/sections/speakers'
 import { KeynoteSpeakers } from '@/sections/keynote'
 import SDCGoalsSection from '@/sections/sdcgoals'
-import { Footer } from '@/sections/footer'
-import ConferenceDates from '@/sections/main/dates'
 import JaipurInfo from '@/sections/main/aboutcity'
+
+import ConferenceDates from '@/sections/main/dates'
+
 
 const ConferencePage = () => {
   return (

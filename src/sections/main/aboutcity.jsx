@@ -60,28 +60,45 @@ export default function JaipurInfo() {
   }
 
   return (
-    <div className="container mx-auto  gradientbg w-full">
-      <h1 className="text-3xl font-semibold mb-8 text-center text-black ">ABOUT JAIPUR</h1>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
-        <div className="w-full lg:w-1/2 order-2 lg:order-1">
-        <h2 className="text-2xl font-semibold mt-2 mb-4 text-center">{jaipurInfo[activeIndex].title}</h2>
-          <p className="text-lg leading-relaxed mb-4">{jaipurInfo[activeIndex].description}</p>
-          <div className="flex justify-center mt-6 gap-4">
-            <Button onClick={handlePrevious} variant="outline" size="icon">
-              <ChevronLeft className="h-4 w-4" />
+    <div className="w-full py-16 gradientbgt">
+      <h1 className="text-3xl font-semibold mb-12 text-center text-black gradienttext">
+        ABOUT JAIPUR
+      </h1>
+      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 max-w-7xl mx-auto px-4">
+        <div className="w-full lg:w-1/2 order-2 lg:order-1 space-y-6">
+          <h2 className="text-3xl font-semibold mb-6 text-center bg-clip-text text-transparent">
+            {jaipurInfo[activeIndex].title}
+          </h2>
+          <p className="text-lg leading-relaxed mb-6 text-gray-800">
+            {jaipurInfo[activeIndex].description}
+          </p>
+          <div className="flex justify-center mt-8 gap-6">
+            <Button 
+              onClick={handlePrevious} 
+              variant="outline" 
+              size="icon"
+              className="hover:bg-pink-50 transition-colors duration-300 border-pink-200 hover:border-pink-300"
+            >
+              <ChevronLeft className="h-5 w-5 text-pink-600" />
             </Button>
-            <Button onClick={handleNext} variant="outline" size="icon">
-              <ChevronRight className="h-4 w-4" />
+            <Button 
+              onClick={handleNext} 
+              variant="outline" 
+              size="icon"
+              className="hover:bg-pink-50 transition-colors duration-300 border-pink-200 hover:border-pink-300"
+            >
+              <ChevronRight className="h-5 w-5 text-pink-600" />
             </Button>
           </div>
         </div>
         <div className="w-full lg:w-1/2 order-1 lg:order-2">
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-300">
             <img
               src={jaipurInfo[activeIndex].image || "/placeholder.svg"}
               alt={jaipurInfo[activeIndex].title}
-              fill
-              className="rounded-lg object-cover w-full h-96"
+              className="w-full h-[500px] object-cover"
             />
+          </div>
         </div>
       </div>
     </div>

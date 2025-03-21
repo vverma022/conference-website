@@ -102,7 +102,7 @@
   padding-bottom: 4rem;
 }
 .gradienttext {
-  background: linear-gradient(to right, #94a3b8, #fb923c); /* Tailwind's slate-400 to orange-400 */
+  background: linear-gradient(to right, #fb923c, #3b82f6); /* Tailwind's slate-400, blue-500, and orange-400 */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

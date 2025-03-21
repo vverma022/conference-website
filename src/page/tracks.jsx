@@ -1,12 +1,18 @@
-import { FocusCards } from "@/components/ui/focus-cards";
 import { Footer } from "../sections/footer";
 import { motion } from "framer-motion";
+import { 
+  FaLaptopCode, 
+  FaNetworkWired, 
+  FaRobot, 
+  FaShieldAlt, 
+  FaLeaf 
+} from "react-icons/fa";
 
 export default function TracksPage() {
-  const cards = [
+  const tracks = [
     {
       title: "Emerging Trends in Smart Computing",
-      src: "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8MXwwfHx8MA%3D%3D",
+      icon: <FaLaptopCode className="text-3xl text-black" />,
       topics: [
         "Smart Computing Paradigms",
         "Algorithms for Smart Computing",
@@ -20,7 +26,7 @@ export default function TracksPage() {
     },
     {
       title: "Advances in Distributed and Decentralized Computing",
-      src: "https://plus.unsplash.com/premium_photo-1673709635882-3bd099a72359?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXIlMjBoYXJkd2FyZXxlbnwwfDF8MHx8fDA%3D",
+      icon: <FaNetworkWired className="text-3xl text-black" />,
       topics: [
         "Algorithms and Theoretical Foundations of Distributed Computing",
         "Scheduling and Resource Management in Distributed Systems",
@@ -33,7 +39,7 @@ export default function TracksPage() {
     },
     {
       title: "Automation and Intelligent Systems",
-      src: "https://plus.unsplash.com/premium_photo-1682144827510-bbe3cd636253?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXV0b21hdGlvbnxlbnwwfDF8MHx8fDA%3D",
+      icon: <FaRobot className="text-3xl text-black" />,
       topics: [
         "Industry 5.0 and Cyber-Physical Systems",
         "Artificial Intelligence in Healthcare and Medical Systems",
@@ -45,7 +51,7 @@ export default function TracksPage() {
     },
     {
       title: "Security, Privacy, and Trust in Smart & Distributed Systems",
-      src: "https://images.unsplash.com/photo-1719255418097-acf2f18306ce?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGN5YmVyc2VjdXJpdHl8ZW58MHwxfDB8fHww",
+      icon: <FaShieldAlt className="text-3xl text-black" />,
       topics: [
         "Security Challenges in Smart Systems",
         "Security Frameworks for Distributed Systems",
@@ -57,7 +63,7 @@ export default function TracksPage() {
     },
     {
       title: "Smart and Distributed Computing for Sustainability",
-      src: "https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfDF8MHx8fDA%3D",
+      icon: <FaLeaf className="text-3xl text-black" />,
       topics: [
         "Green Computing and Energy-Efficient Technologies",
         "Distributed Energy Systems and Microgrid Management",
@@ -72,15 +78,38 @@ export default function TracksPage() {
 
   return (
     <motion.section
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 0.5 }}
-    className="py-16 gradientbg w-full"
-  >
-     <div className="container mx-auto p-4 gradientbg min-h-screen">
-     <h1 className="text-3xl font-semibold mb-6 text-center text-black">CONFERENCE TRACKS</h1>
-        <FocusCards cards={cards} />
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="py-16 gradientbg w-full mt-4"
+    >
+      <div className="container mx-auto px-8">
+        <h1 className="text-3xl font-semibold mb-16 text-center text-black tracking-wide">
+          CONFERENCE TRACKS
+        </h1>
+        <div className="grid gap-8 max-w-5xl mx-auto">
+          {tracks.map((track, index) => (
+            <div 
+              key={index}
+              className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                {track.icon}
+                <h2 className="text-2xl font-semibold text-black">
+                  {track.title}
+                </h2>
+              </div>
+              <ul className="list-disc pl-8 space-y-3">
+                {track.topics.map((topic, topicIndex) => (
+                  <li key={topicIndex} className="text-gray-700 hover:text-black transition-colors duration-200">
+                    {topic}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
-  </motion.section>
+    </motion.section>
   );
 }

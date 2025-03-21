@@ -63,12 +63,12 @@ const CardContentCalender = () => {
                 addToCalendar(
                   "Call for Paper",
                   "Start date for paper submissions.",
-                  "20250301T090000",
-                  "20250301T170000"
+                  "20250401T090000",
+                  "20250401T170000"
                 )
               }
             >
-              1 March 2025
+              1 April 2025
             </span>
           </li>
           {/* <li>
