@@ -36,13 +36,13 @@ const SDCGoalsSection = () => {
             {goals.map((goal, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg transition-transform hover:scale-105"
+                className="flex flex-col items-center text-center p-4 transition-transform hover:scale-105"
               >
-                <div className="mb-4 w-24 h-24 relative">
+                <div className="mb-4 w-32 h-32 relative">
                   <img
                     src={goal.imageUrl || "/placeholder.svg"}
                     alt={goal.title}
-                    className=" object-cover w-full h-full"
+                    className=" object-cover w-full h-full rounded-sm"
                   />
                 </div>
                 {/* <h3 className="text-xl font-semibold mb-2 text-gray-800">{goal.title}</h3>

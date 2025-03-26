@@ -406,6 +406,11 @@ export default function Commitee(){
             "role": "National Informatics Centre, Sikkim, India",
             "image": ""
           },
+          {
+            "name": "Abhishek Narwaria",
+            "role":"Madhav Institute of Technology & Science, Gwalior, India",
+            "image": "",
+          }
       ];
 
   return (

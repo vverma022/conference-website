@@ -90,7 +90,7 @@ export default function Instructions() {
       Publication
     </h2>
     <p className="text-black">
-      All accepted and presented papers will be submitted to our publication partner for potential inclusion in SCOPUS-indexed proceedings. Proof will be shared with the corresponding author for verification before publication. For updates on publication details, visit the conference website regularly.
+      All accepted and presented papers will be submitted to our publication partner for potential inclusion in SCOPUS-indexed proceedings.
     </p>
   </div>
 </div>

@@ -66,7 +66,7 @@ export default function JaipurInfo() {
       </h1>
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 max-w-7xl mx-auto px-4">
         <div className="w-full lg:w-1/2 order-2 lg:order-1 space-y-6">
-          <h2 className="text-3xl font-semibold mb-6 text-center bg-clip-text text-transparent">
+          <h2 className="text-3xl font-semibold mb-6 text-center bg-clip-text text-black">
             {jaipurInfo[activeIndex].title}
           </h2>
           <p className="text-lg leading-relaxed mb-6 text-gray-800">
