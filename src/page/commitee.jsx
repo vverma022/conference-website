@@ -407,7 +407,7 @@ export default function Commitee(){
             "image": ""
           },
           {
-            "name": "Abhishek Narwaria",
+            "name": "Dr. Abhishek Narwaria",
             "role":"Madhav Institute of Technology & Science, Gwalior, India",
             "image": "",
           }

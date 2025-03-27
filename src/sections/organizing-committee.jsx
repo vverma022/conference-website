@@ -16,7 +16,9 @@ const committeeMembers = [
   { name: 'Dr. Arvind Dhaka ', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/317.jpg' },
   { name: 'Dr. Amit Chaurasia', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/280.jpg' },
   { name: 'Dr. Anshika Malsaria', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/291.jpg' },
-  { name: 'Dr.Satyabrata Roy', role: 'Publication Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://media.licdn.com/dms/image/v2/C5603AQHekYPAYtxmeg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1599676288947?e=2147483647&v=beta&t=xxVWomQkKTORd7CxUhkGF2k3FniC4nsphXfSCMVx1Qc' },
+
+  { name: 'Dr.Satyabrata Roy', role: 'Publication Chair', Position: 'CSE, Manipal University Jaipur, India', image: 'https://media.licdn.com/dms/image/v2/C5603AQHekYPAYtxmeg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1599676288947?e=2147483647&v=beta&t=xxVWomQkKTORd7CxUhkGF2k3FniC4nsphXfSCMVx1Qc' },
+  {name: 'Dr. Arjun Singh',role:'Industry Chair', Position: 'CCE, Manipal University Jaipur', image: "https://jaipur.manipal.edu/admin/photo/3/faculty/16/143.jpg"},
   { name: 'Dr. Shalini Phatak', role: 'Publicity Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/312.jpg' },
   {name: 'Dr. Ghanshyam Raghuwanshi', role: 'Finance Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/270.jpg'},
   { name: 'Dr. Amit Kumar Sharma', role: 'Organizing Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/315.jpg' },
