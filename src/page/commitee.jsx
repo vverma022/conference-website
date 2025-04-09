@@ -482,7 +482,7 @@ export default function Commitee(){
     <section className="gradeintbg">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-8 text-center text-black">
-          TECHNICAL COMMITTEE
+          TECHNICAL PROGRAM COMMITTEE
         </h2>
         <ul className="list-disc pl-6 text-gray-700">
           {TechnicalCommitteeMembers.map((member) => (
