@@ -494,7 +494,7 @@ export default function Commitee(){
       </div>
     </section>
     </motion.section>
-    <Speakers />
+    {/* <Speakers /> */}
     <OrganizingCommittee />
   </motion.section>
   )

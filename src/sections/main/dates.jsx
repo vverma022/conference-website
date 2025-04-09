@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 
 const conferenceDates = [
-  { date: "1 April 2025", day: "Call for Paper" },
+  { date: "15 April 2025", day: "Call for Paper" },
   { date: "1 September 2025", day: "Submission Deadline" },
   { date: "1 October 2025", day: "Acceptance Notification" },
   { date: "15 October 2025", day: "Registration Deadline" },

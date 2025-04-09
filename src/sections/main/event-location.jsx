@@ -34,7 +34,7 @@ export function EventLocation() {
   
         {/* Information Section */}
         <div className="w-full md:w-1/2 text-left space-y-6">
-          <h3 className="text-2xl font-semibold text-black gradienttext">ABOUT MANIPAL</h3>
+          <h3 className="text-2xl font-semibold text-black gradienttext">ABOUT MANIPAL UNIVERSITY JAIPUR</h3>
           <p className="text-black leading-relaxed">
   Nestled in the vibrant landscape of Rajasthan, Manipal University Jaipur (MUJ) blends tradition with modernity, standing as a beacon of innovation and excellence. Spanning 122 acres of architectural brilliance, the university fosters creativity, inquiry, and entrepreneurship. With a global perspective, MUJ offers diverse programs across engineering, management, law, design, sciences, and humanities, shaping future leaders through interdisciplinary learning and cutting-edge research.
 </p>

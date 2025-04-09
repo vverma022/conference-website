@@ -24,6 +24,7 @@ const committeeMembers = [
   { name: 'Dr. Amit Kumar Sharma', role: 'Organizing Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/315.jpg' },
   { name: 'Dr. Vijay Shankar Sharma', role: 'Organizing Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/285.jpg' },
   { name: 'Dr. Sadineni Lakshminarayana', role: 'Organizing Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/309.jpg' },
+  {name: 'Dr. Pramod Singh Rathore', role: 'Organizing Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/301.jpg' }
 ]
 
 export function OrganizingCommittee() {
