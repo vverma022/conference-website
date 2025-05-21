@@ -10,6 +10,16 @@ import { Speakers } from '@/sections/speakers';
 export default function Commitee(){
 
     const TechnicalCommitteeMembers = [
+      {
+        name: 'Gopichand Bandarupalli',
+        role: 'United Health Group, USA',
+        image: '',
+      },
+      {
+        name: 'Manish Kumar Keshri',
+        role: 'Meta, USA',
+        image: '',
+      },
 
         { 
           name: 'Dr. Vinay Kumar', 
@@ -99,6 +109,12 @@ export default function Commitee(){
         role: 'SRM University AP, Amravati, India',
         image: '',
         },
+        {
+          name: 'Dr. Prasenjit Das',
+          role: 'smartData Enterprises, Panchkula, India',
+          image: '',
+        }
+
       ];
       const InternationalAdvisoryCommittee = [
         {
@@ -273,6 +289,11 @@ export default function Commitee(){
           role: 'American International University, Kuwait',
           image: '',
         },
+        {
+          name: 'Prof. Bahman Javadi',
+          role: 'SDC Lab, Western Sydney University, Sydney, Australia',
+          image: '',
+        }
        
       ];
       const nationalAdvisoryCommittee = [

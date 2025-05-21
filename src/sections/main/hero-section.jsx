@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import backgroundImage from '../../assets/Manipal.jpeg'
 import Video from '../../assets/mujvideo.mp4'
+import { Button } from '@/components/ui/button'
 
 
 export function HeroSection() {
@@ -91,9 +92,9 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          {/* <Button size="lg" disable variant="outline" className="text-black" >
-      Registration Soon
-    </Button> */}
+          <Button size="lg" disable variant="outline" className="text-black" >
+           Submit Article
+    </Button>
         </motion.div>
       </div>
     </motion.section>
