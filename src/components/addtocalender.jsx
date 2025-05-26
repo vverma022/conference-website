@@ -223,7 +223,7 @@ const CardContentCalender = () => {
           After the deadline, new papers cannot be registered, but you can edit
           the information of already submitted papers.Please refer to the 
           <a href="https://cmt3.research.microsoft.com/ICSDC2025/" className="text-blue-500 underline px-2">link</a>
-          for more information.
+          for article submission.
         </p>
       </div>
     </div>
