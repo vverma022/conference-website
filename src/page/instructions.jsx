@@ -58,30 +58,17 @@ export default function Instructions() {
       Manuscript Preparation Guidelines
     </h2>
     <ul className="list-decimal pl-6 space-y-2 text-black">
-      <li>Title: Capitalize the first letter of each word, excluding helping verbs and connectors.</li>
-      <li>Avoid first/second/third person usage (e.g., our, me, us, I).</li>
-      <li>Proofread for proper English, preferably by a native speaker.</li>
-      <li>Do not use abbreviations in the abstract.</li>
-      <li>Use high-resolution images (DPI 500). Blurred images are not acceptable.</li>
-      <li>Ensure a structured manuscript: Title, Objectives, Research Gap, Proposed Methodology, Results, etc., must flow logically.</li>
-      <li>Include Motivation and Paper Organization in the introduction section.</li>
-      <li>Number all images, tables, and equations sequentially and provide suitable captions.</li>
-      <li>Do not use images of tables; all tables must be created natively in text.</li>
-      <li>Cite all figures, tables, equations, and references in the manuscript text.</li>
-      <li>Provide 5–8 keywords and expand non-standard abbreviations on first use.</li>
-      <li>Structure headings to a maximum of 3 levels, with proper numbering.</li>
-      <li>Acknowledgments, if applicable, should follow the conclusion section.</li>
-      <li>Author names and orders must match across the manuscript, submission portal, and consent forms.</li>
-      <li>Include all authors' names, affiliations, and emails in the manuscript and submission portal.</li>
-      <li>The Conclusion must be novel and statistically supported by results.</li>
-      <li>Ensure references are complete, accurate, and cited in the text.</li>
-      <li>Follow the provided template (Word/LaTeX) and adhere to a 10–15 page limit.</li>
-      <li>ICSDC 2025 seeks submissions featuring novel research contributions relevant to the conference themes. Review or survey articles are not encouraged.</li>
-      <li>Submissions must be in English. Manuscripts should adhere to standard English usage and be thoroughly proofread before submission.</li>
-      <li>The peer review process will be strictly confidential. The conference organizers will address breaches of confidentiality by reviewers or others.</li>
-      <li>ICSDC 2025 employs a single-blind review process. Submissions will undergo plagiarism checks (preferably with Turnitin). Papers exceeding 15% similarity or with more than 2% similarity per source will be rejected. Revisions based on review comments are mandatory. Further revisions may be requested even after acceptance.</li>
-      <li> Submissions must not overlap with prior publications or concurrent submissions. Concurrent submissions must be cited, and differences must be explicitly justified. Authors may contact the Program Chairs for clarification.</li>
-      <li>  At least one author of each accepted paper must register and present the paper at the conference. Only presented papers will be forwarded for publication.</li>
+      <li>The ICSDC 2025 seeks submissions featuring novel research contributions relevant to the conference themes. Review or survey articles are not encouraged. Submissions must not overlap with prior publications or concurrent submissions. Concurrent submissions must be cited, and differences must be explicitly justified. Authors may contact the Program Chairs for clarification. Furthermore, authors should disclose any potential conflicts of interest that might influence the results or interpretation of their work.</li>
+      <li>Submitting the same manuscript to multiple conferences or journals simultaneously is considered unethical and is strictly prohibited.</li>
+      <li>Include all authors&apos; names, affiliations, and emails in the manuscript and submission portal. Author names and orders must match the manuscript, submission portal, and consent forms.</li>
+      <li>Capitalize the first letter of each word, excluding helping verbs and connectors in the title. Proofread for proper English, preferably by a native speaker. Use high-resolution images (DPI 500). Blurred images are not acceptable.</li>
+      <li>Number all images, tables, and equations sequentially and provide suitable captions. Do not use images of tables; all tables must be created natively in text.</li>
+      <li>Cite all figures, tables, equations, and references in the manuscript text. Ensure references are complete and accurate.</li>
+      <li>Follow the provided template (Word/LaTeX) and adhere to a 6-page limit.</li>
+      <li>Submissions will undergo plagiarism checks (preferably with Turnitin). Manuscripts found to have a similarity index exceeding 10% will be scrutinized, and authors may be asked to revise or provide explanations for the overlaps. Instances of confirmed plagiarism will lead to the rejection of the manuscript and may result in further disciplinary actions.</li>
+      <li>All submitted manuscripts will undergo a rigorous double-blind peer review process to ensure impartiality and scholarly quality. Authors must ensure that their submissions do not reveal their identity, either directly or indirectly. The review process will be conducted in strict confidence, and reviewer identities will not be disclosed at any stage.</li>
+      <li>At least one author of each accepted paper must register and present the paper at the conference. Only presented papers will be forwarded for publication.</li>
+      <li>The ICSDC 2025 takes ethical misconduct seriously and has established procedures to address such issues. If unethical behaviour is suspected, the editorial board will investigate the matter thoroughly. If misconduct is confirmed, appropriate actions will be taken, which may include the rejection of the manuscript, notifying the authors&apos; institutions, and banning the authors from future participation in the conference. All investigations and actions will be conducted in accordance with the principles of fairness, confidentiality, and transparency.</li>
     </ul>
   </div>
   <div>
