@@ -61,7 +61,7 @@ export default function JaipurInfo() {
 
   return (
     <div className="w-full py-16 gradientbgt">
-      <h1 className="text-3xl font-semibold mb-12 text-center text-black gradienttext">
+                  <h1 className="text-3xl font-semibold mb-12 text-center text-black">
         ABOUT JAIPUR
       </h1>
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 max-w-7xl mx-auto px-4">

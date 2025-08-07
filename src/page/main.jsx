@@ -1,5 +1,6 @@
 import { HeroSection } from '@/sections/main/hero-section'
 import { AboutEvent } from '@/sections/about-event'
+import { PublicationPartners } from '@/sections/publication-partners'
 import { EventLocation } from '@/sections/main/event-location'
 import { FAQ } from '@/sections/faq'
 import { Navbar } from "../sections/navbar"
@@ -20,6 +21,9 @@ const ConferencePage = () => {
         </section>
         <section id="dates">
           <ConferenceDates />
+        </section>
+        <section id="publication-partners">
+          <PublicationPartners />
         </section>
         <section id="about">
           <AboutEvent />

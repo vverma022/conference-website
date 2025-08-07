@@ -32,7 +32,7 @@ export function FAQ() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-semibold mb-8 text-center text-black gradienttext"
+          className="text-3xl font-semibold mb-8 text-center text-black"
         >
           FREQUENTLY ASKED QUESTIONS
         </motion.h2>
