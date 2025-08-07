@@ -64,7 +64,7 @@ export default function Instructions() {
       <li>Capitalize the first letter of each word, excluding helping verbs and connectors in the title. Proofread for proper English, preferably by a native speaker. Use high-resolution images (DPI 500). Blurred images are not acceptable.</li>
       <li>Number all images, tables, and equations sequentially and provide suitable captions. Do not use images of tables; all tables must be created natively in text.</li>
       <li>Cite all figures, tables, equations, and references in the manuscript text. Ensure references are complete and accurate.</li>
-      <li>Follow the provided template (Word/LaTeX) and adhere to a 6-page limit.</li>
+      <li>Follow the provided <a href="https://docs.google.com/document/d/1F05oK_7kpSVh8SDXxaAhAu-ZBLu1Sv7D/edit?usp=drivesdk&ouid=102304621689665627522&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">template</a> (Word/LaTeX) and adhere to a 5-page limit.</li>
       <li>Submissions will undergo plagiarism checks (preferably with Turnitin). Manuscripts found to have a similarity index exceeding 10% will be scrutinized, and authors may be asked to revise or provide explanations for the overlaps. Instances of confirmed plagiarism will lead to the rejection of the manuscript and may result in further disciplinary actions.</li>
       <li>All submitted manuscripts will undergo a rigorous double-blind peer review process to ensure impartiality and scholarly quality. Authors must ensure that their submissions do not reveal their identity, either directly or indirectly. The review process will be conducted in strict confidence, and reviewer identities will not be disclosed at any stage.</li>
       <li>At least one author of each accepted paper must register and present the paper at the conference. Only presented papers will be forwarded for publication.</li>
@@ -77,7 +77,7 @@ export default function Instructions() {
       Publication
     </h2>
     <p className="text-black">
-      All accepted and presented papers will be submitted to our publication partner for potential inclusion in SCOPUS-indexed proceedings.
+    All accepted and presented papers will be submitted to CRC Press Conference Proceedings (SCOPUS-indexed).
     </p>
   </div>
 </div>

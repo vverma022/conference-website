@@ -1,12 +1,7 @@
 import { motion } from 'framer-motion'
-import CRCLogo from '../assets/CRC Press Logo-image.png'
-import TaylorFrancisLogo from '../assets/taylor-and-francis-group-vector-logo.png'
+import CRCLogo from '../assets/CRC_Press_Logo-image-removebg-preview.png'
+import TaylorFrancisLogo from '../assets/taylor-and-francis-group-vector-logo-removebg-preview.png'
 
-/**
- * Publication Partners section component
- * Displays the conference's publication partners with their logos
- * Uses framer-motion for smooth animations and consistent styling with other sections
- */
 export function PublicationPartners() {
   return (
     <motion.section
@@ -31,7 +26,6 @@ export function PublicationPartners() {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16"
         >
-          {/* CRC Press Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
@@ -59,16 +53,6 @@ export function PublicationPartners() {
             <p className="text-sm text-gray-600 mt-2 text-center">Taylor & Francis Group</p>
           </motion.div>
         </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          className="text-center text-gray-600 mt-8 max-w-2xl mx-auto"
-        >
-          Selected papers from ICSDC 2025 will be published in prestigious journals and conference proceedings 
-          by our esteemed publication partners.
-        </motion.p>
       </div>
     </motion.section>
   )
