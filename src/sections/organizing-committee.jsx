@@ -17,12 +17,12 @@ const committeeMembers = [
   { name: 'Dr. Amit Chaurasia', role: 'Organising Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/280.jpg' },
   { name: 'Dr. Arvind Dhaka', role: 'Technical Session Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/317.jpg' },
   { name: 'Dr. Lal Pratap Verma', role: 'Technical Session Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/281.jpg' },
+  { name: 'Dr. Sandeep Sharma', role: 'Publication Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/292.jpg' },
+  { name: 'Dr. Vijay Shankar Sharma', role: 'Publication Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/285.jpg' },
   { name: 'Dr. Arjun Singh', role: 'Industry Chair', Position: 'CCE, Manipal University Jaipur, India', image: "https://jaipur.manipal.edu/admin/photo/3/faculty/16/143.jpg"},
   { name: 'Dr. Ghanshyam Raghuwanshi', role: 'Finance Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/270.jpg'},
   { name: 'Dr. Shalini Pathak', role: 'Publicity Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/312.jpg' },
   { name: 'Mr. Vivek Sharma', role: 'Transport and Logistics Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/278.jpg' },
-  { name: 'Dr. Sandeep Sharma', role: 'Publication Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/292.jpg' },
-  { name: 'Dr. Vijay Shankar Sharma', role: 'Publication Co-Chair', Position: 'CCE, Manipal University Jaipur, India', image: 'https://jaipur.manipal.edu/admin/photo/3/faculty/16/285.jpg' }
 ]
 
 export function OrganizingCommittee() {
