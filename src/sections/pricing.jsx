@@ -58,7 +58,7 @@ export default function PricingTiers() {
               <CardContent className="space-y-6 flex-grow">
                 <div className="space-y-2">
                   <Badge variant="outline" className="w-full justify-center py-1">
-                    Domestic
+                    National
                   </Badge>
                   <p className="text-3xl text-center">₹{tier.domesticPrice.toLocaleString()}</p>
                 </div>
