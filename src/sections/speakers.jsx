@@ -21,31 +21,47 @@ const committeeMembers = [
 
 export function Speakers() {
   return (
-    <section className="py-16 gradientbg">
+    <section className="py-20 gradientbg">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-semibold mb-8 text-center text-black"
+          className="text-4xl font-bold mb-12 text-center text-black"
         >
           SESSION CHAIRS
         </motion.h2>
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
           {committeeMembers.map((member, index) => (
             <motion.div
               key={member.name}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="text-center text-black"
+              transition={{ delay: index * 0.1, duration: 0.6 }}
+              className="text-center group"
             >
-              <Avatar className="w-32 h-32 mx-auto mb-4">
-                <AvatarImage src={member.image} alt={member.name}/>
-                <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-              </Avatar>
-              <h3 className="text-xl font mb-2">{member.name}</h3>
-              <p className="text-gray-600">{member.college}</p>
+              <div className="relative mb-6">
+                <Avatar className="w-36 h-36 mx-auto mb-4 ring-4 ring-white shadow-2xl group-hover:shadow-3xl transition-all duration-300">
+                  <AvatarImage 
+                    src={member.image} 
+                    alt={member.name}
+                    className="object-cover"
+                  />
+                  <AvatarFallback className="text-xl font-semibold bg-gradient-to-br from-blue-500 to-purple-600 text-white">
+                    {member.name.split(' ').map(n => n[0]).join('')}
+                  </AvatarFallback>
+                </Avatar>
+              </div>
+              <motion.h3 
+                className="text-lg font-bold mb-2 text-gray-800"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                {member.name}
+              </motion.h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {member.college}
+              </p>
             </motion.div>
           ))}
         </div>
