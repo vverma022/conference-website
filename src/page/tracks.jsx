@@ -1,15 +1,27 @@
-import { Footer } from "../sections/footer";
+
 import { motion } from "framer-motion";
 import { 
   FaLaptopCode, 
   FaNetworkWired, 
   FaRobot, 
   FaShieldAlt, 
-  FaLeaf 
+  FaLeaf,
+  FaBolt 
 } from "react-icons/fa";
 
 export default function TracksPage() {
   const tracks = [
+    {
+      title: "Intelligent Power Electronics and Smart Energy Systems for Distributed Computing",
+      icon: <FaBolt className="text-3xl text-black" />,
+      topics: [
+        "AI and Digital Twin Applications in Power Electronics and Smart Grids",
+        "Vehicle-to-Grid (V2G) and Grid-to-Vehicle (G2V) Control Strategies",
+        "High-Gain DC–DC Converters for Renewable and Distributed Energy Systems",
+        "Cybersecurity and Privacy in Distributed Energy and Power Electronics Systems",
+        "Automation and Intelligent Control for Smart and Sustainable Energy",
+      ],
+    },
     {
       title: "Emerging Trends in Smart Computing",
       icon: <FaLaptopCode className="text-3xl text-black" />,
