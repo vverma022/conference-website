@@ -5,6 +5,12 @@ const committeeMembers = [
   {name: 'Prof. Dac-Nhuong Le', role: 'Haiphong University Vietnam, Haiphong, Vietnam', image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=8aJUMoQAAAAJ&citpid=4'},
   {name: 'Dr Rashmi Agrawal', role: 'Professor and Associate Dean, Manav Rachna International Institute of Research and Studies', image: '/rashmi.jpeg'},
   {name: 'Prof.(Dr) Abhishek Kumar', role: 'SMIEEE, Professor /Ass.Director, CU, India, Senior Researcher Ingeniot Lab UCLM Spain', image: '/abhi.jpeg'},
+  {name: 'Prof (Dr.) Abhishek Kumar', role: 'Post Doc, UCLM Spain, Asst. Director, CSE, UIEChandigarh University', image: '/keynote/Picture1.png'},
+  {name: 'Dr. Avinash Panwar', role: 'Director Computer Centre, Head of Department, Department of Computer Science, Mohanlal Sukhadia University, Udaipur', image: '/keynote/Picture2.jpg'},
+  {name: 'Dr. Suman Kumar Ghosh', role: 'York St. John University, London', image: '/keynote/Picture3.png'},
+  {name: 'Prof (Dr.) Debajyoty Banik', role: 'Director (R&C), Anurag University', image: '/keynote/Picture4.jpg'},
+  {name: 'Prof (Dr.) Surbhi Bhatia Khan', role: 'University of Salford, UK', image: '/keynote/Picture5.jpg'},
+
 ]
 
 export function KeynoteSpeakers() {
@@ -19,7 +25,7 @@ export function KeynoteSpeakers() {
         >
           KEYNOTE SPEAKERS
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto">
           {committeeMembers.map((member, index) => (
             <motion.div
               key={member.name}
