@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const committeeMembers = [
-  {name: 'Prof (Dr.) Abhishek Kumar', role: 'Post Doc, UCLM Spain, Asst. Director, CSE, UIEChandigarh University', image: '/keynote/Picture1.png'},
+  {name: 'Prof (Dr.) Abhishek Kumar', role: 'Post Doc, UCLM Spain, Asst. Director, CSE, UIE, Chandigarh University', image: '/keynote/Picture1.png'},
   {name: 'Dr. Avinash Panwar', role: 'Director Computer Centre, Head of Department, Department of Computer Science, Mohanlal Sukhadia University, Udaipur', image: '/keynote/Picture2.jpg'},
   {name: 'Dr. Suman Kumar Ghosh', role: 'York St. John University, London', image: '/keynote/Picture3.png'},
   {name: 'Prof (Dr.) Debajyoty Banik', role: 'Director (R&C), Anurag University', image: '/keynote/Picture4.jpg'},
@@ -22,7 +22,7 @@ export function KeynoteSpeakers() {
         >
           KEYNOTE SPEAKERS
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
           {committeeMembers.map((member, index) => (
             <motion.div
               key={member.name}
