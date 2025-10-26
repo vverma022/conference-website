@@ -11,6 +11,7 @@ const navItems = [
   {name: 'Instructions to Authors', Route: '/instructions'},
   // { name: 'Keynote Speakers', href: 'keynotespeakers' },
   {name: 'Commitee', Route: '/commitee'},
+  {name: 'Ethics', Route: '/ethics'},
   { name: 'Location', href: 'location'},
   // { name: 'Session Speakers', href: 'speakers' },
   { name: 'Contact us', href: 'contact-us' },

@@ -3,6 +3,7 @@ import ConferencePage from './page/main'
 import Tracks from './page/tracks'
 import Instructions from './page/instructions'
 import Commitee from './page/commitee'
+import Ethics from './page/ethics'
 import { Navbar } from './sections/navbar'
 import TracksPage from './page/tracks'
 import { Footer } from './sections/footer'
@@ -16,6 +17,7 @@ function App() {
        <Route path="/instructions" element={<Instructions />} />
         <Route path="/commitee" element={<Commitee />} />
         <Route path='/tracks' element={<TracksPage />} />
+        <Route path='/ethics' element={<Ethics />} />
       </Routes>
       <Footer />
     </BrowserRouter>
