@@ -5,7 +5,7 @@ const committeeMembers = [
   {name: 'Prof (Dr.) Abhishek Kumar', role: 'Post Doc, UCLM Spain, Asst. Director, CSE, UIE, Chandigarh University', image: '/keynote/Picture1.png'},
   {name: 'Dr. Avinash Panwar', role: 'Director Computer Centre, Head of Department, Department of Computer Science, Mohanlal Sukhadia University, Udaipur', image: '/keynote/Picture2.jpg'},
   {name: 'Dr. Suman Kumar Ghosh', role: 'York St. John University, London', image: '/keynote/Picture3.png'},
-  {name: 'Prof (Dr.) Debajyoty Banik', role: 'Director (R&C), Anurag University', image: '/keynote/Picture4.jpg'},
+  {name: 'Prof (Dr.) Debajyoty Banik', role: 'University Director (Research), Anurag University', image: '/drdeb.jpeg'},
   {name: 'Prof (Dr.) Surbhi Bhatia Khan', role: 'University of Salford, UK', image: '/keynote/Picture5.jpg'},
 
 ]
