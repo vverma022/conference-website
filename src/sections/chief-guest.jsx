@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 export function ChiefGuest() {
   const chiefGuest = {
     name: 'Prof (Dr.) Parag Rughani',
-    role: 'Dean, School of Cyber Security and Digital Forensics',
+    role: 'Dean, School of Cyber Security and Digital Forensics, National Forensic Sciences University, Gandhinagar, Gujarat, India.',
     image: '/cg.jpeg', // Fallback image from public; AvatarFallback will handle initials if missing
   }
 
