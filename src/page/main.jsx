@@ -5,6 +5,7 @@ import { EventLocation } from '@/sections/main/event-location'
 import { FAQ } from '@/sections/faq'
 import { Navbar } from "../sections/navbar"
 import { KeynoteSpeakers } from '@/sections/keynote'
+import { ChiefGuest } from '@/sections/chief-guest'
 import SDCGoalsSection from '@/sections/sdcgoals'
 import JaipurInfo from '@/sections/main/aboutcity'
 
@@ -27,6 +28,9 @@ const ConferencePage = () => {
         </section>
         <section id="about">
           <AboutEvent />
+        </section>
+        <section id="chiefguest">
+          <ChiefGuest />
         </section>
         <section id="keynotespeakers">
           <KeynoteSpeakers />
