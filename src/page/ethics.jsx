@@ -1,79 +1,101 @@
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { BookOpen, CheckCircle, Scale } from 'lucide-react'
+import { BookOpen, CheckCircle, Scale, AlertTriangle, Shield } from 'lucide-react'
 
 // Ethics guidelines data structure
 const ethicsGuidelines = {
   authors: {
-    title: "For Authors",
+    title: "Responsibilities of Authors",
     icon: <BookOpen className="h-5 w-5" />,
     items: [
       {
-        title: "Originality",
-        description: "Work must be original and not plagiarized. Proper citation is mandatory for all sources."
+        title: "Original Research",
+        description: "Authors are expected to present original research that has not been published elsewhere. All data, methods, and findings should be accurately reported, without fabrication, falsification, or inappropriate data manipulation."
       },
       {
-        title: "Concurrent Submission",
-        description: "Manuscripts should not be submitted to multiple journals simultaneously."
-      },
-      {
-        title: "Data and Consent",
-        description: "Authors must be prepared to provide evidence of informed consent for studies involving human participants, particularly vulnerable populations or those involving donated organs."
+        title: "Proper Attribution",
+        description: "Authors must properly acknowledge the contributions of others, including citing relevant work. Plagiarism, in any form, is unacceptable and will result in the rejection of the submitted paper."
       },
       {
         title: "Conflict of Interest",
-        description: "Authors must disclose any potential conflicts of interest."
+        description: "Authors should disclose any potential conflicts of interest that might influence the results or interpretation of their work."
+      },
+      {
+        title: "No Concurrent Submission",
+        description: "Submitting the same manuscript to multiple conferences or journals simultaneously is considered unethical and is strictly prohibited."
       }
     ]
   },
   reviewers: {
-    title: "For Reviewers",
+    title: "Responsibilities of Reviewers",
     icon: <Scale className="h-5 w-5" />,
     items: [
       {
-        title: "Confidentiality",
-        description: "Maintain confidentiality of manuscripts and never use them for personal gain."
+        title: "Fair & Objective Feedback",
+        description: "Reviewers play a critical role in the peer review process and are expected to provide fair, objective, and constructive feedback on submitted manuscripts."
       },
       {
-        title: "Objectivity",
-        description: "Conduct reviews based on evidence and without bias."
+        title: "Impartial Evaluation",
+        description: "They should evaluate the work based on its intellectual content without regard to race, gender, sexual orientation, religious belief, ethnic origin, citizenship, or political philosophy of the authors."
+      },
+      {
+        title: "Confidentiality",
+        description: "Reviewers must maintain the confidentiality of the manuscripts they review and must not use information obtained during the peer review process for personal gain."
       },
       {
         title: "Conflict of Interest",
-        description: "Decline to review any manuscript where a conflict of interest exists and inform the editor."
-      },
-      {
-        title: "Promptness",
-        description: "Inform the editor if a thorough and timely review is not possible."
-      },
-      {
-        title: "Suggestions",
-        description: "Point out relevant published work that has not been cited."
+        description: "Any potential conflicts of interest should be disclosed to the editorial board, and reviewers should recuse themselves from the review process if they feel unable to provide an impartial evaluation."
       }
     ]
   },
   editors: {
-    title: "For Editors",
+    title: "Responsibilities of Editorial Board",
     icon: <CheckCircle className="h-5 w-5" />,
     items: [
       {
-        title: "Fairness",
-        description: "Give unbiased consideration to all manuscripts and make decisions based on their merits."
+        title: "Publication Integrity",
+        description: "The editorial board is responsible for ensuring the integrity of the publication process. They should make decisions on submissions based solely on the academic merit of the work and its relevance to the conference's scope."
       },
       {
-        title: "Confidentiality",
-        description: "Keep the peer-review process confidential."
+        title: "Fair Review Process",
+        description: "The editorial board must ensure that the review process is conducted fairly, confidentially, and without bias."
       },
       {
-        title: "Misconduct",
-        description: "Investigate credible allegations of misconduct in consultation with Taylor & Francis."
+        title: "Ethical Oversight",
+        description: "They are responsible for identifying and addressing any ethical issues that may arise, such as suspected plagiarism, data manipulation, or conflicts of interest."
       },
       {
-        title: "Corrections",
-        description: "Ensure appropriate corrections are published if convincing evidence of an error is found in a published article."
+        title: "Transparency & Action",
+        description: "The board is committed to maintaining transparency throughout the publication process and will take appropriate action in cases of malpractice, which may include rejecting manuscripts, issuing retractions, or reporting misconduct to the authors' institutions."
       }
     ]
   }
+}
+
+// Ethical Misconduct section
+const ethicalMisconduct = {
+  title: "Handling Ethical Misconduct",
+  icon: <AlertTriangle className="h-5 w-5" />,
+  description: "The conference takes ethical misconduct seriously and has established procedures to address such issues. If unethical behaviour is suspected, the editorial board will investigate the matter thoroughly.",
+  actions: [
+    "Rejection of the manuscript",
+    "Notifying the authors' institutions",
+    "Banning the authors from future participation in the conference"
+  ],
+  footer: "All investigations and actions will be conducted in accordance with the principles of fairness, confidentiality, and transparency."
+}
+
+// Plagiarism Prevention section
+const plagiarismPrevention = {
+  title: "Plagiarism Prevention",
+  icon: <Shield className="h-5 w-5" />,
+  description: "To maintain the integrity of the conference proceedings, all submitted manuscripts will be screened for plagiarism using specialized detection software.",
+  policies: [
+    "Manuscripts found to have a similarity index exceeding 10% will be scrutinized",
+    "Authors may be asked to revise or provide explanations for the overlaps",
+    "Instances of confirmed plagiarism will lead to the rejection of the manuscript",
+    "Further disciplinary actions may be taken in cases of confirmed plagiarism"
+  ]
 }
 
 const reviewProcess = [
@@ -176,6 +198,48 @@ export default function Ethics() {
                   </ul>
                 </div>
               ))}
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Ethical Misconduct & Plagiarism Prevention Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto mt-12">
+          {/* Handling Ethical Misconduct */}
+          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-black">
+                {ethicalMisconduct.icon}
+                {ethicalMisconduct.title}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-black mb-4">{ethicalMisconduct.description}</p>
+              <p className="text-black font-semibold mb-2">If misconduct is confirmed, appropriate actions will be taken:</p>
+              <ul className="list-disc pl-5 space-y-1 mb-4">
+                {ethicalMisconduct.actions.map((action, index) => (
+                  <li key={index} className="text-black text-sm">{action}</li>
+                ))}
+              </ul>
+              <p className="text-black text-sm italic">{ethicalMisconduct.footer}</p>
+            </CardContent>
+          </Card>
+
+          {/* Plagiarism Prevention */}
+          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-black">
+                {plagiarismPrevention.icon}
+                {plagiarismPrevention.title}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-black mb-4">{plagiarismPrevention.description}</p>
+              <p className="text-black font-semibold mb-2">Our plagiarism policies:</p>
+              <ul className="list-disc pl-5 space-y-1">
+                {plagiarismPrevention.policies.map((policy, index) => (
+                  <li key={index} className="text-black text-sm">{policy}</li>
+                ))}
+              </ul>
             </CardContent>
           </Card>
         </div>
